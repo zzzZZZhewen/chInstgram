@@ -10,4 +10,8 @@ return array(
     'DB_PORT'=>3306,// 端口
     'DB_PREFIX'=>'think_',// 数据库表前缀
     'DB_CHARSET'=>'utf8',// 数据库字符集
+    'TMPL_PARSE_STRING'  =>array(
+     '__PUBLIC__' => '/Edison' // 更改默认的/Public 替换规则
+     // 增加新的上传路径替换规则
+    )
 );
