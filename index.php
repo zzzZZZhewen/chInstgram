@@ -18,15 +18,15 @@ if (version_compare(PHP_VERSION, '5.3.0', '<')) die('require PHP > 5.3.0 !');
 define('APP_DEBUG', True);
 
 // 定义应用目录
-define('APP_PATH', './Newton/');
+define('APP_PATH', './App/');
 
 // 绑定入口文件到Admin模块
 //define('BIND_MODULE', 'Admin');
 
 // 定义运行时目录
-define('RUNTIME_PATH', './Euler/');
+define('RUNTIME_PATH', './Runtime/');
 
 // 引入ThinkPHP入口文件
-require './Pascal/ThinkPHP.php';
+require './Engine/ThinkPHP.php';
 
 // 亲^_^ 后面不需要任何代码了 就是如此简单
