@@ -10,42 +10,45 @@
     <title>chInstgram - 登录</title>
 </head>
 
-<body  class="login">
+<body class="login">
 
 <div class="container">
 
     <form class="form-signin">
         <div class="form-signin-heading text-center">
-            <h1 class="sign-title">Sign In</h1>
+            <h1 class="sign-title">登录</h1>
             <!--<img src="images/login-logo.png" alt=""/>-->
             <i style="font-size: 8em;color: #6BC5A4;" class="fa fa-user"></i>
         </div>
         <div class="login-wrap">
-            <input type="text" class="form-control" placeholder="User ID" autofocus>
-            <input type="password" class="form-control" placeholder="Password">
+            <input id="user_email_input" type="text" class="form-control" placeholder="用户帐号（邮箱）" autofocus>
+            <input id="user_password_input" type="password" class="form-control" placeholder="密码">
 
-            <button class="btn btn-lg btn-login btn-block" type="submit">
+            <button id="login_btn" class="btn btn-lg btn-login btn-block" type="submit">
                 <i class="fa fa-check"></i>
             </button>
 
+
             <div class="registration">
-                Not a member yet?
-                <a class="" href="registration.html">
-                    Signup
+                还不是会员?
+                <a class="" href="javasript:void(0);">
+                    注册
                 </a>
             </div>
-            <label class="checkbox">
-                <input type="checkbox" value="remember-me"> Remember me
-                <span class="pull-right">
-                    <a data-toggle="modal" href="#myModal"> Forgot Password?</a>
 
+
+            <label class="checkbox">
+                <input type="checkbox" value="remember-me"> 记住我
+                <span class="pull-right">
+                    <a data-toggle="modal" href="#myModal"> 忘记密码?</a>
                 </span>
             </label>
 
         </div>
 
         <!-- Modal -->
-        <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
+        <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal"
+             class="modal fade">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -54,7 +57,8 @@
                     </div>
                     <div class="modal-body">
                         <p>Enter your e-mail address below to reset your password.</p>
-                        <input type="text" name="email" placeholder="Email" autocomplete="off" class="form-control placeholder-no-fix">
+                        <input type="text" name="email" placeholder="Email" autocomplete="off"
+                               class="form-control placeholder-no-fix">
 
                     </div>
                     <div class="modal-footer">
@@ -71,7 +75,6 @@
 </div>
 
 
-
 <load href="__PUBLIC__/js/jquery.min.js"/>
 <load href="__PUBLIC__/js/jquery-ui.min.js"/>
 <load href="__PUBLIC__/js/bootstrap.min.js"/>
@@ -80,6 +83,9 @@
 
 
 <load href="__PUBLIC__/js/user_login.js"/>
+<script>
+
+</script>
 </body>
 
 </html>

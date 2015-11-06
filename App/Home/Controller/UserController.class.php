@@ -7,7 +7,15 @@
  */
 namespace Home\Controller;
 use Think\Controller;
-class UserController extends Controller {
+class UserController extends CoreController {
+
+    public $Model = null;
+
+    protected function _initialize() {
+        parent::_initialize();
+        $this->Model = M('User');
+    }
+
     public function index(){
 
         $this->display();
@@ -15,7 +23,12 @@ class UserController extends Controller {
     }
 
     public function login(){
+        if (IS_POST){
 
-        $this->display();
+        }else{
+            $this->display();
+        }
     }
+
+
 }
