@@ -5374,3 +5374,77 @@ ul.iconic-list li a:hover, ul.iconic-list li.active a {
     margin-bottom: 0;
     padding-bottom: 0;
 }
+
+/*------------------------------------
+        Home globally changed styles
+-------------------------------------*/
+.panel-heading{
+    border-bottom: none;
+}
+
+
+
+/*------------------------------------
+        Post panel styles
+-------------------------------------*/
+.post-panel .panel-heading{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.post-panel .poster-name{
+    line-height: 50px;
+}
+
+.post-panel .post-time{
+    line-height: 50px;
+    color: #d3d3d3;
+}
+
+.post-panel .post-img img{
+    width: 100%;
+    /* height: 350px; */
+    height: auto;
+}
+
+.post-panel .post-img {
+    margin: -15px;
+}
+
+.post-panel .post-widgets li a {
+    font-size: 24px;
+}
+
+.post-panel .panel-footer {
+    padding: 4px;
+}
+
+/*------------------------------------
+        Bottom nav-tabs styles
+-------------------------------------*/
+.bottom-tabs{
+    -webkit-transform: translateY(6px);
+    -moz-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    -o-transform: translateY(6px);
+    transform: translateY(6px);
+
+}
+.bottom-tabs .panel-heading{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.bottom-tabs .nav-tabs{
+
+}
+.bottom-tabs .nav-tabs li{
+    text-align: center;
+    width: 20%;
+}
+
+.bottom-tabs .nav-tabs li a{
+    margin: 0;
+}
+
+.bottom-tabs .nav-tabs li i{
+    font-size: 20px;
+}
