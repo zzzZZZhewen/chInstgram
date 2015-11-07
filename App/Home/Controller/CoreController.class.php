@@ -15,11 +15,13 @@ class CoreController extends Controller {
     protected function _initialize() {
 
         /*如果有用户登录，读取用户信息*/
-        if (session('user_id') > 0) {
+        if (session('?User.user_id')) {
             $this->User = session('User');
             $this->assign('User', $this->User);
         } else {
-            if (MODULE_NAME != 'Home' || CONTROLLER_NAME != 'User' || ACTION_NAME != 'login')
+            if (!(MODULE_NAME == 'Home' && CONTROLLER_NAME == 'User' && ACTION_NAME == 'login')
+                && !(MODULE_NAME == 'Home' && CONTROLLER_NAME == 'User' && ACTION_NAME == 'register')
+            )
                 redirect(U('Home/User/login'));
         }
     }

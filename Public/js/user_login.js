@@ -14,7 +14,11 @@ $(document).ready(function () {
                 user_password: $user_password_input.val()
             },
             function (data) {
-                window.location.href="/Home/Index/index";
+                if (data['res'] == 1) {
+                    window.location.href="/Home/Index/index";
+                } else if (data['res'] == 0) {
+
+                }
             });
     });
 

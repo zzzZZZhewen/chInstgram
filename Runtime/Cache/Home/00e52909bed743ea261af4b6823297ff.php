@@ -25,21 +25,21 @@
         <!--logo and iconic logo end-->
         <div class="left-side-inner">
             <!--sidebar nav start-->
-            <ul class="nav nav-pills nav-stacked custom-nav">
+            <ul class="nav nav-pills nav-stacked custom-nav" >
                 <li class="active">
-                    <a href="<?php echo U('Home/Index/index');?>"><i class="fa fa-home"></i> <span>Home</span></a>
+                    <a href="<?php echo U('Home/Index/index');?>"><i class="fa fa-home"></i> <span> chInstgram首页</span></a>
                 </li>
                 <li>
-                    <a href="javascript:void(0)"><i class="fa fa-search"></i> <span>Search</span></a>
+                    <a href="<?php echo U('Home/Search/index');?>"><i class="fa fa-search"></i> <span> 搜索</span></a>
                 </li>
                 <li>
-                    <a href="javascript:void(0)"><i class="fa fa-camera"></i> <span>Camera</span></a>
+                    <a href="<?php echo U('Home/Camera/index');?>"><i class="fa fa-camera"></i> <span> 相机</span></a>
                 </li>
                 <li>
-                    <a href="<?php echo U('Home/Message/index');?>"><i class="fa fa-envelope"></i> <span>Message</span></a>
+                    <a href="<?php echo U('Home/Message/index');?>"><i class="fa fa-envelope"></i> <span> 消息（你有1条新消息）</span></a>
                 </li>
                 <li>
-                    <a href="<?php echo U('Home/User/index');?>"><i class="fa fa-user"></i> <span>User</span></a>
+                    <a href="<?php echo U('Home/User/index');?>"><i class="fa fa-user"></i> <span> 用户资料</span></a>
                 </li>
             </ul>
             <!--sidebar nav end-->
@@ -47,12 +47,43 @@
         </div>
     </div>
     <!-- left side end-->
+    <nav class="navbar navbar-default navbar-fixed-bottom  bottom-tabs hidden-md hidden-lg hidden-sm">
+        <header class="panel-heading custom-tab turquoise-tab">
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <a href="<?php echo U('Home/Index/index');?>">
+                        <i class="fa fa-home"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo U('Home/Search/index');?>">
+                        <i class="fa fa-search"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo U('Home/Camera/index');?>">
+                        <i class="fa fa-camera"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo U('Home/Message/index');?>">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo U('Home/User/index');?>">
+                        <i class="fa fa-user"></i>
+                    </a>
+                </li>
+            </ul>
+        </header>
+    </nav>
 
     <!-- main content start-->
     <div class="main-content">
 
         <!-- header section start-->
-        <div class="header-section" >
+        <div class="header-section">
             <span>chInstgram</span>
             <!--notification menu start -->
             <div class="menu-right hidden-xs">
@@ -61,13 +92,12 @@
                         <a href="http://www.sucaihuo.com/templates" class="btn btn-default dropdown-toggle"
                            data-toggle="dropdown">
                             <img src="/Upload/images/photos/user-avatar.png" alt=""/>
-                            John Doe
+                            <?php echo ($User["user_nickname"]); ?>
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
-                            <li><a href="javascript:void(0)"><i class="fa fa-user"></i> Profile</a></li>
-                            <li><a href="javascript:void(0)"><i class="fa fa-cog"></i> Settings</a></li>
-                            <li><a href="javascript:void(0)"><i class="fa fa-sign-out"></i> Log Out</a>
+                            <li><a href="javascript:void(0)"><i class="fa fa-cog"></i> 设置</a></li>
+                            <li><a id="logout_btn" href="javascript:void(0)"><i class="fa fa-sign-out"></i> 登出</a>
                             </li>
                         </ul>
                     </li>
@@ -75,75 +105,137 @@
                 </ul>
             </div>
             <!--notification menu end -->
-
         </div>
         <!-- header section end-->
+
 
         <!--body wrapper start-->
         <div class="wrapper">
             <div class="row blog">
 
                 <div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-                    <div class="panel">
+                    <!--post panel start  -->
+                    <div class="panel post-panel">
+                        <div class="panel-heading">
+                            <div class="dir-info">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <div class="avatar">
+                                            <img src="/Upload/images/photos/user2.png" alt=""/>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <a href="javascript:void(0);"><span class="poster-name">这是发这条动态的人的名字</span></a>
+                                    </div>
+                                    <div class="col-xs-2 ">
+                                        <span class="post-time">刚刚</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="panel-body">
-                            <h1 class="text-center mtop35"><a href="http://www.sucaihuo.com/templates">Neque porro
-                                quisquam est qui dolo rem ipsum quio</a></h1>
-
-                            <p class="text-center auth-row">
-                                By <a href="http://www.sucaihuo.com/templates">Anthony Jones</a> | 27 December 2014 | <a
-                                    href="http://www.sucaihuo.com/templates">5 Comments</a>
-                            </p>
-
-                            <div class="blog-img-wide">
+                            <div class="post-img">
                                 <img src="/Upload/images/blog/blog-wide-img.jpg" alt="">
                             </div>
-                            <p>Donec ultrices faucibus rutrum. Phasellus sodales vulputate urna, vel accumsan augue
-                                egestas ac. Donec vitae leo at sem lobortis porttitor eu consequat risus. Mauris sed
-                                congue orci.
-                            </p>
-                            <a href="http://www.sucaihuo.com/templates" class="more">Continue Reading</a>
+                        </div>
+                        <div class="panel-footer">
+                            <div class="post-widgets">
+                                <ul class="nav nav-pills p-option">
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="fa fa-heart"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="fa fa-comment"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="fa fa-mail-forward"></i></a>
+                                    </li>
+                                    <li class="pull-right">
+                                        <a href="javascript:void(0);"><i class="fa fa-ellipsis-h"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="post-content">
+                                    1,024次赞
+                                <br/>
+                                <a>WILD AWAKE</a>  这里是作者对图片的描述
+                            </div>
+                            <div class="post-comment">
+                                    全部256条评论
+                                <br/><a href="javascript:void(0);">mzw</a> 评论
+                                <br/><a href="javascript:void(0);">mzw</a> 评论
+                                    <br/><a href="javascript:void(0);">mzw</a> 评论
+                            </div>
                         </div>
                     </div>
-                    <div class="panel">
+                    <!--post panel end  -->
+                    <div class="panel post-panel">
+                        <div class="panel-heading">
+                            <div class="dir-info">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <div class="avatar">
+                                            <img src="/Upload/images/photos/user2.png" alt=""/>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <a href="javascript:void(0);"><span class="poster-name">Wild Awake</span></a>
+                                    </div>
+                                    <div class="col-xs-2 ">
+                                        <span class="post-time">刚刚</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="panel-body">
-                            <h1 class="text-center mtop35"><a href="http://www.sucaihuo.com/templates">Neque porro
-                                quisquam est qui dolo rem ipsum quio</a></h1>
-
-                            <p class="text-center auth-row">
-                                By <a href="http://www.sucaihuo.com/templates">Anthony Jones</a> | 27 December 2014 | <a
-                                    href="http://www.sucaihuo.com/templates">5 Comments</a>
-                            </p>
-
-                            <div class="blog-img-wide">
+                            <div class="post-img">
                                 <img src="/Upload/images/blog/blog-wide-img.jpg" alt="">
                             </div>
-                            <p>Donec ultrices faucibus rutrum. Phasellus sodales vulputate urna, vel accumsan augue
-                                egestas ac. Donec vitae leo at sem lobortis porttitor eu consequat risus. Mauris sed
-                                congue orci.
-                            </p>
-                            <a href="http://www.sucaihuo.com/templates" class="more">Continue Reading</a>
                         </div>
-                    </div>
-                    <div class="panel">
-                        <div class="panel-body">
-                            <h1 class="text-center mtop35"><a href="http://www.sucaihuo.com/templates">Neque porro
-                                quisquam est qui dolo rem ipsum quio</a></h1>
-
-                            <p class="text-center auth-row">
-                                By <a href="http://www.sucaihuo.com/templates">Anthony Jones</a> | 27 December 2014 | <a
-                                    href="http://www.sucaihuo.com/templates">5 Comments</a>
-                            </p>
-
-                            <div class="blog-img-wide">
-                                <img src="/Upload/images/blog/blog-wide-img.jpg" alt="">
+                        <div class="panel-footer">
+                            <div class="post-widgets">
+                                <ul class="nav nav-pills p-option">
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="fa fa-heart"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="fa fa-comment"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="fa fa-mail-forward"></i></a>
+                                    </li>
+                                    <li class="pull-right">
+                                        <a href="javascript:void(0);"><i class="fa fa-ellipsis-h"></i></a>
+                                    </li>
+                                </ul>
                             </div>
-                            <p>Donec ultrices faucibus rutrum. Phasellus sodales vulputate urna, vel accumsan augue
-                                egestas ac. Donec vitae leo at sem lobortis porttitor eu consequat risus. Mauris sed
-                                congue orci.
-                            </p>
-                            <a href="http://www.sucaihuo.com/templates" class="more">Continue Reading</a>
+                        </div>
+                        <div class="panel-body">
+                            <div class="post-content">
+                                <p>
+                                    1024次赞
+                                </p>
+
+                                <p>Donec ultrices faucibus rutrum. Phasellus sodales vulputate urna, vel accumsan augue
+                                    egestas ac. Donec vitae leo at sem lobortis porttitor eu consequat risus. Mauris sed
+                                    congue orci.
+                                </p>
+                            </div>
+                            <div class="post-comment">
+                                <p>
+                                    全部256条评论
+                                </p>
+
+                                <p><a href="javascript:void(0);">mzw</a> 评论
+                                    <br/><a href="javascript:void(0);">mzw</a> 评论
+                                    <br/><a href="javascript:void(0);">mzw</a> 评论
+                                </p>
+                            </div>
                         </div>
                     </div>
+
                     <div class="text-center">
                         <ul class="pagination blog-pagination">
                             <li><a href="http://www.sucaihuo.com/templates">PREV</a></li>
@@ -179,6 +271,8 @@
 <script type="text/javascript" src="/Public/js/jquery.nicescroll.js"></script>
 
 <script type="text/javascript" src="/Public/js/index.js"></script>
+<script type="text/javascript" src="/Public/js/index_index.js"></script>
+
 </body>
 
 </html>

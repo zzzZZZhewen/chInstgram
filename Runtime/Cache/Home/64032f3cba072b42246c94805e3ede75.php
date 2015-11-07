@@ -47,6 +47,37 @@
         </div>
     </div>
     <!-- left side end-->
+    <nav class="navbar navbar-default navbar-fixed-bottom  bottom-tabs hidden-md hidden-lg">
+        <header class="panel-heading custom-tab turquoise-tab">
+            <ul class="nav nav-tabs">
+                <li>
+                    <a href="<?php echo U('Home/Index/index');?>">
+                        <i class="fa fa-home"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo U('Home/Search/index');?>">
+                        <i class="fa fa-search"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo U('Home/Camera/index');?>">
+                        <i class="fa fa-camera"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo U('Home/Message/index');?>">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="<?php echo U('Home/User/index');?>">
+                        <i class="fa fa-user"></i>
+                    </a>
+                </li>
+            </ul>
+        </header>
+    </nav>
 
     <!-- main content start-->
     <div class="main-content">
