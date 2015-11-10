@@ -27,7 +27,7 @@ return array(
     'SESSION_AUTO_START' => true, // 是否自动开启Session
     'SESSION_OPTIONS' => array (), // session 配置数组 支持type name id path expire domain 等参数
     'SESSION_TYPE' => '', // session hander类型 默认无需设置 除非扩展了session hander驱动
-    'SESSION_PREFIX' => 'chist_', // session 前缀
+    //'SESSION_PREFIX' => 'chist_', // session 前缀
 
     /* Cookie设置 */
     'COOKIE_EXPIRE' => 0, // Cookie有效期
@@ -41,10 +41,4 @@ return array(
     'TMPL_DETECT_THEME' => false, // 自动侦测模板主题
     'TMPL_TEMPLATE_SUFFIX' => '.html', // 默认模板文件后缀
     'TMPL_FILE_DEPR' => '/', // 模板文件CONTROLLER_NAME与ACTION_NAME之间的分割符
-    'TMPL_PARSE_STRING'  =>array(
-        //静态资源路径
-        '__PUBLIC__' => '/Public',
-        //上传路径
-        '__UPLOAD__' =>'/Upload',
-    )
 );

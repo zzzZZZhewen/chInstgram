@@ -11,8 +11,11 @@ class UserModel extends Model {
         array('user_email', 'require', '帐号(邮箱)不能为空！'),
         array('user_email', 'email', '邮箱地址有误！'),
         array('user_email', '', '帐号(邮箱)已经存在！', 0, 'unique'),
-        array('user_password', 'require', '密码不能为空！', 0, 'regex'),
+
+        array('user_password', 'require', '密码不能为空！'),
+        //array('user_password', '8,16', '密码必须在8-16之间哦', 0, 'length'),
         array('user_password_again', 'user_password', '确认密码不正确', 0, 'confirm'), // 验证确认密码是否和密码一致
+
     );
     //array(填充字段,填充内容,[填充条件,附加规则])
     protected $_auto = array(

@@ -6,7 +6,6 @@
     <load href="__PUBLIC__/css/style.css"/>
     <load href="__PUBLIC__/css/style-responsive.css"/>
 
-    <load href="__PUBLIC__/css/home.css"/>
     <title>chInstgram - 登录</title>
 </head>
 
@@ -14,15 +13,15 @@
 
 <div class="container">
 
-    <form class="form-signin">
+    <form id="login_form" class="form-signin" action="{:U('Home/User/login_success')}" method="post">
         <div class="form-signin-heading text-center">
             <h1 class="sign-title">登录</h1>
             <!--<img src="images/login-logo.png" alt=""/>-->
             <i style="font-size: 8em;color: #6BC5A4;" class="fa fa-user"></i>
         </div>
         <div class="login-wrap">
-            <input id="user_email_input" type="text" class="form-control" placeholder="用户帐号（邮箱）" autofocus>
-            <input id="user_password_input" type="password" class="form-control" placeholder="密码">
+            <input name="user_email" id="user_email" type="text" class="form-control" placeholder="用户帐号（邮箱）" autofocus>
+            <input name="user_password" id="user_password" type="password" class="form-control" placeholder="密码">
 
             <button id="login_btn" class="btn btn-lg btn-login btn-block" type="submit">
                 <i class="fa fa-check"></i>
@@ -36,17 +35,17 @@
                 </a>
             </div>
 
-
-            <label class="checkbox">
-                <input type="checkbox" value="remember-me"> 记住我
-                <span class="pull-right">
-                    <a data-toggle="modal" href="#myModal"> 忘记密码?</a>
-                </span>
-            </label>
-
+            <!--
+                        <label class="checkbox">
+                            <input type="checkbox" value="remember-me"> 记住我
+                            <span class="pull-right">
+                                <a data-toggle="modal" href="#myModal"> 忘记密码?</a>
+                            </span>
+                        </label>
+            -->
         </div>
 
-        <!-- Modal -->
+        <!-- Modal
         <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal"
              class="modal fade">
             <div class="modal-dialog">
@@ -71,6 +70,28 @@
         <!-- modal -->
 
     </form>
+
+    <!-- hint -->
+    <a id="login_hint_btn" class="hidden" data-toggle="modal" href="#login_hint"> 忘记密码?</a>
+
+    <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="login_hint"
+         class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">出错了:(</h4>
+                </div>
+                <div class="modal-body">
+                    <p>帐号或者密码错误</p>
+
+                </div>
+                <div class="modal-footer">
+                    <button data-dismiss="modal" class="btn btn-default" type="button">知道了</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>
 

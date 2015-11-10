@@ -6,28 +6,18 @@
     <load href="__PUBLIC__/css/style.css"/>
     <load href="__PUBLIC__/css/style-responsive.css"/>
 
-    <load href="__PUBLIC__/css/home.css"/>
+    <load href="__PUBLIC__/css/index_index.css"/>
     <title>chInstgram - 首页</title>
 </head>
 
 <body>
 <section>
-    <!-- left side start-->
     <div class="left-side sticky-left-side">
-        <!--logo and iconic logo start
-        <div class="logo">
-            <a href="index.html"><img src="__UPLOAD__/images/logo.png" alt=""></a>
-        </div>
-
-        <div class="logo-icon text-center">
-            <a href="index.html"><img src="__UPLOAD__/images/logo_icon.png" alt=""></a>
-        </div>
-        <!--logo and iconic logo end-->
         <div class="left-side-inner">
             <!--sidebar nav start-->
             <ul class="nav nav-pills nav-stacked custom-nav" >
                 <li class="active">
-                    <a href="{:U('Home/Index/index')}"><i class="fa fa-home"></i> <span> chInstgram首页</span></a>
+                    <a href="{:U('Home/Index/index')}"><i class="fa fa-home"></i> <span> 首页</span></a>
                 </li>
                 <li>
                     <a href="{:U('Home/Search/index')}"><i class="fa fa-search"></i> <span> 搜索</span></a>
@@ -36,14 +26,12 @@
                     <a href="{:U('Home/Camera/index')}"><i class="fa fa-camera"></i> <span> 相机</span></a>
                 </li>
                 <li>
-                    <a href="{:U('Home/Message/index')}"><i class="fa fa-envelope"></i> <span> 消息（你有1条新消息）</span></a>
+                    <a href="{:U('Home/Message/index')}"><i class="fa fa-envelope"></i> <span> 消息</span></a>
                 </li>
                 <li>
-                    <a href="{:U('Home/User/index')}"><i class="fa fa-user"></i> <span> 用户资料</span></a>
+                    <a href="{:U('Home/User/index')}"><i class="fa fa-user"></i> <span> 用户</span></a>
                 </li>
             </ul>
-            <!--sidebar nav end-->
-
         </div>
     </div>
     <!-- left side end-->
@@ -78,26 +66,24 @@
             </ul>
         </header>
     </nav>
-
     <!-- main content start-->
     <div class="main-content">
-
         <!-- header section start-->
         <div class="header-section">
             <span>chInstgram</span>
             <!--notification menu start -->
-            <div class="menu-right hidden-xs">
+            <div class="menu-right">
                 <ul class="notification-menu">
                     <li>
                         <a href="http://www.sucaihuo.com/templates" class="btn btn-default dropdown-toggle"
                            data-toggle="dropdown">
-                            <img src="__UPLOAD__/images/photos/user-avatar.png" alt=""/>
+                            <img src="__ROOT__/Uploads/avatar/avatar_default.jpg" alt=""/>
                             {$User.user_nickname}
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
                             <li><a href="javascript:void(0)"><i class="fa fa-cog"></i> 设置</a></li>
-                            <li><a id="logout_btn" href="javascript:void(0)"><i class="fa fa-sign-out"></i> 登出</a>
+                            <li><a id="logout_btn" href="{:U('Home/User/logout')}"><i class="fa fa-sign-out"></i> 登出</a>
                             </li>
                         </ul>
                     </li>
@@ -107,8 +93,6 @@
             <!--notification menu end -->
         </div>
         <!-- header section end-->
-
-
         <!--body wrapper start-->
         <div class="wrapper">
             <div class="row blog">
@@ -121,7 +105,7 @@
                                 <div class="row">
                                     <div class="col-xs-2">
                                         <div class="avatar">
-                                            <img src="__UPLOAD__/images/photos/user2.png" alt=""/>
+                                            <img src="__ROOT__/Uploads/avatar/avatar_default.jpg" alt=""/>
                                         </div>
                                     </div>
                                     <div class="col-xs-8">
@@ -135,7 +119,7 @@
                         </div>
                         <div class="panel-body">
                             <div class="post-img">
-                                <img src="__UPLOAD__/images/blog/blog-wide-img.jpg" alt="">
+                                <img src="__ROOT__/Uploads/posts/post_default.jpg" alt="">
                             </div>
                         </div>
                         <div class="panel-footer">
@@ -177,7 +161,7 @@
                                 <div class="row">
                                     <div class="col-xs-2">
                                         <div class="avatar">
-                                            <img src="__UPLOAD__/images/photos/user2.png" alt=""/>
+                                            <img src="__ROOT__/Uploads/avatar/avatar_default.jpg" alt=""/>
                                         </div>
                                     </div>
                                     <div class="col-xs-8">
@@ -191,7 +175,7 @@
                         </div>
                         <div class="panel-body">
                             <div class="post-img">
-                                <img src="__UPLOAD__/images/blog/blog-wide-img.jpg" alt="">
+                                <img src="__ROOT__/Uploads/posts/post_default.jpg" alt="">
                             </div>
                         </div>
                         <div class="panel-footer">
@@ -236,31 +220,16 @@
                         </div>
                     </div>
 
-                    <div class="text-center">
-                        <ul class="pagination blog-pagination">
-                            <li><a href="http://www.sucaihuo.com/templates">PREV</a></li>
-                            <li><a href="http://www.sucaihuo.com/templates">1</a></li>
-                            <li><a href="http://www.sucaihuo.com/templates">2</a></li>
-                            <li><a href="http://www.sucaihuo.com/templates">3</a></li>
-                            <li><a href="http://www.sucaihuo.com/templates">4</a></li>
-                            <li><a href="http://www.sucaihuo.com/templates">5</a></li>
-                            <li><a href="http://www.sucaihuo.com/templates">NEXT</a></li>
-                        </ul>
-
-                    </div>
                 </div>
 
             </div>
         </div>
         <!--body wrapper end-->
-
         <!--footer section start-->
         <footer class="">
             2015 &copy; chInstgram
         </footer>
         <!--footer section end-->
-
-
     </div>
     <!-- main content end-->
 </section>

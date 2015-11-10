@@ -21,6 +21,8 @@ class CoreController extends Controller {
         } else {
             if (!(MODULE_NAME == 'Home' && CONTROLLER_NAME == 'User' && ACTION_NAME == 'login')
                 && !(MODULE_NAME == 'Home' && CONTROLLER_NAME == 'User' && ACTION_NAME == 'register')
+                && !(MODULE_NAME == 'Home' && CONTROLLER_NAME == 'User' && ACTION_NAME == 'login_success')
+                && !(MODULE_NAME == 'Home' && CONTROLLER_NAME == 'User' && ACTION_NAME == 'register_success')
             )
                 redirect(U('Home/User/login'));
         }
