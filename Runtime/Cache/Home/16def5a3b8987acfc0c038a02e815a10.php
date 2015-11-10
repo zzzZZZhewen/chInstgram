@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="zh-cn" class="login">
 
 <head>
     <meta charset="UTF-8">
-    <load href="__PUBLIC__/css/style.css"/>
-    <load href="__PUBLIC__/css/style-responsive.css"/>
+    <link rel="stylesheet" type="text/css" href="/chinstgram/Public/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/chinstgram/Public/css/style-responsive.css" />
 
     <title>chInstgram - 登录</title>
 </head>
@@ -13,7 +13,7 @@
 
 <div class="container">
 
-    <form id="login_form" class="form-signin" action="{:U('Home/User/login_success')}" method="post">
+    <form id="login_form" class="form-signin" action="<?php echo U('Home/User/login_success');?>" method="post">
         <div class="form-signin-heading text-center">
             <h1 class="sign-title">登录</h1>
             <!--<img src="images/login-logo.png" alt=""/>-->
@@ -30,7 +30,7 @@
 
             <div class="registration">
                 还不是会员?
-                <a class="" href="{:U('Home/User/register')}">
+                <a class="" href="<?php echo U('Home/User/register');?>">
                     注册
                 </a>
             </div>
@@ -96,14 +96,14 @@
 </div>
 
 
-<load href="__PUBLIC__/js/jquery.min.js"/>
-<load href="__PUBLIC__/js/jquery-ui.min.js"/>
-<load href="__PUBLIC__/js/bootstrap.min.js"/>
-<load href="__PUBLIC__/js/jquery.nicescroll.js"/>
-<load href="__PUBLIC__/js/index.js"/>
+<script type="text/javascript" src="/chinstgram/Public/js/jquery.min.js"></script>
+<script type="text/javascript" src="/chinstgram/Public/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/chinstgram/Public/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/chinstgram/Public/js/jquery.nicescroll.js"></script>
+<script type="text/javascript" src="/chinstgram/Public/js/index.js"></script>
 
 
-<load href="__PUBLIC__/js/user_login.js"/>
+<script type="text/javascript" src="/chinstgram/Public/js/user_login.js"></script>
 <script>
 
 </script>

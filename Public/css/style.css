@@ -5488,3 +5488,21 @@ body.login {
     /*background: -webkit-radial-gradient(10% 0, farthest-side ellipse, rgba(74, 121, 147, 0.89), rgba(204, 204, 204, 0.85) 60%, rgba(185, 135, 131, 0.87) 120%);
     background: -moz-radial-gradient(10% 0, farthest-side ellipse, rgba(74, 121, 147, 0.89), rgba(204, 204, 204, 0.85) 60%, rgba(185, 135, 131, 0.87) 120%);*/
 }
+
+@media screen and (min-width: 768px){
+    .header-section{
+        padding-left: 240px;
+    }
+}
+
+.header-section{
+    text-align: center;
+}
+
+.header-section li{
+    text-align: left;
+}
+
+.header-section>span{
+    font-size: 20px; line-height: 2.5; width: 100%;
+}

@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="zh-cn" class="login">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html class="login">
 
 <head>
     <meta charset="UTF-8">
-    <load href="__PUBLIC__/css/style.css"/>
-    <load href="__PUBLIC__/css/style-responsive.css"/>
+    <link rel="stylesheet" type="text/css" href="/chinstgram/Public/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/chinstgram/Public/css/style-responsive.css" />
 
     <title>chInstgram - 注册</title>
 </head>
@@ -13,21 +13,21 @@
 
 <div class="container">
 
-    <form id="register_form" class="form-signin" method="post" action="{:U('Home/User/register_success')}">
+    <form id="register_form" class="form-signin" method="post" action="<?php echo U('Home/User/register_success');?>">
         <div class="form-signin-heading text-center">
             <h1 class="sign-title">注册</h1>
             <!--<img src="images/login-logo.png" alt=""/>-->
             <i style="font-size: 8em;color: #6BC5A4;" class="fa fa-users"></i>
         </div>
         <div class="login-wrap">
-            <p>必须填写的部分</p>
+            <p>输入您的账户安全信息</p>
             <input name="user_email" id="user_email" type="text" autofocus="" placeholder="用户名（邮箱）" class="form-control">
             <input name="user_password" id="user_password" type="password" placeholder="密码" class="form-control">
             <input name="user_password_again" id="user_password_again" type="password" placeholder="验证密码" class="form-control">
-            <input name="user_nickname" id="user_nickname" type="text" placeholder="昵称" class="form-control">
 
             <p>输入您的个性信息（可稍后再填）</p>
             <input name="user_realname" id="user_realname" type="text" placeholder="真实姓名" class="form-control">
+            <input name="user_nickname" id="user_nickname" type="text" placeholder="昵称" class="form-control">
             <input name="user_tel" id="user_tel" type="number"  placeholder="手机" class="form-control">
             <input name="user_info" id="user_info" type="text" placeholder="个人描述" class="form-control">
 
@@ -53,7 +53,7 @@
 
             <div class="registration">
                 已经注册？
-                <a href="{:U('Home/User/login')}" class="">
+                <a href="<?php echo U('Home/User/login');?>" class="">
                     用已知账户登录
                 </a>
             </div>
@@ -87,13 +87,13 @@
 </div>
 
 
-<load href="__PUBLIC__/js/jquery.min.js"/>
-<load href="__PUBLIC__/js/jquery-ui.min.js"/>
-<load href="__PUBLIC__/js/bootstrap.min.js"/>
-<load href="__PUBLIC__/js/jquery.nicescroll.js"/>
-<load href="__PUBLIC__/js/index.js"/>
+<script type="text/javascript" src="/chinstgram/Public/js/jquery.min.js"></script>
+<script type="text/javascript" src="/chinstgram/Public/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/chinstgram/Public/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/chinstgram/Public/js/jquery.nicescroll.js"></script>
+<script type="text/javascript" src="/chinstgram/Public/js/index.js"></script>
 
-<load href="__PUBLIC__/js/user_register.js"/>
+<script type="text/javascript" src="/chinstgram/Public/js/user_register.js"></script>
 
 <script>
 
