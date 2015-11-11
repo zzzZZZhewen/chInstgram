@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1,maximum-scale=1"/>
+
     <load href="__PUBLIC__/css/style.css"/>
     <load href="__PUBLIC__/css/style-responsive.css"/>
 
@@ -16,7 +18,7 @@
     <nav class="left-side sticky-left-side">
         <div class="left-side-inner">
             <ul class="nav nav-pills nav-stacked custom-nav">
-                <li >
+                <li>
                     <a href="{:U('Home/Index/index')}"><i class="fa fa-home"></i> <span> 首页</span></a>
                 </li>
                 <li>
@@ -37,7 +39,7 @@
     <nav class="navbar navbar-default navbar-fixed-bottom  bottom-tabs hidden-md hidden-lg hidden-sm">
         <header class="panel-heading custom-tab turquoise-tab">
             <ul class="nav nav-tabs">
-                <li >
+                <li>
                     <a href="{:U('Home/Index/index')}">
                         <i class="fa fa-home"></i>
                     </a>
@@ -68,14 +70,19 @@
     <!--两个导航栏-->
 
     <div class="main-content">
-        <div class="header-section" >
-            <span>{$User.user_nickname}的档案</span>
-            <div class="menu-right">
+
+        <div class="header-section navbar-fixed-top">
+            <a href="javascript:void(0);" class="toggle-btn hidden-xs">
+                <i class="fa fa-bars"></i>
+            </a>
+            <span>{$User.user_nickname}</span>
+
+            <div class="menu-right hidden-xs">
                 <ul class="notification-menu">
                     <li>
                         <a href="javascript:void(0);" class="btn btn-default dropdown-toggle"
                            data-toggle="dropdown">
-                            <img src="__ROOT__/Uploads/avatar/avatar_default.jpg" alt=""/>
+                            <img src="__ROOT__/Uploads/avatar/{$User.user_image_url}" alt=""/>
                             {$User.user_nickname}
                             <span class="caret"></span>
                         </a>
@@ -95,214 +102,362 @@
                 <div class="col-md-4">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="panel">
-                                <div class="panel-body">
-                                    <div class="profile-pic text-center">
-                                        <img alt="" src="__UPLOAD__/images/photos/user1.png">
-                                    </div>
+                            <div class="panel widget-info-twt turquoise-box">
+                                <div class="avatar"><img alt="" src="__ROOT__/Uploads/avatar/{$User.user_image_url}">
                                 </div>
+                                <div class="followers" style="margin-bottom: 10px;">
+                                    <h5>{$User.user_nickname}</h5>
+                                    <span class="subtitle" style="margin-bottom: 10px;">{$User.user_realname}</span>
+                                    <span>0 发布</span> |
+                                    <span>0 关注</span> |
+                                    <span>0 粉丝</span>
+                                </div>
+                                <a class="btn btn-primary btn-block"
+                                   href="{:U('Home/User/edit')}"><span><i></i>编辑档案</span></a>
+                                <a class="btn btn-danger btn-block"
+                                   href="{:U('Home/User/logout')}"><span><i></i>用户登出</span></a>
                             </div>
+
                         </div>
                         <div class="col-md-12">
                             <div class="panel">
                                 <div class="panel-body">
                                     <ul class="p-info">
                                         <li>
-                                            <div class="title">Gender</div>
-                                            <div class="desk">Male</div>
+                                            <div class="title">性别</div>
+                                            <div class="desk">{$User.user_sex}</div>
                                         </li>
                                         <li>
-                                            <div class="title">Founder</div>
-                                            <div class="desk">ABC Inc.</div>
+                                            <div class="title">手机</div>
+                                            <div class="desk">{$User.user_tel}</div>
                                         </li>
                                         <li>
-                                            <div class="title">Education</div>
-                                            <div class="desk">BSC. in CSE</div>
-                                        </li>
-                                        <li>
-                                            <div class="title">Project Done</div>
-                                            <div class="desk">50+</div>
-                                        </li>
-                                        <li>
-                                            <div class="title">Skills</div>
-                                            <div class="desk">HTML, CSS, JavaScript.</div>
+                                            <div class="title">个人简介</div>
+                                            <div class="desk">{$User.user_info}</div>
                                         </li>
                                     </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="panel">
-                                <div class="panel-body p-states">
-                                    <div class="summary pull-left">
-                                        <h4>Total <span>Sales</span></h4>
-                                        <span>Monthly Summary</span>
-                                        <h3>$ 5,600</h3>
-                                    </div>
-                                    <div id="expense" class="chart-bar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="panel">
-                                <div class="panel-body p-states green-box">
-                                    <div class="summary pull-left">
-                                        <h4>Product <span>refund</span></h4>
-                                        <span>Monthly Summary</span>
-                                        <h3>160</h3>
-                                    </div>
-                                    <div id="pro-refund" class="chart-bar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="panel">
-                                <div class="panel-body p-states">
-                                    <div class="summary pull-left">
-                                        <h4>Total <span>Earning</span></h4>
-                                        <span>Monthly Summary</span>
-                                        <h3>$ 51,2600</h3>
-                                    </div>
-                                    <div id="expense2" class="chart-bar"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-8">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="panel">
-                                <div class="panel-body">
-                                    <div class="profile-desk">
-                                        <h1>john doe</h1>
-                                        <span class="designation">PRODUCT DESIGNER (UX / UI / Visual Interaction)</span>
-                                        <p>
-                                            I have 10 years of experience designing for the web, and specialize in the areas of user interface design, interaction design, visual design and prototyping. I’ve worked with notable startups including Pearl Street Software.
-                                        </p>
-                                        <a class="btn p-follow-btn pull-left" href="http://www.sucaihuo.com/templates"> <i class="fa fa-check"></i> Following</a>
+                    <section class="panel" style="border-bottom: none; box-shadow: none;">
+                        <header class="panel-heading custom-tab turquoise-tab user-tabs">
+                            <ul class="nav nav-tabs">
+                                <li>
+                                    <a data-toggle="tab" href="#ths">
+                                        <i class="fa fa-th"></i>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a data-toggle="tab" href="#bars">
+                                        <i class="fa fa-bars"></i>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a data-toggle="tab" href="#likes">
+                                        <i class="fa fa-heart"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </header>
+                        <div class="panel-body" style="padding-bottom: 0;">
+                            <div class="tab-content">
+                                <div id="ths" class="tab-pane ">
+                                    <div class="media-gal">
+                                        <div class="item">
+                                            <a>
+                                                <img src="__ROOT__/Uploads/posts/post_default.jpg" alt=""/>
+                                            </a>
 
-                                        <ul class="p-social-link pull-right">
-                                            <li>
-                                                <a href="http://www.sucaihuo.com/templates">
-                                                    <i class="fa fa-facebook"></i>
-                                                </a>
-                                            </li>
-                                            <li class="active">
-                                                <a href="http://www.sucaihuo.com/templates">
-                                                    <i class="fa fa-twitter"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="http://www.sucaihuo.com/templates">
-                                                    <i class="fa fa-google-plus"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
+                                        </div>
+                                        <div class="item">
+                                            <a>
+                                                <img src="__ROOT__/Uploads/posts/post_default.jpg" alt=""/>
+                                            </a>
+
+                                        </div>
+                                        <div class="item">
+                                            <a>
+                                                <img src="__ROOT__/Uploads/posts/post_default.jpg" alt=""/>
+                                            </a>
+
+                                        </div>
+                                        <div class="item">
+                                            <a>
+                                                <img src="__ROOT__/Uploads/posts/post_default.jpg" alt=""/>
+                                            </a>
+
+                                        </div>
+                                        <div class="item">
+                                            <a>
+                                                <img src="__ROOT__/Uploads/posts/post_default.jpg" alt=""/>
+                                            </a>
+
+                                        </div>
+                                        <div class="item">
+                                            <a>
+                                                <img src="__ROOT__/Uploads/posts/post_default.jpg" alt=""/>
+                                            </a>
+
+                                        </div>
+                                        <div class="item">
+                                            <a>
+                                                <img src="__ROOT__/Uploads/posts/post_default.jpg" alt=""/>
+                                            </a>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div id="bars" class="tab-pane active">
+                                    <div class="row blog" style="background:#eff0f4;">
+                                        <div class="panel post-panel">
+                                            <div class="panel-heading">
+                                                <div class="dir-info">
+                                                    <div class="row">
+                                                        <div class="col-xs-2">
+                                                            <div class="avatar">
+                                                                <img src="__ROOT__/Uploads/avatar/avatar_default.jpg"
+                                                                     alt=""/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-8">
+                                                            <a href="javascript:void(0);"><span class="poster-name">{$User.user_nickname}</span></a>
+                                                        </div>
+                                                        <div class="col-xs-2 ">
+                                                            <span class="post-time">刚刚</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel-body">
+                                                <div class="post-img">
+                                                    <img src="__ROOT__/Uploads/posts/post_default.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="panel-footer">
+                                                <div class="post-widgets">
+                                                    <ul class="nav nav-pills p-option">
+                                                        <li>
+                                                            <a href="javascript:void(0);"><i
+                                                                    class="fa fa-heart"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><i class="fa fa-comment"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><i
+                                                                    class="fa fa-mail-forward"></i></a>
+                                                        </li>
+                                                        <li class="pull-right">
+                                                            <a href="javascript:void(0);"><i
+                                                                    class="fa fa-ellipsis-h"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="panel-body">
+                                                <div class="post-content">
+                                                    1,024次赞
+                                                    <br/>
+                                                    <a>WILD AWAKE</a>  这里是作者对图片的描述
+                                                </div>
+                                                <div class="post-comment">
+                                                    全部256条评论
+                                                    <br/><a href="javascript:void(0);">mzw</a> 评论
+                                                    <br/><a href="javascript:void(0);">mzw</a> 评论
+                                                    <br/><a href="javascript:void(0);">mzw</a> 评论
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel post-panel">
+                                            <div class="panel-heading">
+                                                <div class="dir-info">
+                                                    <div class="row">
+                                                        <div class="col-xs-2">
+                                                            <div class="avatar">
+                                                                <img src="__ROOT__/Uploads/avatar/avatar_default.jpg"
+                                                                     alt=""/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-8">
+                                                            <a href="javascript:void(0);"><span class="poster-name">{$User.user_nickname}</span></a>
+                                                        </div>
+                                                        <div class="col-xs-2 ">
+                                                            <span class="post-time">刚刚</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel-body">
+                                                <div class="post-img">
+                                                    <img src="__ROOT__/Uploads/posts/post_default.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="panel-footer">
+                                                <div class="post-widgets">
+                                                    <ul class="nav nav-pills p-option">
+                                                        <li>
+                                                            <a href="javascript:void(0);"><i
+                                                                    class="fa fa-heart"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><i class="fa fa-comment"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><i
+                                                                    class="fa fa-mail-forward"></i></a>
+                                                        </li>
+                                                        <li class="pull-right">
+                                                            <a href="javascript:void(0);"><i
+                                                                    class="fa fa-ellipsis-h"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="panel-body">
+                                                <div class="post-content">
+                                                    1,024次赞
+                                                    <br/>
+                                                    <a>WILD AWAKE</a>  这里是作者对图片的描述
+                                                </div>
+                                                <div class="post-comment">
+                                                    全部256条评论
+                                                    <br/><a href="javascript:void(0);">mzw</a> 评论
+                                                    <br/><a href="javascript:void(0);">mzw</a> 评论
+                                                    <br/><a href="javascript:void(0);">mzw</a> 评论
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="likes" class="tab-pane ">
+                                    <div class="row blog" style="background:#eff0f4;">
+                                        <div class="panel post-panel">
+                                            <div class="panel-heading">
+                                                <div class="dir-info">
+                                                    <div class="row">
+                                                        <div class="col-xs-2">
+                                                            <div class="avatar">
+                                                                <img src="__ROOT__/Uploads/avatar/avatar_default.jpg"
+                                                                     alt=""/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-8">
+                                                            <a href="javascript:void(0);"><span class="poster-name">你赞过的人</span></a>
+                                                        </div>
+                                                        <div class="col-xs-2 ">
+                                                            <span class="post-time">刚刚</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel-body">
+                                                <div class="post-img">
+                                                    <img src="__ROOT__/Uploads/posts/post_default.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="panel-footer">
+                                                <div class="post-widgets">
+                                                    <ul class="nav nav-pills p-option">
+                                                        <li>
+                                                            <a href="javascript:void(0);"><i
+                                                                    class="fa fa-heart"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><i class="fa fa-comment"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><i
+                                                                    class="fa fa-mail-forward"></i></a>
+                                                        </li>
+                                                        <li class="pull-right">
+                                                            <a href="javascript:void(0);"><i
+                                                                    class="fa fa-ellipsis-h"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="panel-body">
+                                                <div class="post-content">
+                                                    1,024次赞
+                                                    <br/>
+                                                    <a>WILD AWAKE</a>  这里是作者对图片的描述
+                                                </div>
+                                                <div class="post-comment">
+                                                    全部256条评论
+                                                    <br/><a href="javascript:void(0);">mzw</a> 评论
+                                                    <br/><a href="javascript:void(0);">mzw</a> 评论
+                                                    <br/><a href="javascript:void(0);">mzw</a> 评论
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel post-panel">
+                                            <div class="panel-heading">
+                                                <div class="dir-info">
+                                                    <div class="row">
+                                                        <div class="col-xs-2">
+                                                            <div class="avatar">
+                                                                <img src="__ROOT__/Uploads/avatar/avatar_default.jpg"
+                                                                     alt=""/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-8">
+                                                            <a href="javascript:void(0);"><span class="poster-name">你赞过的人</span></a>
+                                                        </div>
+                                                        <div class="col-xs-2 ">
+                                                            <span class="post-time">刚刚</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel-body">
+                                                <div class="post-img">
+                                                    <img src="__ROOT__/Uploads/posts/post_default.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="panel-footer">
+                                                <div class="post-widgets">
+                                                    <ul class="nav nav-pills p-option">
+                                                        <li>
+                                                            <a href="javascript:void(0);"><i
+                                                                    class="fa fa-heart"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><i class="fa fa-comment"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><i
+                                                                    class="fa fa-mail-forward"></i></a>
+                                                        </li>
+                                                        <li class="pull-right">
+                                                            <a href="javascript:void(0);"><i
+                                                                    class="fa fa-ellipsis-h"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="panel-body">
+                                                <div class="post-content">
+                                                    1,024次赞
+                                                    <br/>
+                                                    <a>WILD AWAKE</a>  这里是作者对图片的描述
+                                                </div>
+                                                <div class="post-comment">
+                                                    全部256条评论
+                                                    <br/><a href="javascript:void(0);">mzw</a> 评论
+                                                    <br/><a href="javascript:void(0);">mzw</a> 评论
+                                                    <br/><a href="javascript:void(0);">mzw</a> 评论
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="panel">
-                                <form>
-                                    <textarea class="form-control input-lg p-text-area" rows="2" placeholder="Whats in your mind today?"></textarea>
-                                </form>
-                                <footer class="panel-footer">
-                                    <button class="btn btn-post pull-right">Post</button>
-                                    <ul class="nav nav-pills p-option">
-                                        <li>
-                                            <a href="http://www.sucaihuo.com/templates"><i class="fa fa-user"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="http://www.sucaihuo.com/templates"><i class="fa fa-camera"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="http://www.sucaihuo.com/templates"><i class="fa  fa-location-arrow"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="http://www.sucaihuo.com/templates"><i class="fa fa-meh-o"></i></a>
-                                        </li>
-                                    </ul>
-                                </footer>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="panel">
-                                <header class="panel-heading">
-                                    recent activities
-                                    <span class="tools pull-right">
-                                        <a class="fa fa-chevron-down" href="javascript:;"></a>
-                                        <a class="fa fa-times" href="javascript:;"></a>
-                                     </span>
-                                </header>
-                                <div class="panel-body">
-                                    <ul class="activity-list">
-                                        <li>
-                                            <div class="avatar">
-                                                <img src="__UPLOAD__/images/photos/user1.png" alt=""/>
-                                            </div>
-                                            <div class="activity-desk">
-                                                <h5><a href="http://www.sucaihuo.com/templates">Jonathan Smith</a> <span>Uploaded 5 new photos</span></h5>
-                                                <p class="text-muted">7 minutes ago near Alaska, USA</p>
-                                                <div class="album">
-                                                    <a href="http://www.sucaihuo.com/templates">
-                                                        <img alt="" src="__UPLOAD__/images/gallery/image1.jpg">
-                                                    </a>
-                                                    <a href="http://www.sucaihuo.com/templates">
-                                                        <img alt="" src="__UPLOAD__/images/gallery/image2.jpg">
-                                                    </a>
-                                                    <a href="http://www.sucaihuo.com/templates">
-                                                        <img alt="" src="__UPLOAD__/images/gallery/image3.jpg">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </li>
-
-                                        <li>
-                                            <div class="avatar">
-                                                <img src="__UPLOAD__/images/photos/user3.png" alt=""/>
-                                            </div>
-                                            <div class="activity-desk">
-
-                                                <h5><a href="http://www.sucaihuo.com/templates">Jonathan Smith</a> <span>attended a meeting with</span>
-                                                    <a href="http://www.sucaihuo.com/templates">John Doe.</a></h5>
-                                                <p class="text-muted">2 days ago near Alaska, USA</p>
-                                            </div>
-                                        </li>
-
-                                        <li>
-                                            <div class="avatar">
-                                                <img src="__UPLOAD__/images/photos/user4.png" alt=""/>
-                                            </div>
-                                            <div class="activity-desk">
-
-                                                <h5><a href="http://www.sucaihuo.com/templates">Jonathan Smith</a> <span>completed the task “wireframe design” within the dead line</span></h5>
-                                                <p class="text-muted">4 days ago near Alaska, USA</p>
-                                            </div>
-                                        </li>
-
-                                        <li>
-                                            <div class="avatar">
-                                                <img src="__UPLOAD__/images/photos/user5.png" alt=""/>
-                                            </div>
-                                            <div class="activity-desk">
-
-                                                <h5><a href="http://www.sucaihuo.com/templates">Jonathan Smith</a> <span>was absent office due to sickness</span></h5>
-                                                <p class="text-muted">4 days ago near Alaska, USA</p>
-                                            </div>
-                                        </li>
-
-
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </section>
                 </div>
             </div>
         </div>
@@ -311,7 +466,6 @@
         </footer>
     </div>
 </section>
-
 <load href="__PUBLIC__/js/jquery.min.js"/>
 <load href="__PUBLIC__/js/jquery-ui.min.js"/>
 <load href="__PUBLIC__/js/bootstrap.min.js"/>
@@ -319,6 +473,7 @@
 
 <load href="__PUBLIC__/js/index.js"/>
 <load href="__PUBLIC__/js/user_index.js"/>
+
 
 </body>
 

@@ -14,15 +14,15 @@
         zindex: '1000'
     });
 
-    $(".left-side").niceScroll({
-        styler: "fb",
-        cursorcolor: "#65cea7",
-        cursorwidth: '3',
-        cursorborderradius: '0px',
-        background: '#424f63',
-        spacebarenabled: false,
-        cursorborder: '0'
-    });
+    //$(".left-side").niceScroll({
+    //    styler: "fb",
+    //    cursorcolor: "#65cea7",
+    //    cursorwidth: '3',
+    //    cursorborderradius: '0px',
+    //    background: '#424f63',
+    //    spacebarenabled: false,
+    //    cursorborder: '0'
+    //});
 
 
     $(".left-side").getNiceScroll();

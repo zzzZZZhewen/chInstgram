@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1,maximum-scale=1"/>
     <link rel="stylesheet" type="text/css" href="/chinstgram/Public/css/style.css" />
     <link rel="stylesheet" type="text/css" href="/chinstgram/Public/css/style-responsive.css" />
 
@@ -87,7 +88,7 @@
 
                 </div>
                 <div class="modal-footer">
-                    <button data-dismiss="modal" class="btn btn-default" type="button">知道了</button>
+                    <button data-dismiss="modal" class="btn btn-primary btn-block" type="button">知道了</button>
                 </div>
             </div>
         </div>
