@@ -21,8 +21,22 @@
             <i style="font-size: 8em;color: #6BC5A4;" class="fa fa-user"></i>
         </div>
         <div class="login-wrap">
-            <input name="user_email" id="user_email" type="text" class="form-control" placeholder="用户帐号（邮箱）" autofocus>
-            <input name="user_password" id="user_password" type="password" class="form-control" placeholder="密码">
+            <div class="form-group">
+                <div class="iconic-input">
+                    <i class="fa fa-envelope" style=""></i>
+                    <input name="user_email" id="user_email" type="text" class="form-control" placeholder="用户帐号（邮箱）"
+                           autofocus>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="iconic-input">
+                    <i class="fa fa-key" style=""></i>
+
+                    <input name="user_password" id="user_password" type="password" class="form-control"
+                           placeholder="密码">
+                </div>
+            </div>
+
 
             <button id="login_btn" class="btn btn-lg btn-login btn-block" type="submit">
                 <i class="fa fa-check"></i>

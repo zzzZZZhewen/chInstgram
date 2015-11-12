@@ -65,9 +65,6 @@ hr {
     -webkit-border-radius: 5px;
 }
 
-
-
-
 .form-signin .form-signin-heading {
     margin: 0;
     padding: 25px 15px;
@@ -586,7 +583,7 @@ h5.left-nav-title {
     -moz-transition: all 0.2s ease-out 0s;
     -webkit-transition: all 0.2s ease-out 0s;
     transition: all 0.2s ease-out 0s;
-    margin-right:-52px;
+    margin-right: -52px;
 }
 
 .header-section .back-btn:hover {
@@ -952,7 +949,7 @@ h5.left-nav-title {
 }
 
 .wrapper {
-    margin-top:50px;
+    margin-top: 50px;
     padding: 15px;
 }
 
@@ -5530,6 +5527,7 @@ body.login {
     }
 
 }
+
 .header-section {
     text-align: center;
 }
@@ -5547,12 +5545,23 @@ body.login {
 .panel-heading {
     text-transform: none;
 }
-html{
+
+html {
     min-height: 100%;
 }
-body{
+
+body {
     min-height: 100%;
 }
-.menu-right{
-    marign-right:0;
+
+.menu-right {
+    marign-right: 0;
+}
+
+.iconic-input i {
+    color: #32a1a3;
+    font-size: 17px;
+    z-index: 5;
+    line-height: 37px;
+    margin: 0 0 0 8px;
 }
