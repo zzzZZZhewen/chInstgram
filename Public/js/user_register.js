@@ -7,12 +7,18 @@ $(document).ready(function () {
         $user_nickname = $('#user_nickname'),
         $user_tel = $('#user_tel'),
         $user_info = $('#user_info'),
-        $user_sex = $('input[name="user_sex_radio"]');
+        $user_sex = $('input[name="user_sex_radio"]'),
+        $register_btn = $('#register_btn');
 
-    $('#register_btn').on('click', function (e) {
+    $register_btn.on('click', function (e) {
         e.preventDefault();
 
-
+        var lock = false;
+        if (lock) {
+            return;
+        }
+        lock = true;
+        $register_btn.prop('disabled', true);
         $.post('',
             {
                 user_email: $user_email.val(),
@@ -22,12 +28,15 @@ $(document).ready(function () {
                 user_nickname: $user_nickname.val(),
                 user_tel: $user_tel.val(),
                 user_sex: $user_sex.val(),
-                user_info:$user_info.val()
+                user_info: $user_info.val()
             },
             function (data) {
                 if (data['res'] == 1) {
                     $('#register_form').submit();
+
                 } else if (data['res'] == 0) {
+                    lock = false;
+                    $register_btn.prop('disabled', false);
                     $('#error_text').text(data['error']);
                     $('#hint').trigger('click');
                 }

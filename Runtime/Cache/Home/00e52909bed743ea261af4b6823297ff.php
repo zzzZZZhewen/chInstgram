@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1,maximum-scale=1"/>
+
     <link rel="stylesheet" type="text/css" href="/chinstgram/Public/css/style.css" />
     <link rel="stylesheet" type="text/css" href="/chinstgram/Public/css/style-responsive.css" />
 
@@ -70,12 +72,15 @@
 
     <main class="main-content">
 
-        <header class="header-section">
+        <header class="header-section navbar-fixed-top">
+            <a href="javascript:void(0);" class="toggle-btn hidden-xs">
+                <i class="fa fa-bars"></i>
+            </a>
             <span>chInstgram</span>
-            <div class="menu-right">
+            <div class="menu-right hidden-xs">
                 <ul class="notification-menu">
                     <li>
-                        <a href="http://www.sucaihuo.com/templates" class="btn btn-default dropdown-toggle"
+                        <a href="javascript:void(0);" class="btn btn-default dropdown-toggle"
                            data-toggle="dropdown">
                             <img src="/chinstgram/Uploads/avatar/avatar_default.jpg" alt=""/>
                             <?php echo ($User["user_nickname"]); ?>
@@ -222,14 +227,10 @@
 
             </div>
         </div>
-        <!--body wrapper end-->
-        <!--footer section start-->
         <footer class="">
             2015 &copy; chInstgram
         </footer>
-        <!--footer section end-->
     </main>
-    <!-- main content end-->
 </section>
 
 <script type="text/javascript" src="/chinstgram/Public/js/jquery.min.js"></script>
