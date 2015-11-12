@@ -109,15 +109,15 @@
                 <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
 
                     <form id="camera_form" class="form-signin" method="post" enctype="multipart/form-data"
-                          action="{:U('edit_success')}" style="margin: 0; max-width: none;">
+                          action="{:U('Home/Camera/post_success')}" style="margin: 0; max-width: none;">
                         <div class="login-wrap">
                             <div class="form-group last">
                                 <div class="fileupload fileupload-new" data-provides="fileupload">
-                                    <div class="fileupload-new thumbnail" style="width: 100%; height: 150px;">
+                                    <div class="fileupload-new thumbnail" style="width: 100%; height: 300px;">
                                         <img src="__ROOT__/Uploads/avatar/{$User.user_image_url}" alt=""/>
                                     </div>
                                     <div class="fileupload-preview fileupload-exists thumbnail"
-                                         style="max-width: 100%; max-height: 150px; line-height: 20px;">
+                                         style="max-width: 100%; max-height: 300px; line-height: 20px;">
                                     </div>
                                     <div>
                                     <span class="btn btn-warning btn-file btn-block" style="margin-left: 0;">
@@ -130,11 +130,18 @@
 
                             </div>
 
-                            <p>图片信息</p>
+                            <p>图片描述</p>
+                            <div class="form-group">
+                                <div class="iconic-input">
+                                    <i class="fa fa-info-circle" style="line-height: 90px"></i>
 
-                            <p>滤镜选择</p>
+                                    <input name="post_content" id="post_content" type="text" class="form-control"
+                                           placeholder="添加有趣的图片描述吧（请勿超过140个字符）"
+                                            style="line-height: 70px; ">
+                                </div>
+                            </div>
 
-                            <button id="send_btn" type="submit" class="btn btn-lg btn-login btn-block">
+                            <button id="the_btn" type="submit" class="btn btn-lg btn-login btn-block">
                                 <i class="fa fa-check"></i>
                             </button>
 
@@ -203,7 +210,7 @@
                 </div>
             </div>
         </div>
-        <footer class="">
+        <footer class="" >
             2015 &copy; chInstgram
         </footer>
     </div>

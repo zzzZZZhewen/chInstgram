@@ -108,77 +108,40 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
 
-                    <form id="register_form" class="form-signin" method="post" enctype="multipart/form-data"
-                          action="<?php echo U('edit_success');?>" style="margin: 0; max-width: none;">
+                    <form id="camera_form" class="form-signin" method="post" enctype="multipart/form-data"
+                          action="<?php echo U('Home/Camera/post_success');?>" style="margin: 0; max-width: none;">
                         <div class="login-wrap">
                             <div class="form-group last">
                                 <div class="fileupload fileupload-new" data-provides="fileupload">
-                                    <div class="fileupload-new thumbnail" style="width: 100%; height: 150px;">
+                                    <div class="fileupload-new thumbnail" style="width: 100%; height: 300px;">
                                         <img src="/chinstgram/Uploads/avatar/<?php echo ($User["user_image_url"]); ?>" alt=""/>
                                     </div>
                                     <div class="fileupload-preview fileupload-exists thumbnail"
-                                         style="max-width: 100%; max-height: 150px; line-height: 20px;">
+                                         style="max-width: 100%; max-height: 300px; line-height: 20px;">
                                     </div>
                                     <div>
                                     <span class="btn btn-warning btn-file btn-block" style="margin-left: 0;">
                                         <span class="fileupload-new"><i class="fa fa-upload"></i> 上传图片</span>
                                         <span class="fileupload-exists"><i class="fa fa-undo"></i> 换一张</span>
-                                        <input name="user_image_url" id="user_image_url" type="file" class="default"/>
+                                        <input name="post_url" id="post_url" type="file" class="default"/>
                                     </span>
                                     </div>
                                 </div>
 
                             </div>
 
-                            <p>安全信息</p>
-                            <input type="hidden" name="user_id" value="<?php echo ($User["user_id"]); ?>">
-                            <input disabled name="user_email" id="user_email" type="text" autofocus=""
-                                   placeholder="用户名（邮箱）"
-                                   class="form-control" value="<?php echo ($User["user_email"]); ?>">
-                            <input name="user_old_password" id="user_old_password" type="password" placeholder="旧密码"
-                                   class="form-control">
-                            <input name="user_new_password" id="user_new_password" type="password" placeholder="新密码"
-                                   class="form-control">
-                            <input name="user_new_password_again" id="user_new_password_again" type="password"
-                                   placeholder="验证新密码"
-                                   class="form-control">
+                            <p>图片描述</p>
+                            <div class="form-group">
+                                <div class="iconic-input">
+                                    <i class="fa fa-info-circle" style="line-height: 90px"></i>
 
-                            <p>个性信息</p>
-                            <input name="user_nickname" id="user_nickname" type="text" placeholder="昵称"
-                                   class="form-control" value="<?php echo ($User["user_nickname"]); ?>">
-
-                            <input name="user_realname" id="user_realname" type="text" placeholder="真实姓名"
-                                   class="form-control" value="<?php echo ($User["user_realname"]); ?>">
-                            <input name="user_tel" id="user_tel" type="number" placeholder="手机" class="form-control"
-                                   value="<?php echo ($User["user_tel"]); ?>">
-                            <input name="user_info" id="user_info" type="text" placeholder="个人描述" class="form-control"
-                                   value="<?php echo ($User["user_info"]); ?>">
-
-                            <div class="icheck row" style="margin-bottom:5px;">
-                                <div class="square-green  col-lg-4 col-xs-4" style="margin: 0;">
-                                    <label for="radio-00" class="label_radio"> 保密 </label>
-                                    <?php if($User["user_sex"] == '保密' ): ?><input type="radio" value="保密" id="radio-00" name="user_sex" checked="">
-                                        <?php else: ?>
-                                        <input type="radio" value="保密" id="radio-00" name="user_sex"><?php endif; ?>
-
+                                    <input name="post_content" id="post_content" type="text" class="form-control"
+                                           placeholder="添加有趣的图片描述吧（请勿超过140个字符）"
+                                            style="line-height: 70px; ">
                                 </div>
-                                <div class="square-blue  col-lg-4 col-xs-4" style="margin: 0;">
-                                    <label for="radio-01" class="label_radio ">男</label>
-                                    <?php if($User["user_sex"] == '男' ): ?><input type="radio" value="男" id="radio-01" name="user_sex" checked="">
-                                        <?php else: ?>
-                                        <input type="radio" value="男" id="radio-01" name="user_sex"><?php endif; ?>
-
-                                </div>
-                                <div class="square-red  col-lg-4 col-xs-4" style="margin: 0;">
-                                    <label for="radio-02" class="label_radio ">女</label>
-                                    <?php if($User["user_sex"] == '女' ): ?><input type="radio" value="女" id="radio-02" name="user_sex" checked="">
-                                        <?php else: ?>
-                                        <input type="radio" value="女" id="radio-02" name="user_sex"><?php endif; ?>
-
-                                </div>
-
                             </div>
-                            <button id="register_btn" type="submit" class="btn btn-lg btn-login btn-block">
+
+                            <button id="the_btn" type="submit" class="btn btn-lg btn-login btn-block">
                                 <i class="fa fa-check"></i>
                             </button>
 
@@ -247,7 +210,7 @@
                 </div>
             </div>
         </div>
-        <footer class="">
+        <footer class="" >
             2015 &copy; chInstgram
         </footer>
     </div>

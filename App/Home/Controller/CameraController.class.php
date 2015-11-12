@@ -15,6 +15,7 @@ class CameraController extends CoreController {
 
     protected function _initialize() {
         parent::_initialize();
+        $this->Model = D('Post');
     }
 
     public function index() {

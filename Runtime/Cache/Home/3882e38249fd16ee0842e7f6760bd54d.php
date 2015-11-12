@@ -219,7 +219,7 @@
                 </div>
             </div>
         </div>
-        <footer class="">
+        <footer class="hidden-xs">
             2015 &copy; chInstgram
         </footer>
     </div>
