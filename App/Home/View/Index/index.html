@@ -77,6 +77,7 @@
                 <i class="fa fa-bars"></i>
             </a>
             <span>chInstgram</span>
+
             <div class="menu-right hidden-xs">
                 <ul class="notification-menu">
                     <li>
@@ -102,39 +103,43 @@
 
                 <div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
                     <!--post panel start  -->
-                    <div class="panel post-panel">
+                    <div id="post-{$pl[0].post_id}" class="panel post-panel">
                         <div class="panel-heading">
                             <div class="dir-info">
                                 <div class="row">
                                     <div class="col-xs-2">
                                         <div class="avatar">
-                                            <img src="__ROOT__/Uploads/avatar/avatar_default.jpg" alt=""/>
+                                            <img src="__ROOT__/Uploads/avatar/{$pl[0].user_image_url}" alt=""/>
                                         </div>
                                     </div>
                                     <div class="col-xs-8">
-                                        <a href="javascript:void(0);"><span class="poster-name">这是发这条动态的人的名字</span></a>
+                                        <a href="javascript:void(0);"><span
+                                                class="poster-name">{$pl[0].user_nickname}</span></a>
                                     </div>
-                                    <div class="col-xs-2 ">
-                                        <span class="post-time">刚刚</span>
+                                    <div class="col-xs-2">
+                                        <span class="post-time">{$pl[0].post_datetime}</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="panel-body">
                             <div class="post-img">
-                                <img src="__ROOT__/Uploads/posts/post_default.jpg" alt="">
+                                <img src="__ROOT__/Uploads/posts/{$pl[0].post_url_thumb1080}" alt="">
                             </div>
                         </div>
                         <div class="panel-footer">
                             <div class="post-widgets">
                                 <ul class="nav nav-pills p-option">
-                                    <li>
+                                    <li class="post-widget">
                                         <a href="javascript:void(0);"><i class="fa fa-heart"></i></a>
                                     </li>
-                                    <li>
+                                    <li class="post-widget">
                                         <a href="javascript:void(0);"><i class="fa fa-comment"></i></a>
                                     </li>
-                                    <li>
+                                    <li class="post-widgets-input">
+                                        <input class="add-comment" type="text"  placeholder="添加评论..."/>
+                                    </li>
+                                    <li class="hidden">
                                         <a href="javascript:void(0);"><i class="fa fa-mail-forward"></i></a>
                                     </li>
                                     <li class="pull-right">
@@ -145,80 +150,19 @@
                         </div>
                         <div class="panel-body">
                             <div class="post-content">
-                                1,024次赞
+
+                                {$pl[0].post_liketimes}次赞
                                 <br/>
-                                <a>WILD AWAKE</a>  这里是作者对图片的描述
+                                <a>{$pl[0].user_nickname}</a>  {$pl[0].post_content}
                             </div>
                             <div class="post-comment">
-                                全部256条评论
-                                <br/><a href="javascript:void(0);">mzw</a> 评论
-                                <br/><a href="javascript:void(0);">mzw</a> 评论
-                                <br/><a href="javascript:void(0);">mzw</a> 评论
-                            </div>
-                        </div>
-                    </div>
-                    <!--post panel end  -->
-                    <div class="panel post-panel">
-                        <div class="panel-heading">
-                            <div class="dir-info">
-                                <div class="row">
-                                    <div class="col-xs-2">
-                                        <div class="avatar">
-                                            <img src="__ROOT__/Uploads/avatar/avatar_default.jpg" alt=""/>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-8">
-                                        <a href="javascript:void(0);"><span class="poster-name">Wild Awake</span></a>
-                                    </div>
-                                    <div class="col-xs-2 ">
-                                        <span class="post-time">刚刚</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel-body">
-                            <div class="post-img">
-                                <img src="__ROOT__/Uploads/posts/post_default.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="panel-footer">
-                            <div class="post-widgets">
-                                <ul class="nav nav-pills p-option">
-                                    <li>
-                                        <a href="javascript:void(0);"><i class="fa fa-heart"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);"><i class="fa fa-comment"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);"><i class="fa fa-mail-forward"></i></a>
-                                    </li>
-                                    <li class="pull-right">
-                                        <a href="javascript:void(0);"><i class="fa fa-ellipsis-h"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="panel-body">
-                            <div class="post-content">
-                                <p>
-                                    1024次赞
-                                </p>
-
-                                <p>Donec ultrices faucibus rutrum. Phasellus sodales vulputate urna, vel accumsan augue
-                                    egestas ac. Donec vitae leo at sem lobortis porttitor eu consequat risus. Mauris sed
-                                    congue orci.
-                                </p>
-                            </div>
-                            <div class="post-comment">
-                                <p>
-                                    全部256条评论
-                                </p>
-
-                                <p><a href="javascript:void(0);">mzw</a> 评论
-                                    <br/><a href="javascript:void(0);">mzw</a> 评论
-                                    <br/><a href="javascript:void(0);">mzw</a> 评论
-                                </p>
+                                全部{$pl[0].psot_commenttimes}条评论
+                                <br/><a href="javascript:void(0);">{$pl[0][2].comment_user_nickname}</a>
+                                {$pl[0][2].comment_content}
+                                <br/><a href="javascript:void(0);">{$pl[0][1].comment_content}</a>
+                                {$pl[0][1].comment_content}
+                                <br/><a href="javascript:void(0);">{$pl[0][0].comment_content}</a>
+                                {$pl[0][0].comment_content}
                             </div>
                         </div>
                     </div>

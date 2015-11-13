@@ -5565,3 +5565,24 @@ body {
     line-height: 37px;
     margin: 0 0 0 8px;
 }
+
+.add-comment {
+    border: none;
+    line-height: 36px;
+    padding: 4px 55px 4px 120px;
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+}
+
+.post-panel li {
+    z-index: 1;
+}
+
+.post-panel li.post-widgets-input {
+    width: 100%;
+    margin-left: -108px;
+    margin-right: -100px;
+    z-index: 0;
+}
+
