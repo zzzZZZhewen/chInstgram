@@ -102,76 +102,16 @@
             <div class="row blog">
 
                 <div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-                    <!--post panel start  -->
-                    <div id="post-<?php echo ($pl[0]["post_id"]); ?>" class="panel post-panel">
-                        <div class="panel-heading">
-                            <div class="dir-info">
-                                <div class="row">
-                                    <div class="col-xs-2">
-                                        <div class="avatar">
-                                            <img src="/chinstgram/Uploads/avatar/<?php echo ($pl[0]["user_image_url"]); ?>" alt=""/>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-8">
-                                        <a href="javascript:void(0);"><span
-                                                class="poster-name"><?php echo ($pl[0]["user_nickname"]); ?></span></a>
-                                    </div>
-                                    <div class="col-xs-2">
-                                        <span class="post-time"><?php echo ($pl[0]["post_datetime"]); ?></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel-body">
-                            <div class="post-img">
-                                <img src="/chinstgram/Uploads/posts/<?php echo ($pl[0]["post_url_thumb1080"]); ?>" alt="">
-                            </div>
-                        </div>
-                        <div class="panel-footer">
-                            <div class="post-widgets">
-                                <ul class="nav nav-pills p-option">
-                                    <li class="post-widget">
-                                        <a href="javascript:void(0);"><i class="fa fa-heart"></i></a>
-                                    </li>
-                                    <li class="post-widget">
-                                        <a href="javascript:void(0);"><i class="fa fa-comment"></i></a>
-                                    </li>
-                                    <li class="post-widgets-input">
-                                        <input class="add-comment" type="text"  placeholder="添加评论..."/>
-                                    </li>
-                                    <li class="hidden">
-                                        <a href="javascript:void(0);"><i class="fa fa-mail-forward"></i></a>
-                                    </li>
-                                    <li class="pull-right">
-                                        <a href="javascript:void(0);"><i class="fa fa-ellipsis-h"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="panel-body">
-                            <div class="post-content">
+                    <div class="posts-div">
 
-                                <?php echo ($pl[0]["post_liketimes"]); ?>次赞
-                                <br/>
-                                <a><?php echo ($pl[0]["user_nickname"]); ?></a>  <?php echo ($pl[0]["post_content"]); ?>
-                            </div>
-                            <div class="post-comment">
-                                全部<?php echo ($pl[0]["psot_commenttimes"]); ?>条评论
-                                <br/><a href="javascript:void(0);"><?php echo ($pl[0][2]["comment_user_nickname"]); ?></a>
-                                <?php echo ($pl[0][2]["comment_content"]); ?>
-                                <br/><a href="javascript:void(0);"><?php echo ($pl[0][1]["comment_content"]); ?></a>
-                                <?php echo ($pl[0][1]["comment_content"]); ?>
-                                <br/><a href="javascript:void(0);"><?php echo ($pl[0][0]["comment_content"]); ?></a>
-                                <?php echo ($pl[0][0]["comment_content"]); ?>
-                            </div>
-                        </div>
+
                     </div>
-
+                    <?php if($post_has_more == true): ?><a class="btn-more btn btn-primary hidden">加载更多</a><?php endif; ?>
                 </div>
 
             </div>
         </div>
-        <footer class="">
+        <footer class="hidden">
             2015 &copy; chInstgram
         </footer>
     </main>
@@ -183,7 +123,62 @@
 <script type="text/javascript" src="/chinstgram/Public/js/jquery.nicescroll.js"></script>
 
 <script type="text/javascript" src="/chinstgram/Public/js/index.js"></script>
-<script type="text/javascript" src="/chinstgram/Public/js/index_index.js"></script>
+<script type="text/javascript" src="/chinstgram/Public/js/post.js"></script>
+<script>
+    var auto_more = false;
+    var $page = 0;
+    $(document).ready(function () {
+        $.post('more_index_posts',
+                {
+                    page: 0
+                },
+                function (data) {
+                    $(data).appendTo($('.posts-div')).hide().fadeIn(1000);
+                    $('.btn-more').removeClass('hidden').hide().fadeIn(1000);
+                    $('footer').removeClass('hidden').hide().fadeIn(1000);
+                    $page++;
+                });
+
+        $('.btn-more').on('click', function () {
+            $('.btn-more').hide();
+
+            $.post('more_index_posts',
+                    {
+                        page: $page
+                    },
+                    function (data) {
+                        $(data).appendTo($('.posts-div')).hide().fadeIn(1000);
+                        auto_more = true;
+                        $page++;
+                    });
+
+        });
+
+        $contentLoadTriggered = false;
+        $(window).on('scroll',
+                function () {
+                    if (!auto_more) return;
+                    if (($(document).scrollTop() >= $(document).height() - $(window).height())
+                            && $contentLoadTriggered == false) {
+                        $contentLoadTriggered = true;
+
+                        $.post('more_index_posts',
+                                {
+                                    page: $page
+                                },
+                                function (data) {
+                                    $(data).appendTo($('.posts-div')).hide().fadeIn(1000);
+                                    $page++;
+                                    $contentLoadTriggered = false;
+                                });
+                    }
+                }
+        );
+
+
+    });
+</script>
+
 
 </body>
 

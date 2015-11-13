@@ -3,16 +3,16 @@
 
     // custom scrollbar
 
-    $("html").niceScroll({
-        styler: "fb",
-        cursorcolor: "#65cea7",
-        cursorwidth: '6',
-        cursorborderradius: '0px',
-        background: '#424f63',
-        spacebarenabled: false,
-        cursorborder: '0',
-        zindex: '1000'
-    });
+    //$("html").niceScroll({
+    //    styler: "fb",
+    //    cursorcolor: "#65cea7",
+    //    cursorwidth: '6',
+    //    cursorborderradius: '0px',
+    //    background: '#424f63',
+    //    spacebarenabled: false,
+    //    cursorborder: '0',
+    //    zindex: '1000'
+    //});
 
     //$(".left-side").niceScroll({
     //    styler: "fb",
@@ -188,7 +188,6 @@
 })(jQuery);
 
 jQuery(document).ready(function ($) {
-//将下一行引号中的内容替换成你想要下拉的模块的ID或者CLASS名字,如"#ABC",".ABC"
     var $window = $(window),
         window_height = $window.height();
 
@@ -196,6 +195,4 @@ jQuery(document).ready(function ($) {
         $('.wrapper').css('min-height', window_height - 101 + 'px');
     });
     $('.wrapper').css('min-height', window_height - 101 + 'px');
-
-
 });

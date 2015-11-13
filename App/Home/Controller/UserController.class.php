@@ -20,8 +20,69 @@ class UserController extends CoreController {
 
     public function index() {
 
+        $this_user_id = $this->User['user_id'];
+
+        $this->assign('user_post_count', get_post_count_by_user_id($this_user_id));
+        $this->assign('user_followed_count', get_followed_count_by_user_id($this_user_id));
+        $this->assign('user_follower_count', get_follower_count_by_user_id($this_user_id));
+
+        $this->assign('post_has_more', $this->get_user_PostList_count($this_user_id) > C('COUNT_POST_PER_PAGE'));
+
         $this->display();
 
+    }
+
+    public function get_user_PostList_count($user_id = 0) {
+        $Model = new \Think\Model();
+
+
+        $count = $Model->query("SELECT COUNT(post_id) as count_post_id
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = $user_id;");
+
+        return $count[0]['count_post_id'];
+    }
+
+    public function get_user_PostList_by_user_id($page = 0, $user_id = 0) {
+        $Model = new \Think\Model();
+
+        $COUNT_POST_PER_PAGE = C('COUNT_POST_PER_PAGE');
+        $start_post_number = $page * $COUNT_POST_PER_PAGE;
+
+        $PostList = $Model->query("SELECT post_id,post_content,post_datetime,post_url,chist_post.user_id,user_nickname,user_image_url
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = $user_id
+                        ORDER BY post_datetime DESC
+                        LIMIT $start_post_number, $COUNT_POST_PER_PAGE;");
+
+        return $PostList;
+    }
+
+    public function more_user_posts() {
+
+        $post = I('post.');
+
+        $PostList = $this->get_user_PostList_by_user_id($post['page'], $post['user_id']);
+
+        $this->assign('PostList', $PostList);
+        $this->display('Index/more_posts');
+
+    }
+
+    public function other($user_id = 0) {
+        $condition['user_id'] = $user_id;
+        $other_users = $this->Model->where($condition)->select();
+        if (empty($other_users)) {
+            redirect(U('index'));
+        } else {
+            $other_users[0]['user_post_count'] = get_post_count_by_user_id($user_id);
+            $other_users[0]['user_followed_count'] = get_followed_count_by_user_id($user_id);
+            $other_users[0]['user_follower_count'] = get_follower_count_by_user_id($user_id);
+            $other_users[0]['user_is_followed'] = is_followed($user_id, $this->User['user_id']);
+            $other_users[0]['user_is_self'] = ($user_id == $this->User['user_id']);
+            $this->assign('Other_user', $other_users[0]);
+            $this->display();
+        }
     }
 
     public function login() {

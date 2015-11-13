@@ -15,8 +15,20 @@
         height: 180px;
     }
 }
-@media screen and (max-width: 800px) {
-
+@media screen and (max-width: 767px) {
+    .header-section .back-btn {
+        width: 52px;
+        height: 50px;
+        font-size: 20px;
+        padding: 15px;
+        cursor: pointer;
+        float: left;
+        color: #212121;
+        -moz-transition: all 0.2s ease-out 0s;
+        -webkit-transition: all 0.2s ease-out 0s;
+        transition: all 0.2s ease-out 0s;
+        margin-right: -52px;
+    }
     body {
         position: relative;
     }

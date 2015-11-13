@@ -9,7 +9,7 @@ Author: ThemeBucket
 @import url('custom-ico-fonts.css');
 
 body {
-    background: #424f63;
+    background: #eff0f4;
     font-family: 'Open Sans', sans-serif;
     color: #7a7676;
     line-height: 20px;
@@ -181,6 +181,7 @@ hr {
 ----------------------------------*/
 
 .left-side {
+    background-color: #424f63;
     width: 240px;
     position: absolute;
     top: 0;
@@ -583,7 +584,7 @@ h5.left-nav-title {
     -moz-transition: all 0.2s ease-out 0s;
     -webkit-transition: all 0.2s ease-out 0s;
     transition: all 0.2s ease-out 0s;
-    margin-right: -52px;
+    margin-right: 90px;
 }
 
 .header-section .back-btn:hover {
@@ -5586,3 +5587,36 @@ body {
     z-index: 0;
 }
 
+.btn-more {
+    -webkit-box-direction: normal;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #65CEA7;
+    color: #65CEA7;
+    box-sizing: border-box;
+    display: block;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    padding-bottom: 0px;
+    padding-left: 11px;
+    padding-right: 11px;
+    padding-top: 0px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: baseline;
+    background: transparent;
+    line-height: 100px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+.btn-more:hover{
+    color: #ffffff;
+    background: #65CEA7;
+    border-color: #ffffff;
+}
