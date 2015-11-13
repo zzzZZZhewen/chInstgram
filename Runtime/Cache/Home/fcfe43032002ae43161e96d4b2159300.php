@@ -113,11 +113,11 @@
                         <div class="login-wrap">
                             <div class="form-group last">
                                 <div class="fileupload fileupload-new" data-provides="fileupload">
-                                    <div class="fileupload-new thumbnail" style="width: 100%; height: 300px;">
-                                        <img src="/chinstgram/Uploads/avatar/<?php echo ($User["user_image_url"]); ?>" alt=""/>
+                                    <div class="fileupload-new thumbnail" style="width: 100%; height: 350px;">
+                                        <img src="/chinstgram/Uploads/posts/post_default.jpg" alt=""/>
                                     </div>
                                     <div class="fileupload-preview fileupload-exists thumbnail"
-                                         style="max-width: 100%; max-height: 300px; line-height: 20px;">
+                                         style="max-width: 100%; max-height: 350px; line-height: 20px;">
                                     </div>
                                     <div>
                                     <span class="btn btn-warning btn-file btn-block" style="margin-left: 0;">
@@ -131,13 +131,14 @@
                             </div>
 
                             <p>图片描述</p>
+
                             <div class="form-group">
                                 <div class="iconic-input">
                                     <i class="fa fa-info-circle" style="line-height: 90px"></i>
 
                                     <input name="post_content" id="post_content" type="text" class="form-control"
                                            placeholder="添加有趣的图片描述吧（请勿超过140个字符）"
-                                            style="line-height: 70px; ">
+                                           style="line-height: 70px; ">
                                 </div>
                             </div>
 
@@ -150,7 +151,6 @@
 
                         <a id="hint" style="display: none;" data-toggle="modal" href="#hintModal"></a>
 
-                        <!-- Modal -->
                         <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1"
                              id="hintModal"
                              class="modal fade">
@@ -166,17 +166,17 @@
 
                                     </div>
                                     <div class="modal-footer">
-                                        <button data-dismiss="modal" class="btn btn-default btn-block" type="button">
+                                        <button data-dismiss="modal" class="btn btn-primary btn-block" type="button">
                                             知道了
                                         </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
+                        <!--
                         <a id="hint_back" style="display: none;" data-toggle="modal" href="#hint_backModal"></a>
 
-                        <!-- Modal -->
+
                         <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1"
                              id="hint_backModal"
                              class="modal fade">
@@ -204,13 +204,13 @@
                                 </div>
                             </div>
                         </div>
-
+                        -->
                     </form>
 
                 </div>
             </div>
         </div>
-        <footer class="" >
+        <footer class="">
             2015 &copy; chInstgram
         </footer>
     </div>

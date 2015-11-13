@@ -1,0 +1,1490 @@
+[ 2015-11-13T00:00:16+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 105 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 111 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 115 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 118 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 125 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 148 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 150 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006426s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006472s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000660s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000724s ]
+
+[ 2015-11-13T00:00:27+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 105 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 111 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 115 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 118 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 125 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 148 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 150 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005888s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005922s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000379s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000419s ]
+
+[ 2015-11-13T00:07:55+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 106 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 112 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 117 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 120 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 127 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 153 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 157 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 157 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 158 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 158 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 159 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 159 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006320s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006354s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000661s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000725s ]
+
+[ 2015-11-13T00:08:07+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000271s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 106 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 112 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 117 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 120 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 127 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 153 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 153 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 157 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 157 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 158 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 158 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 159 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 159 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005287s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005312s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000361s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000393s ]
+
+[ 2015-11-13T00:09:18+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 106 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 112 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 117 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 120 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 127 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 154 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 159 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 160 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 160 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 161 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 161 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 162 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 162 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007097s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007130s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000583s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000638s ]
+
+[ 2015-11-13T00:10:30+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 106 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 112 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 117 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 120 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 127 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 154 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 159 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 160 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 160 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 161 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 161 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 162 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 162 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007379s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007413s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000646s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000726s ]
+
+[ 2015-11-13T00:11:10+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000258s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 106 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 112 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 117 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 120 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 127 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 154 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 159 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 160 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 160 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 161 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 161 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 162 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 162 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005165s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005190s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000357s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000391s ]
+
+[ 2015-11-13T00:15:05+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 106 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 112 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 117 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 120 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 127 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 171 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 173 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 173 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 176 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 177 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 178 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 179 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 180 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 181 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 182 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006761s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006794s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000562s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000631s ]
+
+[ 2015-11-13T00:15:22+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 106 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 112 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 117 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 120 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 127 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 165 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 167 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 167 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 170 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 171 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 172 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 173 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 174 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 175 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 176 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007337s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007388s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000175s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000644s ]
+
+[ 2015-11-13T00:15:35+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000255s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 106 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 112 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 117 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 120 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 127 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 165 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 167 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 167 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 170 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 171 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 172 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 173 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 174 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 175 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 176 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007228s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000142s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000385s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000433s ]
+
+[ 2015-11-13T00:16:02+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 106 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 112 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 117 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 120 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 127 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 154 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 159 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 160 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 161 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 162 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 163 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 164 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006382s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006411s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000404s ]
+
+[ 2015-11-13T00:16:07+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 106 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 112 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 117 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 120 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 127 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 154 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 159 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 160 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 161 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 162 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 163 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 164 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005594s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005620s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000806s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000890s ]
+
+[ 2015-11-13T00:16:34+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000270s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 106 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 112 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 117 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 120 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 127 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 154 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 159 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 160 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 161 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 162 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 163 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 164 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005652s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005677s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000378s ]
+
+[ 2015-11-13T00:18:23+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000327s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 106 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 112 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 117 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 120 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 127 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 154 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 159 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 160 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 161 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 162 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 163 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 164 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005868s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005897s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000384s ]
+
+[ 2015-11-13T00:18:42+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 106 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 112 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 117 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 120 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 127 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 154 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 159 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 160 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 161 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 162 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 163 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 164 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006279s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006308s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000105s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000340s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000376s ]
+
+[ 2015-11-13T00:19:28+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000259s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 106 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 112 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 117 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 120 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 127 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 154 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 159 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 160 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 161 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 162 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 163 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 164 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005905s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005933s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000557s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000616s ]
+
+[ 2015-11-13T00:20:23+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 106 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 112 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 117 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 120 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 127 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 154 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 159 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 160 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 161 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 162 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 163 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 164 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005309s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005334s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000326s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000359s ]
+
+[ 2015-11-13T00:20:55+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 106 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 112 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 117 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 120 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 127 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 154 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 159 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 160 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 161 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 162 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 163 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 164 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006706s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006740s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000379s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000415s ]
+
+[ 2015-11-13T00:21:15+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000262s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 106 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 112 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 117 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 120 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 127 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 154 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 159 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 160 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 161 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 162 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 163 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 164 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006391s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006416s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000542s ]
+
+[ 2015-11-13T00:23:39+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 106 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 112 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 117 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 120 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 127 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 154 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 159 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 160 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 161 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 162 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 163 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 164 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006751s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000368s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000397s ]
+
+[ 2015-11-13T00:24:20+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 106 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 112 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 117 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 120 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 127 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 154 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 159 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 160 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 161 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 162 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 163 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 164 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006120s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006152s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000378s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000434s ]
+
+[ 2015-11-13T00:25:45+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000319s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 106 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 112 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 117 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 120 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 127 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 154 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 159 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 160 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 161 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 162 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 163 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 164 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007226s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007253s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000391s ]
+
+[ 2015-11-13T00:26:37+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000273s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 106 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 112 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 117 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 120 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 127 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 154 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 159 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 160 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 161 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 162 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 163 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 164 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005739s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005767s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000148s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001096s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001172s ]
+
+[ 2015-11-13T00:26:43+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000259s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 106 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 112 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 117 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 120 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 127 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 154 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 159 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 160 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 161 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 162 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 163 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 164 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005676s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005702s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000368s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000398s ]
+
+[ 2015-11-13T00:27:19+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000658s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 106 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 112 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 117 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 120 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 127 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 154 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 159 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 160 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 161 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 162 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 163 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 164 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008041s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000700s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000763s ]
+
+[ 2015-11-13T00:27:46+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000897s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000991s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 106 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 112 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 117 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 120 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 127 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 154 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 159 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 160 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 161 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 162 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 163 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 164 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007412s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007447s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000895s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000962s ]
+
+[ 2015-11-13T00:31:37+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000628s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 106 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 112 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 117 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 120 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 127 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 157 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 159 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 159 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 162 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 163 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 164 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 165 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 167 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 168 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007543s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007579s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001170s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000700s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000761s ]
+
+[ 2015-11-13T00:31:45+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000264s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 106 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 112 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 117 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 120 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 127 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 157 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 159 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 159 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 162 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 163 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 164 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 165 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 167 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 168 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005910s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005939s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000392s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000430s ]
+
+[ 2015-11-13T00:32:20+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000267s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 106 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 112 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 117 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 120 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 127 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 155 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 157 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 157 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 160 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 161 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 162 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 163 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 164 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 165 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 166 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005358s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005398s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000330s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000360s ]
+
+[ 2015-11-13T00:32:41+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 106 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 112 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 117 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 120 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 127 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 155 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 157 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 157 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 160 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 161 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 162 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 163 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 164 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 165 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 166 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007581s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007614s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000137s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000159s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000499s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000540s ]
+
+[ 2015-11-13T00:34:44+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000691s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 106 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 112 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 117 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 120 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 127 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 154 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 159 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 160 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 161 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 162 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 163 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 164 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010773s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010810s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000728s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000811s ]
+
+[ 2015-11-13T00:35:06+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000326s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 106 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 112 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 117 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 120 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 127 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 154 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 159 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 160 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 161 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 162 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 163 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 164 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006554s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000557s ]
+
+[ 2015-11-13T00:35:30+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000266s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 106 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 112 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 117 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 120 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 127 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 154 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 159 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 160 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 161 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 162 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 163 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 164 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005778s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005811s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000687s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000778s ]
+
+[ 2015-11-13T00:35:47+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 106 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 112 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 117 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 120 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 127 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 154 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 159 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 160 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 161 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 162 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 163 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 164 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006312s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006343s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000468s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000541s ]
+
+[ 2015-11-13T00:36:32+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000257s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 106 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 112 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 117 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 120 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 127 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 154 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 159 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 160 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 161 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 162 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 163 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 164 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005780s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005811s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000170s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000447s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000502s ]
+
+[ 2015-11-13T00:37:12+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000272s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 106 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 112 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 117 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 120 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 127 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 154 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 159 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 160 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 161 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 162 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 163 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 164 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006143s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006172s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000371s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000413s ]
+
+[ 2015-11-13T00:37:45+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000336s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 106 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 112 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 117 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 120 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 127 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 154 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 159 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 160 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 161 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 162 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 163 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 164 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006197s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006228s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000114s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000467s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000520s ]
+
+[ 2015-11-13T00:38:06+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 106 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 112 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 117 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 120 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 127 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 154 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 159 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 160 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 161 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 162 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 163 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 164 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008824s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008879s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000142s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000482s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000541s ]
+
+[ 2015-11-13T00:39:43+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000287s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 106 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 112 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 117 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 120 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 127 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 154 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 159 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 160 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 161 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 162 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 163 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 164 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006762s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006796s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000713s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000823s ]
+
+[ 2015-11-13T00:42:38+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000341s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 106 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 112 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 117 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 120 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 127 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 154 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 159 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 160 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 161 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 162 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 163 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 164 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006387s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006416s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000376s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000431s ]
+
+[ 2015-11-13T00:42:54+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 106 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 112 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 117 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 120 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 127 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 154 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 159 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 160 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 161 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 162 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 163 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 164 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010512s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010564s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000483s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000533s ]
+
+[ 2015-11-13T00:43:00+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 106 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 112 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 117 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 120 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 127 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 154 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 159 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 160 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 161 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 162 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 163 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 164 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008212s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008245s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000131s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000407s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000447s ]
+
+[ 2015-11-13T00:43:15+08:00 ] 127.0.0.1 /chinstgram/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000122s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000760s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 106 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 112 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 117 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 120 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 127 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 154 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 156 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 159 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 160 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 161 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 162 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 163 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 164 行.
+NOTIC: [8] Undefined variable: pl /Applications/XAMPP/xamppfiles/htdocs/chInstgram/Runtime/Cache/Home/00e52909bed743ea261af4b6823297ff.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005054s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000621s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000665s ]
+

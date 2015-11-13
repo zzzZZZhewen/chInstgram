@@ -11,18 +11,19 @@ $(document).ready(function () {
             return;
         }
         lock = true;
-        $register_btn.prop('disabled', true);
+        $the_btn.prop('disabled', true);
         $.post('',
             {
-                user_info: $user_info.val()
+                post_content: $('#post_content').val()
             },
             function (data) {
                 if (data['res'] == 1) {
+
                     $('#camera_form').submit();
 
                 } else if (data['res'] == 0) {
                     lock = false;
-                    $register_btn.prop('disabled', false);
+                    $the_btn.prop('disabled', false);
                     $('#error_text').text(data['error']);
                     $('#hint').trigger('click');
                 }

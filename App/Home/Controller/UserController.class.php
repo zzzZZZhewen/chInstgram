@@ -46,6 +46,7 @@ class UserController extends CoreController {
             $this->ajaxReturn($data);
 
         } else {
+            // alr
             if (session('?User.user_id')) {
                 redirect(U('Home/Index/index'));
             }
@@ -110,7 +111,7 @@ class UserController extends CoreController {
             }
 
         } else {
-            if (session('?User.user_email')) {
+            if (session('?User.user_id')) {
                 redirect(U('Home/Index/index'));
             }
             $this->display();
@@ -157,7 +158,7 @@ class UserController extends CoreController {
                     if (!$info) {
                         // 上传错误提示错误信息
                         session('error', $upload->getError());
-                        redirect(U('upload_faild'));
+                        redirect(U('upload_failed'));
                     }
 
                     //上传成功
@@ -166,7 +167,7 @@ class UserController extends CoreController {
 
                     $image = new \Think\Image();
                     $image->open('./Uploads/' . $info['user_image_url']['savepath'] . '/' . $info['user_image_url']['savename']);
-                    $image->thumb(500, 500)->save('./Uploads/' . $info['user_image_url']['savepath'] . '/' . $info['user_image_url']['savename']);
+                    $image->thumb(500, 500, \Think\Image::IMAGE_THUMB_FILLED)->save('./Uploads/' . $info['user_image_url']['savepath'] . '/' . $info['user_image_url']['savename']);
 
                     $data['user_image_url'] = $info['user_image_url']['savename'];
 
@@ -256,7 +257,7 @@ class UserController extends CoreController {
                     if (!$info) {
                         // 上传错误提示错误信息
                         session('error', $upload->getError());
-                        redirect(U('upload_faild'));
+                        redirect(U('upload_failed'));
                     }
 
                     //上传成功
@@ -265,7 +266,7 @@ class UserController extends CoreController {
 
                     $image = new \Think\Image();
                     $image->open('./Uploads/' . $info['user_image_url']['savepath'] . '/' . $info['user_image_url']['savename']);
-                    $image->thumb(500, 500)->save('./Uploads/' . $info['user_image_url']['savepath'] . '/' . $info['user_image_url']['savename']);
+                    $image->thumb(500, 500, \Think\Image::IMAGE_THUMB_FILLED)->save('./Uploads/' . $info['user_image_url']['savepath'] . '/' . $info['user_image_url']['savename']);
 
                     $data['user_image_url'] = $info['user_image_url']['savename'];
 
@@ -285,6 +286,12 @@ class UserController extends CoreController {
         } else {
             redirect(U('index'));
         }
+    }
+
+    public function upload_failed() {
+        $this->assign('error', I('session.error'));
+        session('error', null);
+        $this->display();
     }
 
     public function logout() {
