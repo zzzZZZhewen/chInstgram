@@ -41,4 +41,8 @@ return array(
     'TMPL_DETECT_THEME' => false, // 自动侦测模板主题
     'TMPL_TEMPLATE_SUFFIX' => '.html', // 默认模板文件后缀
     'TMPL_FILE_DEPR' => '/', // 模板文件CONTROLLER_NAME与ACTION_NAME之间的分割符
+
+
+    //龟䇲
+    'COUNT_POST_PER_PAGE'=>'2',
 );

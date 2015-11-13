@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="/chinstgram/Public/css/iCheck/skins/square/blue.css" />
 
     <link rel="stylesheet" type="text/css" href="/chinstgram/Public/css/user_index.css" />
-    <title>chInstgram - 用户档案</title>
+    <title>chInstgram - 编辑档案</title>
 </head>
 
 <body>
@@ -106,26 +106,25 @@
                             <div class="icheck row" style="margin-bottom:5px;">
                                 <div class="square-green  col-lg-4 col-xs-4" style="margin: 0;">
                                     <label for="radio-00" class="label_radio"> 保密 </label>
-                                    <?php if($User["user_sex"] == '保密' ): ?><input type="radio" value="保密" id="radio-00" name="user_sex" checked="">
+                                    <?php if($User["user_sex"] == '保密' ): ?><input type="radio" value="保密" id="radio-00" name="user_sex" checked/>
                                         <?php else: ?>
-                                        <input type="radio" value="保密" id="radio-00" name="user_sex"><?php endif; ?>
+                                        <input type="radio" value="保密" id="radio-00" name="user_sex"/><?php endif; ?>
 
                                 </div>
                                 <div class="square-blue  col-lg-4 col-xs-4" style="margin: 0;">
                                     <label for="radio-01" class="label_radio ">男</label>
-                                    <?php if($User["user_sex"] == '男' ): ?><input type="radio" value="男" id="radio-01" name="user_sex" checked="">
+                                    <?php if($User["user_sex"] == '男' ): ?><input type="radio" value="男" id="radio-01" name="user_sex" checked/>
                                         <?php else: ?>
-                                        <input type="radio" value="男" id="radio-01" name="user_sex"><?php endif; ?>
+                                        <input type="radio" value="男" id="radio-01" name="user_sex"/><?php endif; ?>
 
                                 </div>
                                 <div class="square-red  col-lg-4 col-xs-4" style="margin: 0;">
                                     <label for="radio-02" class="label_radio ">女</label>
-                                    <?php if($User["user_sex"] == '女' ): ?><input type="radio" value="女" id="radio-02" name="user_sex" checked="">
+                                    <?php if($User["user_sex"] == '女' ): ?><input type="radio" value="女" id="radio-02" name="user_sex" checked/>
                                         <?php else: ?>
-                                        <input type="radio" value="女" id="radio-02" name="user_sex"><?php endif; ?>
+                                        <input type="radio" value="女" id="radio-02" name="user_sex"/><?php endif; ?>
 
                                 </div>
-
                             </div>
                             <div class="form-group last">
                                 <div class="fileupload fileupload-new" data-provides="fileupload">

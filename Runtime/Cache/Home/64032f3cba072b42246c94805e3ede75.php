@@ -97,7 +97,7 @@
             </div>
 
         </div>
-        <div class="wrapper">
+        <div id="<?php echo ($User["user_id"]); ?>" class="wrapper">
             <div class="row">
                 <div class="col-md-4">
                     <div class="row">
@@ -108,9 +108,9 @@
                                 <div class="followers" style="margin-bottom: 10px;">
                                     <h5><?php echo ($User["user_nickname"]); ?></h5>
                                     <span class="subtitle" style="margin-bottom: 10px;"><?php echo ($User["user_realname"]); ?></span>
-                                    <span>0 发布</span> |
-                                    <span>0 关注</span> |
-                                    <span>0 粉丝</span>
+                                    <span><?php echo ($user_post_count); ?> 发布</span> |
+                                    <span><?php echo ($user_followed_count); ?> 关注</span> |
+                                    <span><?php echo ($user_follower_count); ?> 粉丝</span>
                                 </div>
                                 <a class="btn btn-primary btn-block"
                                    href="<?php echo U('Home/User/edit');?>"><span><i></i>编辑档案</span></a>
@@ -213,124 +213,11 @@
                                 </div>
                                 <div id="bars" class="tab-pane active">
                                     <div class="row blog" style="background:#eff0f4;">
-                                        <div class="panel post-panel">
-                                            <div class="panel-heading">
-                                                <div class="dir-info">
-                                                    <div class="row">
-                                                        <div class="col-xs-2">
-                                                            <div class="avatar">
-                                                                <img src="/chinstgram/Uploads/avatar/avatar_default.jpg"
-                                                                     alt=""/>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-xs-8">
-                                                            <a href="javascript:void(0);"><span class="poster-name"><?php echo ($User["user_nickname"]); ?></span></a>
-                                                        </div>
-                                                        <div class="col-xs-2 ">
-                                                            <span class="post-time">刚刚</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="panel-body">
-                                                <div class="post-img">
-                                                    <img src="/chinstgram/Uploads/posts/post_default.jpg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="panel-footer">
-                                                <div class="post-widgets">
-                                                    <ul class="nav nav-pills p-option">
-                                                        <li>
-                                                            <a href="javascript:void(0);"><i
-                                                                    class="fa fa-heart"></i></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0);"><i class="fa fa-comment"></i></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0);"><i
-                                                                    class="fa fa-mail-forward"></i></a>
-                                                        </li>
-                                                        <li class="pull-right">
-                                                            <a href="javascript:void(0);"><i
-                                                                    class="fa fa-ellipsis-h"></i></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="panel-body">
-                                                <div class="post-content">
-                                                    1,024次赞
-                                                    <br/>
-                                                    <a>WILD AWAKE</a>  这里是作者对图片的描述
-                                                </div>
-                                                <div class="post-comment">
-                                                    全部256条评论
-                                                    <br/><a href="javascript:void(0);">mzw</a> 评论
-                                                    <br/><a href="javascript:void(0);">mzw</a> 评论
-                                                    <br/><a href="javascript:void(0);">mzw</a> 评论
-                                                </div>
-                                            </div>
+                                        <div class="posts-div">
+
+
                                         </div>
-                                        <div class="panel post-panel">
-                                            <div class="panel-heading">
-                                                <div class="dir-info">
-                                                    <div class="row">
-                                                        <div class="col-xs-2">
-                                                            <div class="avatar">
-                                                                <img src="/chinstgram/Uploads/avatar/avatar_default.jpg"
-                                                                     alt=""/>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-xs-8">
-                                                            <a href="javascript:void(0);"><span class="poster-name"><?php echo ($User["user_nickname"]); ?></span></a>
-                                                        </div>
-                                                        <div class="col-xs-2 ">
-                                                            <span class="post-time">刚刚</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="panel-body">
-                                                <div class="post-img">
-                                                    <img src="/chinstgram/Uploads/posts/post_default.jpg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="panel-footer">
-                                                <div class="post-widgets">
-                                                    <ul class="nav nav-pills p-option">
-                                                        <li>
-                                                            <a href="javascript:void(0);"><i
-                                                                    class="fa fa-heart"></i></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0);"><i class="fa fa-comment"></i></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0);"><i
-                                                                    class="fa fa-mail-forward"></i></a>
-                                                        </li>
-                                                        <li class="pull-right">
-                                                            <a href="javascript:void(0);"><i
-                                                                    class="fa fa-ellipsis-h"></i></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="panel-body">
-                                                <div class="post-content">
-                                                    1,024次赞
-                                                    <br/>
-                                                    <a>WILD AWAKE</a>  这里是作者对图片的描述
-                                                </div>
-                                                <div class="post-comment">
-                                                    全部256条评论
-                                                    <br/><a href="javascript:void(0);">mzw</a> 评论
-                                                    <br/><a href="javascript:void(0);">mzw</a> 评论
-                                                    <br/><a href="javascript:void(0);">mzw</a> 评论
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <?php if($post_has_more == true): ?><a class="btn-more btn btn-primary hidden">加载更多</a><?php endif; ?>
                                     </div>
                                 </div>
                                 <div id="likes" class="tab-pane ">
@@ -461,7 +348,7 @@
                 </div>
             </div>
         </div>
-        <footer class="hidden-xs">
+        <footer class="hidden">
             2015 &copy; chInstgram
         </footer>
     </div>
@@ -473,7 +360,66 @@
 
 <script type="text/javascript" src="/chinstgram/Public/js/index.js"></script>
 <script type="text/javascript" src="/chinstgram/Public/js/user_index.js"></script>
+<script>
+    var auto_more = false;
+    var $page = 0;
+    $(document).ready(function () {
+        var $user_id = $(".wrapper").attr('id');
 
+        $.post('more_user_posts',
+                {
+                    page: $page,
+                    user_id: $user_id,
+                },
+                function (data) {
+                    $(data).appendTo($('.posts-div')).hide().fadeIn(1000);
+                    $('.btn-more').removeClass('hidden');
+                    $('footer').removeClass('hidden');
+                    $page++;
+                });
+
+        $('.btn-more').on('click', function () {
+            $('.btn-more').hide();
+
+            $.post('more_user_posts',
+                    {
+                        page: $page,
+                        user_id: $user_id,
+                    },
+                    function (data) {
+                        $(data).appendTo($('.posts-div')).hide().fadeIn(1000);
+                        auto_more = true;
+                        $page++;
+                    });
+
+        });
+
+
+        $contentLoadTriggered = false;
+        $(window).on('scroll',
+                function () {
+                    if (!auto_more) return;
+                    if (($(document).scrollTop() >= $(document).height() - $(window).height())
+                            && $contentLoadTriggered == false) {
+                        $contentLoadTriggered = true;
+
+                        $.post('more_user_posts',
+                                {
+                                    page: $page,
+                                    user_id: $user_id,
+                                },
+                                function (data) {
+                                    $(data).appendTo($('.posts-div')).hide().fadeIn(1000);
+                                    $page++;
+                                    $contentLoadTriggered = false;
+                                });
+                    }
+                }
+        );
+
+
+    });
+</script>
 
 </body>
 
