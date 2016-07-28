@@ -3,36 +3,40 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1,maximum-scale=1"/>
+    <meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1 "/>
 
-    <link rel="stylesheet" type="text/css" href="/chinstgram/Public/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="/chinstgram/Public/css/style-responsive.css" />
+    <link rel="stylesheet" type="text/css" href="/chin/Public/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/chin/Public/css/style-responsive.css" />
 
-    <link rel="stylesheet" type="text/css" href="/chinstgram/Public/css/index_index.css" />
-    <title>chInstgram - 首页</title>
+    <link rel="stylesheet" type="text/css" href="/chin/Public/css/index_index.css" />
+    <title>Chinstagram - Home</title>
 </head>
 
 <body>
 <section>
     <!--两个导航栏-->
     <nav class="left-side sticky-left-side">
+        <div style="padding-top: 10px" class="logo">
+            <a href="<?php echo U('Home/Index/index');?>"><img style="width: 200px;" src="/chin/Public/pic/index_logo.png" alt=""></a>
+        </div>
+
         <div class="left-side-inner">
             <!--sidebar nav start-->
             <ul class="nav nav-pills nav-stacked custom-nav">
                 <li class="active">
-                    <a href="<?php echo U('Home/Index/index');?>"><i class="fa fa-home"></i> <span> 首页</span></a>
+                    <a href="<?php echo U('Home/Index/index');?>"><i class="fa fa-home"></i> <span> Home</span></a>
                 </li>
                 <li>
-                    <a href="<?php echo U('Home/Search/index');?>"><i class="fa fa-search"></i> <span> 搜索</span></a>
+                    <a href="<?php echo U('Home/Search/index');?>"><i class="fa fa-search"></i> <span> Find</span></a>
                 </li>
                 <li>
-                    <a href="<?php echo U('Home/Camera/index');?>"><i class="fa fa-camera"></i> <span> 相机</span></a>
+                    <a href="<?php echo U('Home/Camera/index');?>"><i class="fa fa-camera"></i> <span> Camera</span></a>
                 </li>
                 <li>
-                    <a href="<?php echo U('Home/Message/index');?>"><i class="fa fa-envelope"></i> <span> 消息</span></a>
+                    <a href="<?php echo U('Home/Message/index');?>"><i class="fa fa-envelope"></i> <span> Message</span></a>
                 </li>
                 <li>
-                    <a href="<?php echo U('Home/User/index');?>"><i class="fa fa-user"></i> <span> 用户</span></a>
+                    <a href="<?php echo U('Home/User/index');?>"><i class="fa fa-user"></i> <span> User</span></a>
                 </li>
             </ul>
         </div>
@@ -76,20 +80,20 @@
             <a href="javascript:void(0);" class="toggle-btn hidden-xs">
                 <i class="fa fa-bars"></i>
             </a>
-            <span>chInstgram</span>
+            <span>Chinstagram</span>
 
             <div class="menu-right hidden-xs">
                 <ul class="notification-menu">
                     <li>
                         <a href="javascript:void(0);" class="btn btn-default dropdown-toggle"
                            data-toggle="dropdown">
-                            <img src="/chinstgram/Uploads/avatar/avatar_default.jpg" alt=""/>
+                            <img src="/chin/Uploads/avatar/<?php echo ($User["user_image_url"]); ?>" alt=""/>
                             <?php echo ($User["user_nickname"]); ?>
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
-                            <li><a href="<?php echo U('Home/User/index');?>"><i class="fa fa-cog"></i> 档案</a></li>
-                            <li><a id="logout_btn" href="<?php echo U('Home/User/logout');?>"><i class="fa fa-sign-out"></i> 登出</a>
+                            <li><a href="<?php echo U('Home/User/index');?>"><i class="fa fa-cog"></i> profile</a></li>
+                            <li><a id="logout_btn" href="<?php echo U('Home/User/logout');?>"><i class="fa fa-sign-out"></i> Signout</a>
                             </li>
                         </ul>
                     </li>
@@ -106,24 +110,47 @@
 
 
                     </div>
-                    <?php if($post_has_more == true): ?><a class="btn-more btn btn-primary hidden">加载更多</a><?php endif; ?>
+                    <?php if($no_post == true): ?><a class="btn-block btn btn-primary">Go get some friends or ... post by yourself</a><?php endif; ?>
+                    <?php if($post_has_more == true): ?><a id="more-post" class="btn-more btn btn-primary hidden">more</a><?php endif; ?>
                 </div>
 
             </div>
         </div>
         <footer class="hidden">
-            2015 &copy; chInstgram
+            2016 &copy; Chinstagram
         </footer>
+        <a id="hint" style="display: none;" data-toggle="modal" href="#hintModal"></a>
+
+        <!-- Modal -->
+        <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="hintModal"
+             class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">A Friendly Hint</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p id="error_text"></p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button data-dismiss="modal" class="btn btn-block btn-primary" type="button">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal -->
+
     </main>
 </section>
 
-<script type="text/javascript" src="/chinstgram/Public/js/jquery.min.js"></script>
-<script type="text/javascript" src="/chinstgram/Public/js/jquery-ui.min.js"></script>
-<script type="text/javascript" src="/chinstgram/Public/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="/chinstgram/Public/js/jquery.nicescroll.js"></script>
+<script type="text/javascript" src="/chin/Public/js/jquery.min.js"></script>
+<script type="text/javascript" src="/chin/Public/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/chin/Public/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/chin/Public/js/jquery.nicescroll.js"></script>
 
-<script type="text/javascript" src="/chinstgram/Public/js/index.js"></script>
-<script type="text/javascript" src="/chinstgram/Public/js/post.js"></script>
+<script type="text/javascript" src="/chin/Public/js/index.js"></script>
 <script>
     var auto_more = false;
     var $page = 0;
@@ -133,14 +160,16 @@
                     page: 0
                 },
                 function (data) {
-                    $(data).appendTo($('.posts-div')).hide().fadeIn(1000);
-                    $('.btn-more').removeClass('hidden').hide().fadeIn(1000);
+                    $data_appended = $(data).appendTo($('.posts-div')).hide();
+                    $data_appended.fadeIn(1000);
+
+                    $('#more-post').removeClass('hidden').hide().fadeIn(1000);
                     $('footer').removeClass('hidden').hide().fadeIn(1000);
                     $page++;
                 });
 
-        $('.btn-more').on('click', function () {
-            $('.btn-more').hide();
+        $('#more-post').on('click', function () {
+            $('#more-post').hide();
 
             $.post('more_index_posts',
                     {

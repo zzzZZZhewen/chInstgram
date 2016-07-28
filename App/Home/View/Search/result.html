@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1,maximum-scale=1"/>
+    <load href="__PUBLIC__/css/bootstrap-fileupload.min.css"/>
+
+    <load href="__PUBLIC__/css/style.css"/>
+    <load href="__PUBLIC__/css/style-responsive.css"/>
+
+    <load href="__PUBLIC__/css/iCheck/skins/square/green.css"/>
+
+    <load href="__PUBLIC__/css/iCheck/skins/square/square.css"/>
+
+    <load href="__PUBLIC__/css/iCheck/skins/square/red.css"/>
+
+    <load href="__PUBLIC__/css/iCheck/skins/square/blue.css"/>
+
+    <load href="__PUBLIC__/css/user_index.css"/>
+    <title>Chinstagram - Search result</title>
+</head>
+
+<body>
+<section>
+    <nav class="left-side sticky-left-side">
+        <div style="padding-top: 10px" class="logo">
+            <a href="index.html"><img style="width: 200px;" src="__PUBLIC__/pic/index_logo.png" alt=""></a>
+        </div>
+        <div class="left-side-inner">
+            <ul class="nav nav-pills nav-stacked custom-nav">
+                <li>
+                    <a href="{:U('Home/Index/index')}"><i class="fa fa-home"></i> <span> Home</span></a>
+                </li>
+                <li>
+                    <a href="{:U('Home/Search/index')}"><i class="fa fa-search"></i> <span> Find</span></a>
+                </li>
+                <li>
+                    <a href="{:U('Home/Camera/index')}"><i class="fa fa-camera"></i> <span> Camera</span></a>
+                </li>
+                <li>
+                    <a href="{:U('Home/Message/index')}"><i class="fa fa-envelope"></i> <span> Message</span></a>
+                </li>
+                <li class="active">
+                    <a href="{:U('Home/User/index')}"><i class="fa fa-user"></i> <span> User</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <div class="header-section navbar-fixed-top">
+            <a href="javascript:history.back();" class="back-btn">
+                <i class="fa fa-chevron-left"></i>
+            </a>
+            <span>Result</span>
+
+            <div class="menu-right hidden-xs">
+                <ul class="notification-menu">
+                    <li>
+                        <a href="javascript:void(0);" class="btn btn-default dropdown-toggle"
+                           data-toggle="dropdown">
+                            <img src="__ROOT__/Uploads/avatar/{$User.user_image_url}" alt=""/>
+                            {$User.user_nickname}
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
+                            <li><a href="{:U('Home/User/index')}"><i class="fa fa-cog"></i> profile</a></li>
+                            <li><a id="logout_btn" href="{:U('Home/User/logout')}"><i class="fa fa-sign-out"></i> Signout</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="wrapper">
+
+                <div class="directory-info-row">
+                    <div class="row">
+
+                        <volist name="Results" id="Result">
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="panel" >
+                                    <div class="panel-body" style="cursor: pointer;"   onClick='window.location.href="{:U("User/other")}?user_id={$Result.user_id}"'>
+                                        <div class="media usr-info">
+                                            <a class="pull-left" href='{:U("User/other")}?user_id={$Result.user_id}'>
+                                                <img alt="" src="__ROOT__/Uploads/avatar/{$Result.user_image_url}" class="thumb">
+                                            </a>
+                                            <div class="media-body">
+                                                <h4 class="media-heading">{$Result.user_nickname}</h4>
+                                                <span >
+                                                    <if condition="$Result.user_sex eq '保密' ">
+                                                        secret
+                                                    </if>
+                                                    <if condition="$Result.user_sex eq '男' ">
+                                                        male
+                                                    </if>
+                                                    <if condition="$Result.user_sex eq '女' ">
+                                                        female
+                                                    </if>
+                                                </span>
+                                                <p>{$Result.user_info}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel-footer custom-trq-footer">
+                                        <ul class="user-states" style="margin: 0 0 15px 0; padding: 0;">
+                                            <li style="cursor: pointer;"   onClick='window.location.href="{:U("User/other")}?user_id={$Result.user_id}"'>
+                                                <i class="fa fa-picture-o"></i> {$Result.post_count}
+                                            </li>
+                                            <li style="cursor: pointer;"   onClick='window.location.href="{:U("User/follow_list")}?user_id={$Result.user_id}"'>
+                                                <i class="fa fa-eye"></i> {$Result.follow_count}
+                                            </li>
+                                            <li style="cursor: pointer;"   onClick='window.location.href="{:U("User/follower_list")}?user_id={$Result.user_id}"'>
+                                                <i class="fa fa-users"></i> {$Result.follower_count}
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </volist>
+
+                    </div>
+
+                </div>
+            <a id="more-like" class="btn-more btn btn-primary hidden">more</a>
+
+        </div>
+        <footer class="hidden-xs">
+            2016 &copy; Chinstagram
+        </footer>
+    </div>
+</section>
+<load href="__PUBLIC__/js/jquery.min.js"/>
+<load href="__PUBLIC__/js/jquery-ui.min.js"/>
+<load href="__PUBLIC__/js/bootstrap.min.js"/>
+<load href="__PUBLIC__/js/jquery.nicescroll.js"/>
+<load href="__PUBLIC__/js/index.js"/>
+<load href="__PUBLIC__/js/search_user_result.js"/>
+
+
+</body>
+
+</html>

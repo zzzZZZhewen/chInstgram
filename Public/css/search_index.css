@@ -1,0 +1,24 @@
+#search-advice-box {
+    background-color: transparent;
+    display: none;
+    padding: 0;
+    position: absolute;
+    z-index: 10;
+}
+#search-advice-box .panel-body {
+    padding: 0;
+}
+
+#owl-hot-topic > div.owl-wrapper-outer {
+    height: 100%;
+}
+
+#owl-hot-topic .item {
+    margin: 3px;
+}
+
+#owl-hot-topic .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}

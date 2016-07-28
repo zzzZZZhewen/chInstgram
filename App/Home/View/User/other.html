@@ -18,28 +18,31 @@
     <load href="__PUBLIC__/css/iCheck/skins/square/blue.css"/>
 
     <load href="__PUBLIC__/css/user_index.css"/>
-    <title>chInstgram - 用户档案</title>
+    <title>Chinstagram - {$User.user_nickname}</title>
 </head>
 
 <body>
 <section>
     <nav class="left-side sticky-left-side">
+        <div style="padding-top: 10px" class="logo">
+            <a href="{:U('Home/Index/index')}"><img style="width: 200px;" src="__PUBLIC__/pic/index_logo.png" alt=""></a>
+        </div>
         <div class="left-side-inner">
             <ul class="nav nav-pills nav-stacked custom-nav">
                 <li>
-                    <a href="{:U('Home/Index/index')}"><i class="fa fa-home"></i> <span> 首页</span></a>
+                    <a href="{:U('Home/Index/index')}"><i class="fa fa-home"></i> <span> Home</span></a>
                 </li>
                 <li>
-                    <a href="{:U('Home/Search/index')}"><i class="fa fa-search"></i> <span> 搜索</span></a>
+                    <a href="{:U('Home/Search/index')}"><i class="fa fa-search"></i> <span> Find</span></a>
                 </li>
                 <li>
-                    <a href="{:U('Home/Camera/index')}"><i class="fa fa-camera"></i> <span> 相机</span></a>
+                    <a href="{:U('Home/Camera/index')}"><i class="fa fa-camera"></i> <span> Camera</span></a>
                 </li>
                 <li>
-                    <a href="{:U('Home/Message/index')}"><i class="fa fa-envelope"></i> <span> 消息</span></a>
+                    <a href="{:U('Home/Message/index')}"><i class="fa fa-envelope"></i> <span> Message</span></a>
                 </li>
                 <li class="active">
-                    <a href="{:U('Home/User/index')}"><i class="fa fa-user"></i> <span> 用户</span></a>
+                    <a href="{:U('Home/User/index')}"><i class="fa fa-user"></i> <span> User</span></a>
                 </li>
             </ul>
         </div>
@@ -47,7 +50,7 @@
 
     <div class="main-content">
         <div class="header-section navbar-fixed-top">
-            <a href="javascript:history.go(-1);" class="back-btn">
+            <a href="javascript:history.back();" class="back-btn">
                 <i class="fa fa-chevron-left"></i>
             </a>
             <span>{$Other_user.user_nickname}</span>
@@ -62,8 +65,8 @@
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
-                            <li><a href="{:U('Home/User/index')}"><i class="fa fa-cog"></i> 档案</a></li>
-                            <li><a id="logout_btn" href="{:U('Home/User/logout')}"><i class="fa fa-sign-out"></i> 登出</a>
+                            <li><a href="{:U('Home/User/index')}"><i class="fa fa-cog"></i> profile</a></li>
+                            <li><a id="logout_btn" href="{:U('Home/User/logout')}"><i class="fa fa-sign-out"></i> Signout</a>
                             </li>
                         </ul>
                     </li>
@@ -72,35 +75,55 @@
             </div>
 
         </div>
-        <div class="wrapper">
+        <div id="{$Other_user.user_id}" class="wrapper">
             <div class="row">
                 <div class="col-md-4">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="panel widget-info-twt turquoise-box">
+                                <div class="panel-body">
+
                                 <div class="avatar"><img alt=""
                                                          src="__ROOT__/Uploads/avatar/{$Other_user.user_image_url}">
                                 </div>
                                 <div class="followers" style="margin-bottom: 10px;">
                                     <h5>{$Other_user.user_nickname}</h5>
-                                    <span class="subtitle"
-                                          style="margin-bottom: 10px;">{$Other_user.user_realname}</span>
-                                    <span>{$Other_user.user_post_count} 发布</span> |
-                                    <span>{$Other_user.user_followed_count} 关注</span> |
-                                    <span>{$Other_user.user_follower_count} 粉丝</span>
+                                </div>
+                                <div class="panel-footer custom-trq-footer" style="background: none repeat scroll 0 0 #65CEA7; box-shadow: 0 0 0 #65CEA7; margin-bottom: 5px">
+                                    <ul class="user-states" style="margin: 0 0 20px 0; padding: 0; ">
+                                        <li style="cursor: pointer;"   onClick='window.location.href="{:U("User/other")}?user_id={$Other_user.user_id}"'>
+                                            <i class="fa fa-picture-o"></i> {$Other_user.user_post_count}
+                                        </li>
+                                        <li style="cursor: pointer;"   onClick='window.location.href="{:U("User/follow_list")}?user_id={$Other_user.user_id}"'>
+                                            <i class="fa fa-eye"></i> {$Other_user.user_followed_count}
+                                        </li>
+                                        <li style="cursor: pointer;"   onClick='window.location.href="{:U("User/follower_list")}?user_id={$Other_user.user_id}"'>
+                                            <i class="fa fa-users"></i> {$Other_user.user_follower_count}
+                                        </li>
+                                    </ul>
                                 </div>
                                 <if condition="$Other_user.user_is_self eq true">
+                                    <a class="btn btn-primary btn-block"
+                                       href="{:U('Home/User/edit')}"><span><i></i>Edit Profile</span></a>
+                                    <a class="btn btn-danger btn-block"
+                                       href="{:U('Home/User/logout')}"><span><i></i>Sign Out</span></a>
+
                                     <else/>
                                     <if condition="$Other_user.user_is_followed eq true">
-                                        <a class="btn btn-primary btn-block"
-                                           href="javascript:void(0);"><span><i></i>取消关注</span></a>
+                                        <a id="follow_btn" class="btn btn-primary btn-block" style="display: none;"
+                                           href="javascript:void(0);" onclick="onfollow('{$Other_user.user_id}')"><span><i></i>Follow</span></a>
+                                        <a id="unfollow_btn" class="btn btn-primary btn-block"
+                                           href="javascript:void(0);" onclick="onunfollow('{$Other_user.user_id}')"><span><i></i>Unfollow</span></a>
                                         <else/>
-                                        <a class="btn btn-primary btn-block"
-                                           href="javascript:void(0);"><span><i></i>关注</span></a>
+                                        <a id="follow_btn" class="btn btn-primary btn-block"
+                                           href="javascript:void(0);" onclick="onfollow('{$Other_user.user_id}')"><span><i></i>Follow</span></a>
+                                        <a id="unfollow_btn" class="btn btn-primary btn-block" style="display: none;"
+                                           href="javascript:void(0);" onclick="onunfollow('{$Other_user.user_id}')"><span><i></i>Unfollow</span></a>
                                     </if>
                                     <a class="btn btn-warning btn-block"
-                                       href="javascript:void(0);"><span><i></i>私信</span></a>
+                                       href="{:U('Home/Message/chat')}?user_id={$Other_user.user_id}"><span><i></i>Message</span></a>
                                 </if>
+                                    </div>
                             </div>
 
                         </div>
@@ -109,15 +132,26 @@
                                 <div class="panel-body">
                                     <ul class="p-info">
                                         <li>
-                                            <div class="title">性别</div>
-                                            <div class="desk">{$Other_user.user_sex}</div>
+                                            <div class="title">gen.</div>
+                                            <div class="desk">
+                                                <if condition="$Other_user.user_sex eq '保密' ">
+                                                    secret
+                                                </if>
+                                                <if condition="$Other_user.user_sex eq '男' ">
+                                                    male
+                                                </if>
+                                                <if condition="$Other_user.user_sex eq '女' ">
+                                                    female
+                                                </if>
+
+                                            </div>
                                         </li>
                                         <li>
-                                            <div class="title">手机</div>
+                                            <div class="title">tel.</div>
                                             <div class="desk">{$Other_user.user_tel}</div>
                                         </li>
                                         <li>
-                                            <div class="title">个人简介</div>
+                                            <div class="title">intro.</div>
                                             <div class="desk">{$Other_user.user_info}</div>
                                         </li>
                                     </ul>
@@ -131,16 +165,16 @@
                         <header class="panel-heading custom-tab turquoise-tab user-tabs">
                             <ul class="nav nav-tabs">
                                 <li>
-                                    <a data-toggle="tab" href="#ths">
+                                    <a onclick="loadalbum({$Other_user.user_id},0)" data-toggle="tab" href="#ths">
                                         <i class="fa fa-th"></i>
                                     </a>
                                 </li>
-                                <li class="active">
+                                <li onclick="loaduserpost({$Other_user.user_id},0)" class="active">
                                     <a data-toggle="tab" href="#bars">
                                         <i class="fa fa-bars"></i>
                                     </a>
                                 </li>
-                                <li class="">
+                                <li onclick="loadlikes({$Other_user.user_id},0)" class="">
                                     <a data-toggle="tab" href="#likes">
                                         <i class="fa fa-heart"></i>
                                     </a>
@@ -151,304 +185,83 @@
                             <div class="tab-content">
                                 <div id="ths" class="tab-pane ">
                                     <div class="media-gal">
-                                        <div class="item">
-                                            <a>
-                                                <img src="__ROOT__/Uploads/posts/post_default.jpg" alt=""/>
-                                            </a>
 
-                                        </div>
-                                        <div class="item">
-                                            <a>
-                                                <img src="__ROOT__/Uploads/posts/post_default.jpg" alt=""/>
-                                            </a>
-
-                                        </div>
-                                        <div class="item">
-                                            <a>
-                                                <img src="__ROOT__/Uploads/posts/post_default.jpg" alt=""/>
-                                            </a>
-
-                                        </div>
-                                        <div class="item">
-                                            <a>
-                                                <img src="__ROOT__/Uploads/posts/post_default.jpg" alt=""/>
-                                            </a>
-
-                                        </div>
-                                        <div class="item">
-                                            <a>
-                                                <img src="__ROOT__/Uploads/posts/post_default.jpg" alt=""/>
-                                            </a>
-
-                                        </div>
-                                        <div class="item">
-                                            <a>
-                                                <img src="__ROOT__/Uploads/posts/post_default.jpg" alt=""/>
-                                            </a>
-
-                                        </div>
-                                        <div class="item">
-                                            <a>
-                                                <img src="__ROOT__/Uploads/posts/post_default.jpg" alt=""/>
-                                            </a>
-
-                                        </div>
+                                        <!--<a class="btn-more btn btn-primary hidden">more</a>-->
 
                                     </div>
                                 </div>
                                 <div id="bars" class="tab-pane active">
                                     <div class="row blog" style="background:#eff0f4;">
-                                        <div class="panel post-panel">
-                                            <div class="panel-heading">
-                                                <div class="dir-info">
-                                                    <div class="row">
-                                                        <div class="col-xs-2">
-                                                            <div class="avatar">
-                                                                <img src="__ROOT__/Uploads/avatar/avatar_default.jpg"
-                                                                     alt=""/>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-xs-8">
-                                                            <a href="javascript:void(0);"><span class="poster-name">{$User.user_nickname}</span></a>
-                                                        </div>
-                                                        <div class="col-xs-2 ">
-                                                            <span class="post-time">刚刚</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="panel-body">
-                                                <div class="post-img">
-                                                    <img src="__ROOT__/Uploads/posts/post_default.jpg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="panel-footer">
-                                                <div class="post-widgets">
-                                                    <ul class="nav nav-pills p-option">
-                                                        <li>
-                                                            <a href="javascript:void(0);"><i
-                                                                    class="fa fa-heart"></i></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0);"><i class="fa fa-comment"></i></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0);"><i
-                                                                    class="fa fa-mail-forward"></i></a>
-                                                        </li>
-                                                        <li class="pull-right">
-                                                            <a href="javascript:void(0);"><i
-                                                                    class="fa fa-ellipsis-h"></i></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="panel-body">
-                                                <div class="post-content">
-                                                    1,024次赞
-                                                    <br/>
-                                                    <a>WILD AWAKE</a>  这里是作者对图片的描述
-                                                </div>
-                                                <div class="post-comment">
-                                                    全部256条评论
-                                                    <br/><a href="javascript:void(0);">mzw</a> 评论
-                                                    <br/><a href="javascript:void(0);">mzw</a> 评论
-                                                    <br/><a href="javascript:void(0);">mzw</a> 评论
-                                                </div>
-                                            </div>
+                                        <div class="posts-div">
+
+
                                         </div>
-                                        <div class="panel post-panel">
-                                            <div class="panel-heading">
-                                                <div class="dir-info">
-                                                    <div class="row">
-                                                        <div class="col-xs-2">
-                                                            <div class="avatar">
-                                                                <img src="__ROOT__/Uploads/avatar/avatar_default.jpg"
-                                                                     alt=""/>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-xs-8">
-                                                            <a href="javascript:void(0);"><span class="poster-name">{$User.user_nickname}</span></a>
-                                                        </div>
-                                                        <div class="col-xs-2 ">
-                                                            <span class="post-time">刚刚</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="panel-body">
-                                                <div class="post-img">
-                                                    <img src="__ROOT__/Uploads/posts/post_default.jpg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="panel-footer">
-                                                <div class="post-widgets">
-                                                    <ul class="nav nav-pills p-option">
-                                                        <li>
-                                                            <a href="javascript:void(0);"><i
-                                                                    class="fa fa-heart"></i></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0);"><i class="fa fa-comment"></i></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0);"><i
-                                                                    class="fa fa-mail-forward"></i></a>
-                                                        </li>
-                                                        <li class="pull-right">
-                                                            <a href="javascript:void(0);"><i
-                                                                    class="fa fa-ellipsis-h"></i></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="panel-body">
-                                                <div class="post-content">
-                                                    1,024次赞
-                                                    <br/>
-                                                    <a>WILD AWAKE</a>  这里是作者对图片的描述
-                                                </div>
-                                                <div class="post-comment">
-                                                    全部256条评论
-                                                    <br/><a href="javascript:void(0);">mzw</a> 评论
-                                                    <br/><a href="javascript:void(0);">mzw</a> 评论
-                                                    <br/><a href="javascript:void(0);">mzw</a> 评论
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <if condition="$post_has_more eq true">
+                                            <a id="more-post" class="btn-more btn btn-primary hidden">more</a>
+                                        </if>
                                     </div>
                                 </div>
                                 <div id="likes" class="tab-pane ">
                                     <div class="row blog" style="background:#eff0f4;">
-                                        <div class="panel post-panel">
-                                            <div class="panel-heading">
-                                                <div class="dir-info">
-                                                    <div class="row">
-                                                        <div class="col-xs-2">
-                                                            <div class="avatar">
-                                                                <img src="__ROOT__/Uploads/avatar/avatar_default.jpg"
-                                                                     alt=""/>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-xs-8">
-                                                            <a href="javascript:void(0);"><span class="poster-name">你赞过的人</span></a>
-                                                        </div>
-                                                        <div class="col-xs-2 ">
-                                                            <span class="post-time">刚刚</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="panel-body">
-                                                <div class="post-img">
-                                                    <img src="__ROOT__/Uploads/posts/post_default.jpg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="panel-footer">
-                                                <div class="post-widgets">
-                                                    <ul class="nav nav-pills p-option">
-                                                        <li>
-                                                            <a href="javascript:void(0);"><i
-                                                                    class="fa fa-heart"></i></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0);"><i class="fa fa-comment"></i></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0);"><i
-                                                                    class="fa fa-mail-forward"></i></a>
-                                                        </li>
-                                                        <li class="pull-right">
-                                                            <a href="javascript:void(0);"><i
-                                                                    class="fa fa-ellipsis-h"></i></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="panel-body">
-                                                <div class="post-content">
-                                                    1,024次赞
-                                                    <br/>
-                                                    <a>WILD AWAKE</a>  这里是作者对图片的描述
-                                                </div>
-                                                <div class="post-comment">
-                                                    全部256条评论
-                                                    <br/><a href="javascript:void(0);">mzw</a> 评论
-                                                    <br/><a href="javascript:void(0);">mzw</a> 评论
-                                                    <br/><a href="javascript:void(0);">mzw</a> 评论
-                                                </div>
-                                            </div>
+                                        <div class="likes-div">
+
+
                                         </div>
-                                        <div class="panel post-panel">
-                                            <div class="panel-heading">
-                                                <div class="dir-info">
-                                                    <div class="row">
-                                                        <div class="col-xs-2">
-                                                            <div class="avatar">
-                                                                <img src="__ROOT__/Uploads/avatar/avatar_default.jpg"
-                                                                     alt=""/>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-xs-8">
-                                                            <a href="javascript:void(0);"><span class="poster-name">你赞过的人</span></a>
-                                                        </div>
-                                                        <div class="col-xs-2 ">
-                                                            <span class="post-time">刚刚</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="panel-body">
-                                                <div class="post-img">
-                                                    <img src="__ROOT__/Uploads/posts/post_default.jpg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="panel-footer">
-                                                <div class="post-widgets">
-                                                    <ul class="nav nav-pills p-option">
-                                                        <li>
-                                                            <a href="javascript:void(0);"><i
-                                                                    class="fa fa-heart"></i></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0);"><i class="fa fa-comment"></i></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0);"><i
-                                                                    class="fa fa-mail-forward"></i></a>
-                                                        </li>
-                                                        <li class="pull-right">
-                                                            <a href="javascript:void(0);"><i
-                                                                    class="fa fa-ellipsis-h"></i></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="panel-body">
-                                                <div class="post-content">
-                                                    1,024次赞
-                                                    <br/>
-                                                    <a>WILD AWAKE</a>  这里是作者对图片的描述
-                                                </div>
-                                                <div class="post-comment">
-                                                    全部256条评论
-                                                    <br/><a href="javascript:void(0);">mzw</a> 评论
-                                                    <br/><a href="javascript:void(0);">mzw</a> 评论
-                                                    <br/><a href="javascript:void(0);">mzw</a> 评论
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <if condition="$like_has_more eq true">
+                                            <a id="more-like" class="btn-more btn btn-primary hidden">more</a>
+                                        </if>
                                     </div>
                                 </div>
                             </div>
-                        </div>
                     </section>
                 </div>
             </div>
         </div>
-        <footer class="hidden-xs">
-            2015 &copy; chInstgram
+        <footer class="hidden">
+            2016 &copy; Chinstagram
         </footer>
+        <a id="hint" style="display: none;" data-toggle="modal" href="#hintModal"></a>
+
+        <!-- Modal -->
+        <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="hintModal"
+             class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">A Friendly Hint</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p id="error_text"></p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button data-dismiss="modal" class="btn btn-block btn-primary" type="button">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal -->
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-show-img">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Photo Detail</h4>
+                    </div>
+
+                    <div class="modal-body row">
+                        <div class="col-md-12 img-modal">
+                            <img src="__ROOT__/Uploads/posts/post_default.jpg" alt=""/>
+                            <!--<button data-dismiss="modal" class="btn btn-block btn-info" type="button"><i class="fa fa-heart"></i> Like</button>-->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- modal -->
     </div>
 </section>
 <load href="__PUBLIC__/js/jquery.min.js"/>
@@ -456,8 +269,11 @@
 <load href="__PUBLIC__/js/bootstrap.min.js"/>
 <load href="__PUBLIC__/js/jquery.nicescroll.js"/>
 <load href="__PUBLIC__/js/index.js"/>
+<load href="__PUBLIC__/js/user_posts.js"/>
 
 
 </body>
+
+
 
 </html>

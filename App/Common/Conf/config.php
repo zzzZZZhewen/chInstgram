@@ -11,7 +11,7 @@ return array(
     'DEFAULT_AJAX_RETURN' => 'JSON', // 默认AJAX 数据返回格式,可选JSON XML ...
     'DEFAULT_FILTER' => 'htmlspecialchars', // 默认参数过滤方法 用于I函数...
 
-    'APP_NAME' => 'chInstgram',
+    'APP_NAME' => 'Chinstagram',
 
     /*数据库配置*/
     'DB_TYPE'=>'mysql',// 数据库类型
@@ -43,6 +43,10 @@ return array(
     'TMPL_FILE_DEPR' => '/', // 模板文件CONTROLLER_NAME与ACTION_NAME之间的分割符
 
 
-    //龟䇲
-    'COUNT_POST_PER_PAGE'=>'2',
+    //const
+    'COUNT_POST_PER_PAGE'=>3,
+    'COUNT_COMMENT_PER_PAGE'=>6,
+    'COUNT_MESSAGE_FIRST_LOAD' =>6,
+    'COUNT_MESSAGE_PER_LOAD'=>10
+
 );

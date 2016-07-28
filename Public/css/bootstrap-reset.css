@@ -3,9 +3,9 @@
     margin-top: 1px;
 }
 
-.nav > li > a:hover, .nav > li > a:focus {
-    background-color: #353F4F;
-    text-decoration: none;
+.nav > li > a.active {
+    background: #6bc5a4;
+    color: #fff;
 }
 
 .panel {
@@ -198,4 +198,16 @@
     background-color: #D9534F;
     border-color: #D9534F;
     color: #fff;
+}
+.modal-title,.modal-body {
+    text-align: center;
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.modal-dialog {
+
 }

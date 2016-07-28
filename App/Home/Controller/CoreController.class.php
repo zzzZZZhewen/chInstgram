@@ -6,7 +6,7 @@ use Think\Controller;
 
 class CoreController extends Controller {
 
-    //全局用户信息
+    //全局User信息
     public $User;
 
     /**
@@ -14,7 +14,7 @@ class CoreController extends Controller {
      */
     protected function _initialize() {
 
-        /*如果有用户登录，读取用户信息*/
+        /*如果有User登录，读取User信息*/
         if (session('?User.user_id')) {
             $this->User = session('User');
             $this->assign('User', $this->User);

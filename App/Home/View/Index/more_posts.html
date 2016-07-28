@@ -1,5 +1,5 @@
 <volist name="PostList" id="Post">
-    <div id="post-{$Post.post_id}" class="panel post-panel">
+    <div id="post-{$Post.post_id}" class="panel post-panel" >
         <div class="panel-heading">
             <div class="dir-info">
                 <div class="row">
@@ -26,45 +26,46 @@
             </div>
         </div>
 
-        <div class="panel-body">
-            <div class="post-content">
-                                <span style="font-size: 16px;">
-                                    <a href='{:U("User/other")}?user_id={$Post.user_id}'>{$Post.user_nickname}</a>  <span
-                                        style="color: #424F63;">{$Post.post_content}</span>
-                                </span>
-            </div>
-            <div class="post-comment hidden">
-                {$Post.post_liketimes}次赞
-                <br/>
-                全部{$Post.psot_commenttimes}条评论
-                <br/><a href="javascript:void(0);">{$Post[2].comment_user_nickname}</a>
-                {$Post[2].comment_content}
-                <br/><a href="javascript:void(0);">{$Post[1].comment_content}</a>
-                {$Post[1].comment_content}
-                <br/><a href="javascript:void(0);">{$Post[0].comment_content}</a>
-                {$Post[0].comment_content}
-            </div>
-        </div>
+
         <div class="panel-footer">
             <div class="post-widgets">
                 <ul class="nav nav-pills p-option">
                     <li class="post-widget">
-                        <a href="javascript:void(0);"><i class="fa fa-heart"></i></a>
+                        <a class="{$Post.like_active}" id="like-btn-{$Post.post_id}" href="javascript:void(0);" onclick="onlike({$Post.post_id})"><i class="fa fa-heart"></i><span style="font-size: 14px;"> {$Post.like_count}</span></a>
                     </li>
                     <li class="post-widget">
-                        <a href="javascript:void(0);"><i class="fa fa-comment"></i></a>
+                        <a id="comment-btn-{$Post.post_id}" href="javascript:void(0);" onclick="onaddcomment({$Post.post_id})"><i class="fa fa-comment"></i><span style="line-height: 14px;font-size: 14px"> {$Post.comment_count}</span></a>
                     </li>
-                    <li class="post-widgets-input">
-                        <input class="add-comment" type="text" placeholder="添加评论..."/>
+                    <li class="post-widget">
+                        <form comment-form-{$Post.post_id} onsubmit="onaddcomment({$Post.post_id}); return false;">
+                            <input id="comment-input-{$Post.post_id}" class="add-comment"  type="text" placeholder="comment..."/>
+                        </form>
                     </li>
                     <li class="hidden">
                         <a href="javascript:void(0);"><i class="fa fa-mail-forward"></i></a>
                     </li>
-                    <li class="pull-right">
-                        <a href="javascript:void(0);"><i class="fa fa-ellipsis-h"></i></a>
-                    </li>
                 </ul>
             </div>
         </div>
+        <div class="panel-body">
+            <div class="post-content">
+                <span style="font-size: 16px;">
+                    <a href='{:U("User/other")}?user_id={$Post.user_id}'>{$Post.user_nickname}</a>  
+                    <span style="color: #424F63;">{$Post.post_content}</span>
+                </span>
+            </div>
+            <gt name="Post.comment_count" value="0">
+                <a class="load-comment-btn" id="load-comment-btn-{$Post.post_id}-0" onclick="onloadcomment({$Post.post_id},0)" href="javascript:void(0);"> <i class="fa fa-chevron-down"></i> </a>
+            </gt>
+
+            <eq name="Post.comment_count" value="0">
+                <a style="display:none;" class="load-comment-btn" id="load-comment-btn-{$Post.post_id}-0" onclick="onloadcomment({$Post.post_id},0)" href="javascript:void(0);"> <i class="fa fa-chevron-down"></i> </a>
+            </eq>
+
+            <ul  class="chats normal-chat post-comment" id="post-comment-{$Post.post_id}" style="display: none; margin: 0;">
+            </ul>
+        </div>
     </div>
+
+
 </volist>

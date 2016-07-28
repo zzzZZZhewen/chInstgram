@@ -1,0 +1,2890 @@
+[ 2016-05-06T10:23:06+08:00 ] 127.0.0.1 /chin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000760s ]
+SQL: SELECT COUNT(post_id) as count_post_id
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 1 OR chist_post.user_id IN (
+                          SELECT followed_user_id FROM chist_follow WHERE follower_id = 1
+                        )
+                        ORDER BY post_datetime DESC; [ RunTime:0.0090s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009794s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009834s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000764s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000876s ]
+
+[ 2016-05-06T10:23:07+08:00 ] 127.0.0.1 /chin/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+SQL: SELECT COUNT(post_id) as count_post_id
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 1 OR chist_post.user_id IN (
+                          SELECT followed_user_id FROM chist_follow WHERE follower_id = 1
+                        )
+                        ORDER BY post_datetime DESC; [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005290s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000414s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000475s ]
+
+[ 2016-05-06T10:23:07+08:00 ] 127.0.0.1 /chin/index.php/Home/Index/more_index_posts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+SQL: SELECT post_id,post_content,post_datetime,post_url,chist_post.user_id,user_nickname,user_image_url
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 1 OR chist_post.user_id IN (
+                          SELECT followed_user_id FROM chist_follow WHERE follower_id = 1
+                        )
+                        ORDER BY post_datetime DESC
+                        LIMIT 0, 3; [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `chist_like` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 36 AND `user_id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `chist_comment` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 36 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 36 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 34 AND `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 34 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 34 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 33 AND `user_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 33 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 33 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007326s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007389s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000578s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000632s ]
+
+[ 2016-05-06T10:44:13+08:00 ] 127.0.0.1 /chin/index.php/Home/Search/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007581s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007627s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000696s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000747s ]
+
+[ 2016-05-06T10:44:15+08:00 ] 127.0.0.1 /chin/index.php/Home/Search/result_for_users?key=a&rand=1247
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `chist_user` WHERE `user_nickname` LIKE '%a%'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `chist_post` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_post` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `chist_follow` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `follower_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `followed_user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_post` WHERE `user_id` = 9 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `follower_id` = 9 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `followed_user_id` = 9 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_post` WHERE `user_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `follower_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `followed_user_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009371s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009411s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000589s ]
+
+[ 2016-05-06T10:44:21+08:00 ] 127.0.0.1 /chin/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+SQL: SELECT COUNT(post_id) as count_post_id
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 1 OR chist_post.user_id IN (
+                          SELECT followed_user_id FROM chist_follow WHERE follower_id = 1
+                        )
+                        ORDER BY post_datetime DESC; [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004965s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000389s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000424s ]
+
+[ 2016-05-06T10:44:21+08:00 ] 127.0.0.1 /chin/index.php/Home/Index/more_index_posts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000334s ]
+SQL: SELECT post_id,post_content,post_datetime,post_url,chist_post.user_id,user_nickname,user_image_url
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 1 OR chist_post.user_id IN (
+                          SELECT followed_user_id FROM chist_follow WHERE follower_id = 1
+                        )
+                        ORDER BY post_datetime DESC
+                        LIMIT 0, 3; [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `chist_like` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 36 AND `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `chist_comment` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 36 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 36 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 34 AND `user_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 34 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 34 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 33 AND `user_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 33 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 33 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007023s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007054s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000503s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000556s ]
+
+[ 2016-05-06T10:55:33+08:00 ] 127.0.0.1 /chin/index.php/Home/Index/more_index_posts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+SQL: SELECT post_id,post_content,post_datetime,post_url,chist_post.user_id,user_nickname,user_image_url
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 1 OR chist_post.user_id IN (
+                          SELECT followed_user_id FROM chist_follow WHERE follower_id = 1
+                        )
+                        ORDER BY post_datetime DESC
+                        LIMIT 0, 3; [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `chist_like` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 36 AND `user_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `chist_comment` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 36 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 36 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 34 AND `user_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 34 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 34 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 33 AND `user_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 33 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 33 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008638s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008666s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000141s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000421s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000473s ]
+
+[ 2016-05-06T11:30:00+08:00 ] 127.0.0.1 /chin/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000733s ]
+SQL: SELECT COUNT(post_id) as count_post_id
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 1 OR chist_post.user_id IN (
+                          SELECT followed_user_id FROM chist_follow WHERE follower_id = 1
+                        )
+                        ORDER BY post_datetime DESC; [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011031s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011081s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000654s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000707s ]
+
+[ 2016-05-06T11:30:00+08:00 ] 127.0.0.1 /chin/index.php/Home/Index/more_index_posts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000694s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001642s ]
+SQL: SELECT post_id,post_content,post_datetime,post_url,chist_post.user_id,user_nickname,user_image_url
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 1 OR chist_post.user_id IN (
+                          SELECT followed_user_id FROM chist_follow WHERE follower_id = 1
+                        )
+                        ORDER BY post_datetime DESC
+                        LIMIT 0, 3; [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `chist_like` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 36 AND `user_id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `chist_comment` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 36 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 36 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 34 AND `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 34 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 34 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 33 AND `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 33 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 33 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015216s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015323s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001811s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002062s ]
+
+[ 2016-05-06T11:30:01+08:00 ] 127.0.0.1 /chin/index.php/Home/Camera/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000658s ]
+SQL: SHOW COLUMNS FROM `chist_post` [ RunTime:0.0071s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010924s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011179s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000506s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000583s ]
+
+[ 2016-05-06T11:30:12+08:00 ] 127.0.0.1 /chin/index.php/Home/Camera/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+SQL: SHOW COLUMNS FROM `chist_post` [ RunTime:0.0022s ]
+
+[ 2016-05-06T11:30:13+08:00 ] 127.0.0.1 /chin/index.php/Home/Camera/post_success.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000272s ]
+SQL: SHOW COLUMNS FROM `chist_post` [ RunTime:0.0012s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /Applications/XAMPP/xamppfiles/htdocs/chin/Engine/Library/Think/Upload.class.php 第 170 行.
+SQL: INSERT INTO `chist_post` (`post_content`,`post_url`,`post_filter`,`post_gps`,`user_id`,`post_datetime`) VALUES ('cats','572c0fc4bf334.jpeg','0','','1','2016-05-06 11:30:13') [ RunTime:0.0312s ]
+
+[ 2016-05-06T11:30:13+08:00 ] 127.0.0.1 /chin/index.php/Home/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `chist_post` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_post` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `chist_follow` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `follower_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `followed_user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(post_id) as count_post_id
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 1; [ RunTime:0.0003s ]
+SQL: SELECT count(*) as count_like
+                        FROM chist_like LEFT JOIN chist_post ON chist_post.post_id = chist_like.post_id LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_like.user_id = 1; [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007688s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007723s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000559s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000600s ]
+
+[ 2016-05-06T11:30:13+08:00 ] 127.0.0.1 /chin/index.php/Home/User/more_user_posts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0014s ]
+SQL: SELECT post_id,post_content,post_datetime,post_url,chist_post.user_id,user_nickname,user_image_url
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 1
+                        ORDER BY post_datetime DESC
+                        LIMIT 0, 3; [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `chist_like` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 40 AND `user_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `chist_comment` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 40 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 40 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 36 AND `user_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 36 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 36 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 34 AND `user_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 34 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 34 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005212s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005239s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000554s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000605s ]
+
+[ 2016-05-06T11:30:15+08:00 ] 127.0.0.1 /chin/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000287s ]
+SQL: SELECT COUNT(post_id) as count_post_id
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 1 OR chist_post.user_id IN (
+                          SELECT followed_user_id FROM chist_follow WHERE follower_id = 1
+                        )
+                        ORDER BY post_datetime DESC; [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004338s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004372s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000378s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000418s ]
+
+[ 2016-05-06T11:30:15+08:00 ] 127.0.0.1 /chin/index.php/Home/Index/more_index_posts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000341s ]
+SQL: SELECT post_id,post_content,post_datetime,post_url,chist_post.user_id,user_nickname,user_image_url
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 1 OR chist_post.user_id IN (
+                          SELECT followed_user_id FROM chist_follow WHERE follower_id = 1
+                        )
+                        ORDER BY post_datetime DESC
+                        LIMIT 0, 3; [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `chist_like` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 40 AND `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `chist_comment` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 40 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 40 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 36 AND `user_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 36 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 36 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 34 AND `user_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 34 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 34 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006884s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006915s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000593s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000669s ]
+
+[ 2016-05-06T11:44:41+08:00 ] 127.0.0.1 /chin/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000285s ]
+SQL: SELECT COUNT(post_id) as count_post_id
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 1 OR chist_post.user_id IN (
+                          SELECT followed_user_id FROM chist_follow WHERE follower_id = 1
+                        )
+                        ORDER BY post_datetime DESC; [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004832s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004868s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000389s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000434s ]
+
+[ 2016-05-06T11:44:42+08:00 ] 127.0.0.1 /chin/index.php/Home/Index/more_index_posts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+SQL: SELECT post_id,post_content,post_datetime,post_url,chist_post.user_id,user_nickname,user_image_url
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 1 OR chist_post.user_id IN (
+                          SELECT followed_user_id FROM chist_follow WHERE follower_id = 1
+                        )
+                        ORDER BY post_datetime DESC
+                        LIMIT 0, 3; [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `chist_like` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 40 AND `user_id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `chist_comment` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 40 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 40 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 36 AND `user_id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 36 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 36 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 34 AND `user_id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 34 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 34 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010149s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010193s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000136s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000680s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000750s ]
+
+[ 2016-05-06T11:49:16+08:00 ] 127.0.0.1 /chin/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000303s ]
+SQL: SELECT COUNT(post_id) as count_post_id
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 1 OR chist_post.user_id IN (
+                          SELECT followed_user_id FROM chist_follow WHERE follower_id = 1
+                        )
+                        ORDER BY post_datetime DESC; [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005988s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006045s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000457s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000513s ]
+
+[ 2016-05-06T11:49:17+08:00 ] 127.0.0.1 /chin/index.php/Home/Index/more_index_posts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000629s ]
+SQL: SELECT post_id,post_content,post_datetime,post_url,chist_post.user_id,user_nickname,user_image_url
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 1 OR chist_post.user_id IN (
+                          SELECT followed_user_id FROM chist_follow WHERE follower_id = 1
+                        )
+                        ORDER BY post_datetime DESC
+                        LIMIT 0, 3; [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `chist_like` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 40 AND `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `chist_comment` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 40 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 40 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 36 AND `user_id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 36 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 36 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 34 AND `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 34 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 34 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011891s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011981s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000775s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000856s ]
+
+[ 2016-05-06T11:49:21+08:00 ] 127.0.0.1 /chin/index.php/Home/Index/add_comment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000290s ]
+SQL: SHOW COLUMNS FROM `chist_comment` [ RunTime:0.0018s ]
+
+[ 2016-05-06T17:13:07+08:00 ] 127.0.0.1 /chin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+SQL: SELECT COUNT(post_id) as count_post_id
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 1 OR chist_post.user_id IN (
+                          SELECT followed_user_id FROM chist_follow WHERE follower_id = 1
+                        )
+                        ORDER BY post_datetime DESC; [ RunTime:0.0078s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011029s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011075s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000646s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000691s ]
+
+[ 2016-05-06T17:13:09+08:00 ] 127.0.0.1 /chin/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000315s ]
+SQL: SELECT COUNT(post_id) as count_post_id
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 1 OR chist_post.user_id IN (
+                          SELECT followed_user_id FROM chist_follow WHERE follower_id = 1
+                        )
+                        ORDER BY post_datetime DESC; [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004988s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005026s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000486s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000521s ]
+
+[ 2016-05-06T17:13:09+08:00 ] 127.0.0.1 /chin/index.php/Home/Index/more_index_posts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+SQL: SELECT post_id,post_content,post_datetime,post_url,chist_post.user_id,user_nickname,user_image_url
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 1 OR chist_post.user_id IN (
+                          SELECT followed_user_id FROM chist_follow WHERE follower_id = 1
+                        )
+                        ORDER BY post_datetime DESC
+                        LIMIT 0, 3; [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `chist_like` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 40 AND `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `chist_comment` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 40 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 40 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 36 AND `user_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 36 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 36 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 34 AND `user_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 34 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 34 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006845s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000468s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000539s ]
+
+[ 2016-05-06T17:13:41+08:00 ] 127.0.0.1 /chin/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+SQL: SELECT COUNT(post_id) as count_post_id
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 1 OR chist_post.user_id IN (
+                          SELECT followed_user_id FROM chist_follow WHERE follower_id = 1
+                        )
+                        ORDER BY post_datetime DESC; [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005165s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005205s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000405s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000451s ]
+
+[ 2016-05-06T17:13:42+08:00 ] 127.0.0.1 /chin/index.php/Home/Index/more_index_posts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+SQL: SELECT post_id,post_content,post_datetime,post_url,chist_post.user_id,user_nickname,user_image_url
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 1 OR chist_post.user_id IN (
+                          SELECT followed_user_id FROM chist_follow WHERE follower_id = 1
+                        )
+                        ORDER BY post_datetime DESC
+                        LIMIT 0, 3; [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `chist_like` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 36 AND `user_id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `chist_comment` [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 36 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 36 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 34 AND `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 34 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 34 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 33 AND `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 33 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 33 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008198s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008243s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000643s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000727s ]
+
+[ 2016-05-06T17:13:46+08:00 ] 127.0.0.1 /chin/index.php/Home/User/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000307s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0010s ]
+
+[ 2016-05-06T17:13:46+08:00 ] 127.0.0.1 /chin/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000277s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003769s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003805s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000278s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000303s ]
+
+[ 2016-05-06T17:16:56+08:00 ] 127.0.0.1 /chin/index.php/Home/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000507s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010765s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010829s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000678s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000848s ]
+
+[ 2016-05-06T17:17:01+08:00 ] 127.0.0.1 /chin/index.php/Home/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000655s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0044s ]
+
+[ 2016-05-06T17:17:13+08:00 ] 127.0.0.1 /chin/index.php/Home/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001002s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0031s ]
+
+[ 2016-05-06T17:17:31+08:00 ] 127.0.0.1 /chin/index.php/Home/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `chist_user` WHERE `user_email` = 'zhewen@zhewen.com' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-05-06T17:17:50+08:00 ] 127.0.0.1 /chin/index.php/Home/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000688s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `chist_user` WHERE `user_email` = 'zhewen@zhewen.com' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: user_old_password /Applications/XAMPP/xamppfiles/htdocs/chin/Engine/Library/Think/Model.class.php 第 1208 行.
+NOTIC: [8] Undefined index: user_new_password /Applications/XAMPP/xamppfiles/htdocs/chin/Engine/Library/Think/Model.class.php 第 1208 行.
+NOTIC: [8] Undefined index: user_new_password_again /Applications/XAMPP/xamppfiles/htdocs/chin/Engine/Library/Think/Model.class.php 第 1208 行.
+SQL: SELECT * FROM `chist_user` WHERE `user_nickname` = 'Miao' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-05-06T17:18:11+08:00 ] 127.0.0.1 /chin/index.php/Home/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000998s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `chist_user` WHERE `user_email` = 'zhewen@zhewen.com' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: user_old_password /Applications/XAMPP/xamppfiles/htdocs/chin/Engine/Library/Think/Model.class.php 第 1208 行.
+NOTIC: [8] Undefined index: user_new_password /Applications/XAMPP/xamppfiles/htdocs/chin/Engine/Library/Think/Model.class.php 第 1208 行.
+NOTIC: [8] Undefined index: user_new_password_again /Applications/XAMPP/xamppfiles/htdocs/chin/Engine/Library/Think/Model.class.php 第 1208 行.
+SQL: SELECT * FROM `chist_user` WHERE `user_nickname` = 'MiaoZhewen' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-05-06T17:18:11+08:00 ] 127.0.0.1 /chin/index.php/Home/User/register_success.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `chist_user` WHERE `user_email` = 'zhewen@zhewen.com' LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: user_old_password /Applications/XAMPP/xamppfiles/htdocs/chin/Engine/Library/Think/Model.class.php 第 1208 行.
+NOTIC: [8] Undefined index: user_new_password /Applications/XAMPP/xamppfiles/htdocs/chin/Engine/Library/Think/Model.class.php 第 1208 行.
+NOTIC: [8] Undefined index: user_new_password_again /Applications/XAMPP/xamppfiles/htdocs/chin/Engine/Library/Think/Model.class.php 第 1208 行.
+SQL: SELECT * FROM `chist_user` WHERE `user_nickname` = 'MiaoZhewen' LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `chist_user` (`user_email`,`user_password`,`user_realname`,`user_nickname`,`user_tel`,`user_sex`,`user_info`,`user_image_url`) VALUES ('zhewen@zhewen.com','madel1ne','','MiaoZhewen','','保密','great coder ','avatar_default.jpg') [ RunTime:0.0016s ]
+SQL: SELECT * FROM `chist_user` WHERE `user_email` = 'zhewen@zhewen.com'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008152s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008211s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000382s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000433s ]
+
+[ 2016-05-06T17:18:17+08:00 ] 127.0.0.1 /chin/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+SQL: SELECT COUNT(post_id) as count_post_id
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 16 OR chist_post.user_id IN (
+                          SELECT followed_user_id FROM chist_follow WHERE follower_id = 16
+                        )
+                        ORDER BY post_datetime DESC; [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010365s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001135s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001235s ]
+
+[ 2016-05-06T17:18:17+08:00 ] 127.0.0.1 /chin/index.php/Home/Index/more_index_posts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+SQL: SELECT post_id,post_content,post_datetime,post_url,chist_post.user_id,user_nickname,user_image_url
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 16 OR chist_post.user_id IN (
+                          SELECT followed_user_id FROM chist_follow WHERE follower_id = 16
+                        )
+                        ORDER BY post_datetime DESC
+                        LIMIT 0, 3; [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000410s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016354s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016417s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000366s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000397s ]
+
+[ 2016-05-06T17:18:27+08:00 ] 127.0.0.1 /chin/index.php/Home/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001912s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002182s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `chist_post` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_post` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `chist_follow` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `follower_id` = 16 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `followed_user_id` = 16 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(post_id) as count_post_id
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 16; [ RunTime:0.0005s ]
+SQL: SELECT count(*) as count_like
+                        FROM chist_like LEFT JOIN chist_post ON chist_post.post_id = chist_like.post_id LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_like.user_id = 16; [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017892s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017990s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002235s ]
+
+[ 2016-05-06T17:18:27+08:00 ] 127.0.0.1 /chin/index.php/Home/User/more_user_posts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000600s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0045s ]
+SQL: SELECT post_id,post_content,post_datetime,post_url,chist_post.user_id,user_nickname,user_image_url
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 16
+                        ORDER BY post_datetime DESC
+                        LIMIT 0, 3; [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013433s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013529s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000435s ]
+
+[ 2016-05-06T17:18:28+08:00 ] 127.0.0.1 /chin/index.php/Home/User/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000829s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000933s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013173s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013331s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000767s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001123s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001680s ]
+
+[ 2016-05-06T17:19:14+08:00 ] 127.0.0.1 /chin/index.php/Home/User/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001017s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `chist_user` WHERE `user_id` = 16  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `chist_user` WHERE `user_email` = 'zhewen@zhewen.com' AND `user_id` <> '16' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `chist_user` WHERE `user_nickname` = 'MiaoZhewen' AND `user_id` <> '16' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-05-06T17:19:14+08:00 ] 127.0.0.1 /chin/index.php/Home/User/edit_success.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `chist_user` WHERE `user_id` = 16  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `chist_user` WHERE `user_email` = 'zhewen@zhewen.com' AND `user_id` <> '16' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `chist_user` WHERE `user_nickname` = 'MiaoZhewen' AND `user_id` <> '16' LIMIT 1   [ RunTime:0.0011s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /Applications/XAMPP/xamppfiles/htdocs/chin/Engine/Library/Think/Upload.class.php 第 170 行.
+NOTIC: [8] Undefined variable: x /Applications/XAMPP/xamppfiles/htdocs/chin/Engine/Library/Think/Image/Driver/Gd.class.php 第 270 行.
+NOTIC: [8] Undefined variable: y /Applications/XAMPP/xamppfiles/htdocs/chin/Engine/Library/Think/Image/Driver/Gd.class.php 第 270 行.
+SQL: UPDATE `chist_user` SET `user_realname`='',`user_nickname`='MiaoZhewen',`user_image_url`='572c6192294db.png',`user_email`='zhewen@zhewen.com',`user_password`='madel1ne',`user_sex`='保密',`user_tel`='',`user_info`='great coder ' WHERE `user_id` = 16 [ RunTime:0.0015s ]
+
+[ 2016-05-06T17:19:14+08:00 ] 127.0.0.1 /chin/index.php/Home/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001006s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `chist_post` [ RunTime:0.0037s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_post` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `chist_follow` [ RunTime:0.0032s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `follower_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `followed_user_id` = 16 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(post_id) as count_post_id
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 16; [ RunTime:0.0013s ]
+SQL: SELECT count(*) as count_like
+                        FROM chist_like LEFT JOIN chist_post ON chist_post.post_id = chist_like.post_id LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_like.user_id = 16; [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017561s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017661s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000652s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001119s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001242s ]
+
+[ 2016-05-06T17:19:14+08:00 ] 127.0.0.1 /chin/index.php/Home/User/more_user_posts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001114s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0049s ]
+SQL: SELECT post_id,post_content,post_datetime,post_url,chist_post.user_id,user_nickname,user_image_url
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 16
+                        ORDER BY post_datetime DESC
+                        LIMIT 0, 3; [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000223s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000428s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018354s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018508s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000902s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001024s ]
+
+[ 2016-05-06T17:19:17+08:00 ] 127.0.0.1 /chin/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+SQL: SELECT COUNT(post_id) as count_post_id
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 16 OR chist_post.user_id IN (
+                          SELECT followed_user_id FROM chist_follow WHERE follower_id = 16
+                        )
+                        ORDER BY post_datetime DESC; [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007982s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008146s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000904s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001008s ]
+
+[ 2016-05-06T17:19:18+08:00 ] 127.0.0.1 /chin/index.php/Home/Index/more_index_posts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001210s ]
+SQL: SELECT post_id,post_content,post_datetime,post_url,chist_post.user_id,user_nickname,user_image_url
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 16 OR chist_post.user_id IN (
+                          SELECT followed_user_id FROM chist_follow WHERE follower_id = 16
+                        )
+                        ORDER BY post_datetime DESC
+                        LIMIT 0, 3; [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010936s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011550s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000772s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000882s ]
+
+[ 2016-05-06T17:19:42+08:00 ] 127.0.0.1 /chin/index.php/Home/User/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000257s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0020s ]
+
+[ 2016-05-06T17:19:42+08:00 ] 127.0.0.1 /chin/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000271s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003388s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003417s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000164s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000294s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000321s ]
+
+[ 2016-05-06T17:23:20+08:00 ] 127.0.0.1 /chin/index.php/Home/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009805s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000959s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001049s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001084s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001155s ]
+
+[ 2016-05-06T17:23:26+08:00 ] 127.0.0.1 /chin/index.php/Home/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000787s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000874s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0041s ]
+
+[ 2016-05-06T17:23:34+08:00 ] 127.0.0.1 /chin/index.php/Home/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `chist_user` WHERE `user_email` = 'zhewen@163.com' LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2016-05-06T17:23:44+08:00 ] 127.0.0.1 /chin/index.php/Home/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000570s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `chist_user` WHERE `user_email` = 'zhewen@163.com' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: user_old_password /Applications/XAMPP/xamppfiles/htdocs/chin/Engine/Library/Think/Model.class.php 第 1208 行.
+NOTIC: [8] Undefined index: user_new_password /Applications/XAMPP/xamppfiles/htdocs/chin/Engine/Library/Think/Model.class.php 第 1208 行.
+NOTIC: [8] Undefined index: user_new_password_again /Applications/XAMPP/xamppfiles/htdocs/chin/Engine/Library/Think/Model.class.php 第 1208 行.
+SQL: SELECT * FROM `chist_user` WHERE `user_nickname` = 'Miao' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-05-06T17:24:20+08:00 ] 127.0.0.1 /chin/index.php/Home/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000688s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000854s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `chist_user` WHERE `user_email` = 'zhewen@163.com' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: user_old_password /Applications/XAMPP/xamppfiles/htdocs/chin/Engine/Library/Think/Model.class.php 第 1208 行.
+NOTIC: [8] Undefined index: user_new_password /Applications/XAMPP/xamppfiles/htdocs/chin/Engine/Library/Think/Model.class.php 第 1208 行.
+NOTIC: [8] Undefined index: user_new_password_again /Applications/XAMPP/xamppfiles/htdocs/chin/Engine/Library/Think/Model.class.php 第 1208 行.
+SQL: SELECT * FROM `chist_user` WHERE `user_nickname` = 'Zhewen' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2016-05-06T17:24:20+08:00 ] 127.0.0.1 /chin/index.php/Home/User/register_success.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `chist_user` WHERE `user_email` = 'zhewen@163.com' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_old_password /Applications/XAMPP/xamppfiles/htdocs/chin/Engine/Library/Think/Model.class.php 第 1208 行.
+NOTIC: [8] Undefined index: user_new_password /Applications/XAMPP/xamppfiles/htdocs/chin/Engine/Library/Think/Model.class.php 第 1208 行.
+NOTIC: [8] Undefined index: user_new_password_again /Applications/XAMPP/xamppfiles/htdocs/chin/Engine/Library/Think/Model.class.php 第 1208 行.
+SQL: SELECT * FROM `chist_user` WHERE `user_nickname` = 'Zhewen' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /Applications/XAMPP/xamppfiles/htdocs/chin/Engine/Library/Think/Upload.class.php 第 170 行.
+NOTIC: [8] Undefined variable: x /Applications/XAMPP/xamppfiles/htdocs/chin/Engine/Library/Think/Image/Driver/Gd.class.php 第 270 行.
+NOTIC: [8] Undefined variable: y /Applications/XAMPP/xamppfiles/htdocs/chin/Engine/Library/Think/Image/Driver/Gd.class.php 第 270 行.
+SQL: INSERT INTO `chist_user` (`user_email`,`user_password`,`user_realname`,`user_nickname`,`user_tel`,`user_sex`,`user_info`,`user_image_url`) VALUES ('zhewen@163.com','madel1ne','','Zhewen','','男','intro intro intro intro','572c62c440d4b.png') [ RunTime:0.0016s ]
+SQL: SELECT * FROM `chist_user` WHERE `user_email` = 'zhewen@163.com'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005288s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005389s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000387s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000421s ]
+
+[ 2016-05-06T17:24:25+08:00 ] 127.0.0.1 /chin/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000336s ]
+SQL: SELECT COUNT(post_id) as count_post_id
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 17 OR chist_post.user_id IN (
+                          SELECT followed_user_id FROM chist_follow WHERE follower_id = 17
+                        )
+                        ORDER BY post_datetime DESC; [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009192s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009344s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000863s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001050s ]
+
+[ 2016-05-06T17:24:26+08:00 ] 127.0.0.1 /chin/index.php/Home/Index/more_index_posts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000827s ]
+SQL: SELECT post_id,post_content,post_datetime,post_url,chist_post.user_id,user_nickname,user_image_url
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 17 OR chist_post.user_id IN (
+                          SELECT followed_user_id FROM chist_follow WHERE follower_id = 17
+                        )
+                        ORDER BY post_datetime DESC
+                        LIMIT 0, 3; [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008939s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009046s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000643s ]
+
+[ 2016-05-06T17:24:43+08:00 ] 127.0.0.1 /chin/index.php/Home/User/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000672s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0030s ]
+
+[ 2016-05-06T17:24:43+08:00 ] 127.0.0.1 /chin/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000638s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007298s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007392s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000770s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000912s ]
+
+[ 2016-05-06T17:24:48+08:00 ] 127.0.0.1 /chin/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000965s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001061s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `chist_user` WHERE `user_email` = 'zhewen@163.com' AND `user_password` = ''  [ RunTime:0.0003s ]
+
+[ 2016-05-06T17:25:00+08:00 ] 127.0.0.1 /chin/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `chist_user` WHERE `user_email` = 'zhewen@163.com' AND `user_password` = 'madel1ne'  [ RunTime:0.0008s ]
+
+[ 2016-05-06T17:25:00+08:00 ] 127.0.0.1 /chin/index.php/Home/User/login_success.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000558s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `chist_user` WHERE `user_email` = 'zhewen@163.com' AND `user_password` = 'madel1ne'  [ RunTime:0.0009s ]
+
+[ 2016-05-06T17:25:00+08:00 ] 127.0.0.1 /chin/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000456s ]
+SQL: SELECT COUNT(post_id) as count_post_id
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 17 OR chist_post.user_id IN (
+                          SELECT followed_user_id FROM chist_follow WHERE follower_id = 17
+                        )
+                        ORDER BY post_datetime DESC; [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007915s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007975s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000217s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000716s ]
+
+[ 2016-05-06T17:25:01+08:00 ] 127.0.0.1 /chin/index.php/Home/Index/more_index_posts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000847s ]
+SQL: SELECT post_id,post_content,post_datetime,post_url,chist_post.user_id,user_nickname,user_image_url
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 17 OR chist_post.user_id IN (
+                          SELECT followed_user_id FROM chist_follow WHERE follower_id = 17
+                        )
+                        ORDER BY post_datetime DESC
+                        LIMIT 0, 3; [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009091s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009323s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001248s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001362s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000761s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000851s ]
+
+[ 2016-05-06T17:25:10+08:00 ] 127.0.0.1 /chin/index.php/Home/Search/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013174s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013277s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000995s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001133s ]
+
+[ 2016-05-06T17:25:17+08:00 ] 127.0.0.1 /chin/index.php/Home/Search/result_for_users?key=a&rand=4161
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `chist_user` WHERE `user_nickname` LIKE '%a%'  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `chist_post` [ RunTime:0.0038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_post` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `chist_follow` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `follower_id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `followed_user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_post` WHERE `user_id` = 9 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `follower_id` = 9 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `followed_user_id` = 9 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_post` WHERE `user_id` = 13 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `follower_id` = 13 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `followed_user_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_post` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `follower_id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `followed_user_id` = 16 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013615s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013694s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000651s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000772s ]
+
+[ 2016-05-06T17:25:23+08:00 ] 127.0.0.1 /chin/index.php/Home/User/other.html?user_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000598s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000819s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `chist_user` WHERE `user_id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `chist_post` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_post` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `chist_follow` [ RunTime:0.0024s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `follower_id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `followed_user_id` = 1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `followed_user_id` = 1 AND `follower_id` = 17 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(post_id) as count_post_id
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 1; [ RunTime:0.0008s ]
+SQL: SELECT count(*) as count_like
+                        FROM chist_like LEFT JOIN chist_post ON chist_post.post_id = chist_like.post_id LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_like.user_id = 1; [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010929s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000979s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001100s ]
+
+[ 2016-05-06T17:25:23+08:00 ] 127.0.0.1 /chin/index.php/Home/User/more_user_posts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0019s ]
+SQL: SELECT post_id,post_content,post_datetime,post_url,chist_post.user_id,user_nickname,user_image_url
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 1
+                        ORDER BY post_datetime DESC
+                        LIMIT 0, 3; [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `chist_like` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 36 AND `user_id` = 17 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `chist_comment` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 36 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 36 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 34 AND `user_id` = 17 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 34 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 34 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 33 AND `user_id` = 17 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 33 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 33 LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000299s ]
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014799s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014945s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000815s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001203s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001426s ]
+
+[ 2016-05-06T17:25:48+08:00 ] 127.0.0.1 /chin/index.php/Home/User/follow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000789s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000923s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001133s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `chist_follow` [ RunTime:0.0026s ]
+NOTIC: [2] Illegal offset type in isset or empty /Applications/XAMPP/xamppfiles/htdocs/chin/Engine/Library/Think/Model.class.php 第 1007 行.
+SQL: INSERT INTO `chist_follow` (`followed_user_id`,`follower_id`) VALUES ('1','17') [ RunTime:0.0028s ]
+
+[ 2016-05-06T17:25:52+08:00 ] 127.0.0.1 /chin/index.php/Home/User/unfollow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000825s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000695s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `chist_follow` [ RunTime:0.0017s ]
+NOTIC: [2] Illegal offset type in isset or empty /Applications/XAMPP/xamppfiles/htdocs/chin/Engine/Library/Think/Model.class.php 第 511 行.
+SQL: DELETE FROM `chist_follow` WHERE `followed_user_id` = 1 AND `follower_id` = 17 [ RunTime:0.0021s ]
+
+[ 2016-05-06T17:25:58+08:00 ] 127.0.0.1 /chin/index.php/Home/User/like_post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000663s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `chist_like` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `chist_like` WHERE `user_id` = 17 AND `post_id` = 36  [ RunTime:0.0003s ]
+SQL: INSERT INTO `chist_like` (`user_id`,`post_id`) VALUES ('17','36') [ RunTime:0.0008s ]
+
+[ 2016-05-06T17:26:05+08:00 ] 127.0.0.1 /chin/index.php/Home/User/more_comments
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0024s ]
+SQL: SELECT comment_post_id, comment_user_id, comment_content, chist_user.user_nickname, comment_date
+                                        From chist_comment left join chist_user on comment_user_id = user_id
+                                        WHERE comment_post_id = 36
+                                        Order by comment_date desc
+                                        LIMIT 0,6 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `chist_comment` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 36 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008013s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008091s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000604s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000722s ]
+
+[ 2016-05-06T17:26:13+08:00 ] 127.0.0.1 /chin/index.php/Home/User/add_comment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000348s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `chist_comment` [ RunTime:0.0015s ]
+SQL: INSERT INTO `chist_comment` (`comment_content`,`comment_post_id`,`comment_date`,`comment_user_id`) VALUES ('Pretty cute','36','2016-05-06 17:26:13','17') [ RunTime:0.0012s ]
+
+[ 2016-05-06T17:26:13+08:00 ] 127.0.0.1 /chin/index.php/Home/User/more_comments
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000719s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001633s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0029s ]
+SQL: SELECT comment_post_id, comment_user_id, comment_content, chist_user.user_nickname, comment_date
+                                        From chist_comment left join chist_user on comment_user_id = user_id
+                                        WHERE comment_post_id = 36
+                                        Order by comment_date desc
+                                        LIMIT 0,6 [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `chist_comment` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 36 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006540s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006604s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001026s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001269s ]
+
+[ 2016-05-06T17:26:19+08:00 ] 127.0.0.1 /chin/index.php/Home/User/more_like_posts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0025s ]
+SQL: SELECT chist_post.post_id,post_content,post_datetime,post_url,chist_post.user_id,user_nickname,user_image_url
+                        FROM chist_like LEFT JOIN chist_post ON chist_post.post_id = chist_like.post_id LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_like.user_id = 1
+                        ORDER BY post_datetime DESC
+                        LIMIT 0, 3; [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `chist_like` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 36 AND `user_id` = 17 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `chist_comment` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 36 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 36 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 21 AND `user_id` = 17 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 21 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 21 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 20 AND `user_id` = 17 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 20 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 20 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009440s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009476s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000554s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000617s ]
+
+[ 2016-05-06T17:26:24+08:00 ] 127.0.0.1 /chin/index.php/Home/User/like_post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `chist_like` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `chist_like` WHERE `user_id` = 17 AND `post_id` = 21  [ RunTime:0.0007s ]
+SQL: INSERT INTO `chist_like` (`user_id`,`post_id`) VALUES ('17','21') [ RunTime:0.0015s ]
+
+[ 2016-05-06T17:26:30+08:00 ] 127.0.0.1 /chin/index.php/Home/User/more_album
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000600s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0035s ]
+SQL: SELECT post_id,post_content,post_datetime,post_url,chist_post.user_id,user_nickname,user_image_url
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 1
+                        ORDER BY post_datetime DESC
+                        LIMIT 0, 3; [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `chist_like` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 36 AND `user_id` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `chist_comment` [ RunTime:0.0032s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 36 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 36 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 34 AND `user_id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 34 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 34 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 33 AND `user_id` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 33 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 33 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `chist_post` [ RunTime:0.0032s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_post` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009868s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009984s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000537s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000604s ]
+
+[ 2016-05-06T17:26:32+08:00 ] 127.0.0.1 /chin/index.php/Home/User/more_album
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0039s ]
+SQL: SELECT post_id,post_content,post_datetime,post_url,chist_post.user_id,user_nickname,user_image_url
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 1
+                        ORDER BY post_datetime DESC
+                        LIMIT 3, 3; [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `chist_like` [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 20 AND `user_id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `chist_comment` [ RunTime:0.0024s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 20 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 20 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 24 AND `user_id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 24 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 24 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 22 AND `user_id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 22 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 22 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `chist_post` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_post` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004941s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000403s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000451s ]
+
+[ 2016-05-06T17:26:33+08:00 ] 127.0.0.1 /chin/index.php/Home/User/more_album
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000291s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0026s ]
+SQL: SELECT post_id,post_content,post_datetime,post_url,chist_post.user_id,user_nickname,user_image_url
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 1
+                        ORDER BY post_datetime DESC
+                        LIMIT 6, 3; [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `chist_like` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 28 AND `user_id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `chist_comment` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 28 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 28 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `chist_post` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_post` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006778s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006850s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000643s ]
+
+[ 2016-05-06T17:26:44+08:00 ] 127.0.0.1 /chin/index.php/Home/User/more_user_posts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0042s ]
+SQL: SELECT post_id,post_content,post_datetime,post_url,chist_post.user_id,user_nickname,user_image_url
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 1
+                        ORDER BY post_datetime DESC
+                        LIMIT 3, 3; [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `chist_like` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 20 AND `user_id` = 17 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `chist_comment` [ RunTime:0.0024s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 20 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 20 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 24 AND `user_id` = 17 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 24 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 24 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 22 AND `user_id` = 17 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 22 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 22 LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017884s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017977s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000676s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000800s ]
+
+[ 2016-05-06T17:26:46+08:00 ] 127.0.0.1 /chin/index.php/Home/User/more_user_posts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0023s ]
+SQL: SELECT post_id,post_content,post_datetime,post_url,chist_post.user_id,user_nickname,user_image_url
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 1
+                        ORDER BY post_datetime DESC
+                        LIMIT 6, 3; [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `chist_like` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 28 AND `user_id` = 17 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `chist_comment` [ RunTime:0.0031s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 28 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 28 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008931s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008986s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000359s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000388s ]
+
+[ 2016-05-06T17:26:47+08:00 ] 127.0.0.1 /chin/index.php/Home/User/more_user_posts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000802s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0038s ]
+SQL: SELECT post_id,post_content,post_datetime,post_url,chist_post.user_id,user_nickname,user_image_url
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 1
+                        ORDER BY post_datetime DESC
+                        LIMIT 9, 3; [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015352s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015562s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000681s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001671s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001823s ]
+
+[ 2016-05-06T17:26:51+08:00 ] 127.0.0.1 /chin/index.php/Home/User/follow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000979s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001157s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `chist_follow` [ RunTime:0.0018s ]
+NOTIC: [2] Illegal offset type in isset or empty /Applications/XAMPP/xamppfiles/htdocs/chin/Engine/Library/Think/Model.class.php 第 1007 行.
+SQL: INSERT INTO `chist_follow` (`followed_user_id`,`follower_id`) VALUES ('1','17') [ RunTime:0.0011s ]
+
+[ 2016-05-06T17:27:00+08:00 ] 127.0.0.1 /chin/index.php/Home/User/follow_list.html?user_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000581s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0031s ]
+SQL: SELECT *
+                                    FROM chist_user
+                                    WHERE chist_user.user_id IN (
+                                      SELECT followed_user_id
+                                      FROM chist_follow
+                                      WHERE follower_id = 1
+                                    );
+         [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `chist_post` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_post` WHERE `user_id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `chist_follow` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `follower_id` = 5 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `followed_user_id` = 5 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012239s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012308s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000461s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000497s ]
+
+[ 2016-05-06T17:27:03+08:00 ] 127.0.0.1 /chin/index.php/Home/User/more_user_posts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000253s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000963s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001006s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0029s ]
+SQL: SELECT post_id,post_content,post_datetime,post_url,chist_post.user_id,user_nickname,user_image_url
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 1
+                        ORDER BY post_datetime DESC
+                        LIMIT 0, 3; [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `chist_like` [ RunTime:0.0024s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 36 AND `user_id` = 17 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `chist_comment` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 36 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 36 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 34 AND `user_id` = 17 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 34 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 34 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 33 AND `user_id` = 17 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 33 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 33 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006923s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006960s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000726s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000812s ]
+
+[ 2016-05-06T17:27:04+08:00 ] 127.0.0.1 /chin/index.php/Home/User/follower_list.html?user_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001358s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0050s ]
+SQL: SELECT *
+                                    FROM chist_user
+                                    WHERE chist_user.user_id IN (
+                                      SELECT follower_id
+                                      FROM chist_follow
+                                      WHERE followed_user_id = 1
+                                    );
+         [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `chist_post` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_post` WHERE `user_id` = 8 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `chist_follow` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `follower_id` = 8 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `followed_user_id` = 8 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_post` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `follower_id` = 17 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `followed_user_id` = 17 LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000264s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019784s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020026s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001541s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001729s ]
+
+[ 2016-05-06T17:27:07+08:00 ] 127.0.0.1 /chin/index.php/Home/User/more_user_posts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000205s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001032s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000964s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001105s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0076s ]
+SQL: SELECT post_id,post_content,post_datetime,post_url,chist_post.user_id,user_nickname,user_image_url
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 1
+                        ORDER BY post_datetime DESC
+                        LIMIT 0, 3; [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `chist_like` [ RunTime:0.0081s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 36 AND `user_id` = 17 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `chist_comment` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 36 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 36 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 34 AND `user_id` = 17 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 34 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 34 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 33 AND `user_id` = 17 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 33 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 33 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009106s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009158s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000955s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001084s ]
+
+[ 2016-05-06T17:27:10+08:00 ] 127.0.0.1 /chin/index.php/Home/User/other.html?user_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001264s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `chist_user` WHERE `user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `chist_post` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_post` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `chist_follow` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `follower_id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `followed_user_id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `followed_user_id` = 1 AND `follower_id` = 17 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(post_id) as count_post_id
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 1; [ RunTime:0.0009s ]
+SQL: SELECT count(*) as count_like
+                        FROM chist_like LEFT JOIN chist_post ON chist_post.post_id = chist_like.post_id LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_like.user_id = 1; [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010919s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011019s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000578s ]
+
+[ 2016-05-06T17:27:10+08:00 ] 127.0.0.1 /chin/index.php/Home/User/more_user_posts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000675s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000874s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0057s ]
+SQL: SELECT post_id,post_content,post_datetime,post_url,chist_post.user_id,user_nickname,user_image_url
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 1
+                        ORDER BY post_datetime DESC
+                        LIMIT 0, 3; [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `chist_like` [ RunTime:0.0041s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 36 AND `user_id` = 17 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `chist_comment` [ RunTime:0.0039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 36 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 36 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 34 AND `user_id` = 17 LIMIT 1   [ RunTime:0.0047s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 34 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 34 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 33 AND `user_id` = 17 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 33 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 33 LIMIT 1   [ RunTime:0.0047s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018985s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019082s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001107s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001186s ]
+
+[ 2016-05-06T17:27:13+08:00 ] 127.0.0.1 /chin/index.php/Home/Message/chat.html?user_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000995s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `chist_user` WHERE `user_id` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `chist_post` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_post` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `chist_follow` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `follower_id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `followed_user_id` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `followed_user_id` = 1 AND `follower_id` = 17 LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011533s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011636s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000294s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000319s ]
+
+[ 2016-05-06T17:27:13+08:00 ] 127.0.0.1 /chin/index.php/Home/Message/more_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000717s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001222s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `chist_user` WHERE `user_id` = 1  [ RunTime:0.0012s ]
+SQL: SELECT message_id, message_sender_id, message_reciever_id, message_content, message_datetime
+                        FROM chist_message
+                        WHERE (message_sender_id = 17 AND message_reciever_id = 1) OR (message_sender_id = 1 AND message_reciever_id = 17)
+                        ORDER BY message_datetime DESC
+                        ; [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011226s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011376s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000662s ]
+NOTIC: [8] Undefined offset: 0 /Applications/XAMPP/xamppfiles/htdocs/chin/App/Home/Controller/MessageController.class.php 第 107 行.
+
+[ 2016-05-06T17:27:18+08:00 ] 127.0.0.1 /chin/index.php/Home/Message/continue_load_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000890s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `chist_message` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `chist_message` WHERE `message_sender_id` = 1 AND `message_datetime` > '' AND `message_reciever_id` = 17 ORDER BY message_datetime  [ RunTime:0.0006s ]
+
+[ 2016-05-06T17:27:23+08:00 ] 127.0.0.1 /chin/index.php/Home/Message/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0031s ]
+SQL: SELECT message_datetime , message_sender_id, message_reciever_id, message_content, message_id
+                        FROM chist_message
+                        WHERE message_datetime IN (
+                          SELECT max(message_datetime) as max_message_datetime
+                          FROM chist_message
+                          WHERE message_sender_id = 17 OR message_reciever_id = 17
+                          GROUP BY message_sender_id, message_reciever_id
+                        )
+                        ORDER BY message_datetime DESC ; [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000354s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017612s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017775s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001063s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001163s ]
+
+[ 2016-05-06T17:27:29+08:00 ] 127.0.0.1 /chin/index.php/Home/Message/more_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000674s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000955s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `chist_user` WHERE `user_id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT message_id, message_sender_id, message_reciever_id, message_content, message_datetime
+                        FROM chist_message
+                        WHERE (message_sender_id = 17 AND message_reciever_id = 1) OR (message_sender_id = 1 AND message_reciever_id = 17)
+                        ORDER BY message_datetime DESC
+                        ; [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000441s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022992s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023208s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000617s ]
+NOTIC: [8] Undefined offset: 0 /Applications/XAMPP/xamppfiles/htdocs/chin/App/Home/Controller/MessageController.class.php 第 107 行.
+
+[ 2016-05-06T17:27:34+08:00 ] 127.0.0.1 /chin/index.php/Home/Message/add_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `chist_message` [ RunTime:0.0026s ]
+SQL: INSERT INTO `chist_message` (`message_content`,`message_reciever_id`,`message_datetime`,`message_sender_id`) VALUES ('hello','1','2016-05-06 17:27:34','17') [ RunTime:0.0012s ]
+SQL: SELECT * FROM `chist_user` WHERE `user_id` = 1  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009308s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009422s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000331s ]
+
+[ 2016-05-06T17:27:35+08:00 ] 127.0.0.1 /chin/index.php/Home/Message/continue_load_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000270s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `chist_message` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `chist_message` WHERE `message_sender_id` = 1 AND `message_datetime` > '' AND `message_reciever_id` = 17 ORDER BY message_datetime  [ RunTime:0.0003s ]
+
+[ 2016-05-06T17:27:40+08:00 ] 127.0.0.1 /chin/index.php/Home/Message/continue_load_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000810s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `chist_message` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `chist_message` WHERE `message_sender_id` = 1 AND `message_datetime` > '' AND `message_reciever_id` = 17 ORDER BY message_datetime  [ RunTime:0.0020s ]
+
+[ 2016-05-06T17:27:43+08:00 ] 127.0.0.1 /chin/index.php/Home/Message/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0041s ]
+SQL: SELECT message_datetime , message_sender_id, message_reciever_id, message_content, message_id
+                        FROM chist_message
+                        WHERE message_datetime IN (
+                          SELECT max(message_datetime) as max_message_datetime
+                          FROM chist_message
+                          WHERE message_sender_id = 17 OR message_reciever_id = 17
+                          GROUP BY message_sender_id, message_reciever_id
+                        )
+                        ORDER BY message_datetime DESC ; [ RunTime:0.0027s ]
+SQL: SELECT * FROM `chist_user` WHERE `user_id` = 1  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007827s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007911s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000630s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000702s ]
+
+[ 2016-05-06T17:27:47+08:00 ] 127.0.0.1 /chin/index.php/Home/Message/chat.html?user_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `chist_user` WHERE `user_id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `chist_post` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_post` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `chist_follow` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `follower_id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `followed_user_id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `followed_user_id` = 1 AND `follower_id` = 17 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000283s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007532s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007596s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000303s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000331s ]
+
+[ 2016-05-06T17:27:47+08:00 ] 127.0.0.1 /chin/index.php/Home/Message/more_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001093s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `chist_user` WHERE `user_id` = 1  [ RunTime:0.0007s ]
+SQL: SELECT message_id, message_sender_id, message_reciever_id, message_content, message_datetime
+                        FROM chist_message
+                        WHERE (message_sender_id = 17 AND message_reciever_id = 1) OR (message_sender_id = 1 AND message_reciever_id = 17)
+                        ORDER BY message_datetime DESC
+                        ; [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008890s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000507s ]
+
+[ 2016-05-06T17:27:52+08:00 ] 127.0.0.1 /chin/index.php/Home/Message/continue_load_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `chist_message` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `chist_message` WHERE `message_sender_id` = 1 AND `message_datetime` > '2016-05-06 17:27:34' AND `message_reciever_id` = 17 ORDER BY message_datetime  [ RunTime:0.0005s ]
+
+[ 2016-05-06T17:27:54+08:00 ] 127.0.0.1 /chin/index.php/Home/Message/add_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `chist_message` [ RunTime:0.0039s ]
+SQL: INSERT INTO `chist_message` (`message_content`,`message_reciever_id`,`message_datetime`,`message_sender_id`) VALUES ('are you there?','1','2016-05-06 17:27:54','17') [ RunTime:0.0017s ]
+SQL: SELECT * FROM `chist_user` WHERE `user_id` = 1  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007442s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007517s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000204s ]
+
+[ 2016-05-06T17:27:57+08:00 ] 127.0.0.1 /chin/index.php/Home/Message/continue_load_message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `chist_message` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `chist_message` WHERE `message_sender_id` = 1 AND `message_datetime` > '2016-05-06 17:27:34' AND `message_reciever_id` = 17 ORDER BY message_datetime  [ RunTime:0.0008s ]
+
+[ 2016-05-06T17:28:07+08:00 ] 127.0.0.1 /chin/index.php/Home/Camera/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001016s ]
+SQL: SHOW COLUMNS FROM `chist_post` [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012644s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012755s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000723s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000933s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001062s ]
+
+[ 2016-05-06T17:28:32+08:00 ] 127.0.0.1 /chin/index.php/Home/Camera/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000920s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001114s ]
+SQL: SHOW COLUMNS FROM `chist_post` [ RunTime:0.0030s ]
+
+[ 2016-05-06T17:28:34+08:00 ] 127.0.0.1 /chin/index.php/Home/Camera/post_success.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001398s ]
+SQL: SHOW COLUMNS FROM `chist_post` [ RunTime:0.0030s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /Applications/XAMPP/xamppfiles/htdocs/chin/Engine/Library/Think/Upload.class.php 第 170 行.
+SQL: INSERT INTO `chist_post` (`post_content`,`post_url`,`post_filter`,`post_gps`,`user_id`,`post_datetime`) VALUES ('cute isn\'t it?','572c63c0c30b1.JPG','0','','17','2016-05-06 17:28:34') [ RunTime:0.0020s ]
+
+[ 2016-05-06T17:28:34+08:00 ] 127.0.0.1 /chin/index.php/Home/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `chist_post` [ RunTime:0.0033s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_post` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `chist_follow` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `follower_id` = 17 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `followed_user_id` = 17 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(post_id) as count_post_id
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 17; [ RunTime:0.0003s ]
+SQL: SELECT count(*) as count_like
+                        FROM chist_like LEFT JOIN chist_post ON chist_post.post_id = chist_like.post_id LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_like.user_id = 17; [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000300s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000514s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013669s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013730s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000887s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001004s ]
+
+[ 2016-05-06T17:28:35+08:00 ] 127.0.0.1 /chin/index.php/Home/User/more_user_posts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0036s ]
+SQL: SELECT post_id,post_content,post_datetime,post_url,chist_post.user_id,user_nickname,user_image_url
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 17
+                        ORDER BY post_datetime DESC
+                        LIMIT 0, 3; [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `chist_like` [ RunTime:0.0038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 41 AND `user_id` = 17 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `chist_comment` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 41 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 41 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012672s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012733s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001085s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001224s ]
+
+[ 2016-05-06T17:28:51+08:00 ] 127.0.0.1 /chin/index.php/Home/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000352s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `chist_post` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_post` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `chist_follow` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `follower_id` = 17 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_follow` WHERE `followed_user_id` = 17 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(post_id) as count_post_id
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 17; [ RunTime:0.0004s ]
+SQL: SELECT count(*) as count_like
+                        FROM chist_like LEFT JOIN chist_post ON chist_post.post_id = chist_like.post_id LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_like.user_id = 17; [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010171s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010260s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000746s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000869s ]
+
+[ 2016-05-06T17:28:51+08:00 ] 127.0.0.1 /chin/index.php/Home/User/more_user_posts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000772s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001715s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0046s ]
+SQL: SELECT post_id,post_content,post_datetime,post_url,chist_post.user_id,user_nickname,user_image_url
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 17
+                        ORDER BY post_datetime DESC
+                        LIMIT 0, 3; [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `chist_like` [ RunTime:0.0037s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 41 AND `user_id` = 17 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `chist_comment` [ RunTime:0.0037s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 41 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 41 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028464s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028707s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001148s ]
+
+[ 2016-05-06T17:28:53+08:00 ] 127.0.0.1 /chin/index.php/Home/User/more_album
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0052s ]
+SQL: SELECT post_id,post_content,post_datetime,post_url,chist_post.user_id,user_nickname,user_image_url
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 17
+                        ORDER BY post_datetime DESC
+                        LIMIT 0, 3; [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `chist_like` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 41 AND `user_id` = 17 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `chist_comment` [ RunTime:0.0035s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 41 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 41 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `chist_post` [ RunTime:0.0037s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_post` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009765s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009877s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000854s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000956s ]
+
+[ 2016-05-06T17:28:54+08:00 ] 127.0.0.1 /chin/index.php/Home/User/more_like_posts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+SQL: SHOW COLUMNS FROM `chist_user` [ RunTime:0.0039s ]
+SQL: SELECT chist_post.post_id,post_content,post_datetime,post_url,chist_post.user_id,user_nickname,user_image_url
+                        FROM chist_like LEFT JOIN chist_post ON chist_post.post_id = chist_like.post_id LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_like.user_id = 17
+                        ORDER BY post_datetime DESC
+                        LIMIT 0, 3; [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `chist_like` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 36 AND `user_id` = 17 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `chist_comment` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 36 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 36 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 21 AND `user_id` = 17 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 21 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 21 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011877s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000768s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000852s ]
+
+[ 2016-05-06T17:28:59+08:00 ] 127.0.0.1 /chin/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000727s ]
+SQL: SELECT COUNT(post_id) as count_post_id
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 17 OR chist_post.user_id IN (
+                          SELECT followed_user_id FROM chist_follow WHERE follower_id = 17
+                        )
+                        ORDER BY post_datetime DESC; [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005724s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005785s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000539s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000618s ]
+
+[ 2016-05-06T17:29:00+08:00 ] 127.0.0.1 /chin/index.php/Home/Index/more_index_posts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000983s ]
+SQL: SELECT post_id,post_content,post_datetime,post_url,chist_post.user_id,user_nickname,user_image_url
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 17 OR chist_post.user_id IN (
+                          SELECT followed_user_id FROM chist_follow WHERE follower_id = 17
+                        )
+                        ORDER BY post_datetime DESC
+                        LIMIT 0, 3; [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `chist_like` [ RunTime:0.0034s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 41 AND `user_id` = 17 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `chist_comment` [ RunTime:0.0031s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 41 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 41 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 36 AND `user_id` = 17 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 36 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 36 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 34 AND `user_id` = 17 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 34 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 34 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012347s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012427s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000945s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001091s ]
+
+[ 2016-05-06T17:29:03+08:00 ] 127.0.0.1 /chin/index.php/Home/Index/more_index_posts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000771s ]
+SQL: SELECT post_id,post_content,post_datetime,post_url,chist_post.user_id,user_nickname,user_image_url
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 17 OR chist_post.user_id IN (
+                          SELECT followed_user_id FROM chist_follow WHERE follower_id = 17
+                        )
+                        ORDER BY post_datetime DESC
+                        LIMIT 3, 3; [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `chist_like` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 33 AND `user_id` = 17 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `chist_comment` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 33 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 33 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 20 AND `user_id` = 17 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 20 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 20 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 24 AND `user_id` = 17 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 24 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 24 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010969s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011052s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000987s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001164s ]
+
+[ 2016-05-06T17:29:05+08:00 ] 127.0.0.1 /chin/index.php/Home/Index/more_index_posts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+SQL: SELECT post_id,post_content,post_datetime,post_url,chist_post.user_id,user_nickname,user_image_url
+                        FROM chist_post LEFT JOIN chist_user ON chist_post.user_id = chist_user.user_id
+                        WHERE chist_post.user_id = 17 OR chist_post.user_id IN (
+                          SELECT followed_user_id FROM chist_follow WHERE follower_id = 17
+                        )
+                        ORDER BY post_datetime DESC
+                        LIMIT 6, 3; [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `chist_like` [ RunTime:0.0033s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 22 AND `user_id` = 17 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `chist_comment` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 22 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 22 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 28 AND `user_id` = 17 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_comment` WHERE `comment_post_id` = 28 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chist_like` WHERE `post_id` = 28 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+NOTIC: [8] Undefined index: like_active /Applications/XAMPP/xamppfiles/htdocs/chin/Runtime/Cache/Home/390b2224356116c11bfade03d861d945.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007457s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007496s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000126s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000273s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000295s ]
+

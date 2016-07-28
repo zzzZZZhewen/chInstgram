@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1,maximum-scale=1"/>
 
-    <link rel="stylesheet" type="text/css" href="/chinstgram/Public/css/bootstrap-fileupload.min.css" />
-    <link rel="stylesheet" type="text/css" href="/chinstgram/Public/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="/chinstgram/Public/css/style-resposive.css" />
+    <link rel="stylesheet" type="text/css" href="/chin/Public/css/bootstrap-fileupload.min.css" />
+    <link rel="stylesheet" type="text/css" href="/chin/Public/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/chin/Public/css/style-resposive.css" />
 
 
-    <link rel="stylesheet" type="text/css" href="/chinstgram/Public/css/iCheck/skins/square/green.css" />
-    <link rel="stylesheet" type="text/css" href="/chinstgram/Public/css/iCheck/skins/square/square.css" />
-    <link rel="stylesheet" type="text/css" href="/chinstgram/Public/css/iCheck/skins/square/red.css" />
-    <link rel="stylesheet" type="text/css" href="/chinstgram/Public/css/iCheck/skins/square/blue.css" />
+    <link rel="stylesheet" type="text/css" href="/chin/Public/css/iCheck/skins/square/green.css" />
+    <link rel="stylesheet" type="text/css" href="/chin/Public/css/iCheck/skins/square/square.css" />
+    <link rel="stylesheet" type="text/css" href="/chin/Public/css/iCheck/skins/square/red.css" />
+    <link rel="stylesheet" type="text/css" href="/chin/Public/css/iCheck/skins/square/blue.css" />
 
-    <title>chInstgram - 注册</title>
+    <title>Chinstagram - Register</title>
 </head>
 
 <body class="login">
@@ -24,35 +24,40 @@
 
     <form id="register_form" class="form-signin" method="post" enctype="multipart/form-data"  action="<?php echo U('register_success');?>">
         <div class="form-signin-heading text-center">
-            <h1 class="sign-title">注册</h1>
+            <h1 class="sign-title">Sing up</h1>
             <!--<img src="images/login-logo.png" alt=""/>-->
+            <div style="padding-top: 10px" class="logo">
+                <a style="margin:0px;" href="index.html"><img style="width: 200px;" src="/chin/Public/pic/index_logo.png" alt=""></a>
+            </div>
             <i style="font-size: 8em;color: #6BC5A4;" class="fa fa-users"></i>
         </div>
         <div class="login-wrap">
-            <p>必须填写的信息</p>
-            <input name="user_email" id="user_email" type="text" autofocus="" placeholder="用户名（邮箱）"
+            <p>Required</p>
+            <input name="user_email" id="user_email" type="text" autofocus="" placeholder="User ID（email）"
                    class="form-control">
-            <input name="user_password" id="user_password" type="password" placeholder="密码" class="form-control">
-            <input name="user_password_again" id="user_password_again" type="password" placeholder="验证密码"
+            <input name="user_password" id="user_password" type="password" placeholder="Password" class="form-control">
+            <input name="user_password_again" id="user_password_again" type="password" placeholder="Password Confirmation"
                    class="form-control">
-            <input name="user_nickname" id="user_nickname" type="text" placeholder="昵称" class="form-control">
+            <input name="user_nickname" id="user_nickname" type="text" placeholder="Nickname" class="form-control">
 
-            <p>输入您的个性信息（可稍后再填）</p>
+            <p>Optional</p>
 
-            <input name="user_realname" id="user_realname" type="text" placeholder="真实姓名" class="form-control">
-            <input name="user_tel" id="user_tel" type="number" placeholder="手机" class="form-control">
-            <input name="user_info" id="user_info" type="text" placeholder="个人描述" class="form-control">
+            <input name="user_realname" id="user_realname" type="text" placeholder="Realname" class="form-control">
+            <input name="user_tel" id="user_tel" type="number" placeholder="Cellphone" class="form-control">
+            <input name="user_info" id="user_info" type="text" placeholder="brief introduction to yourself" class="form-control">
+            gender
             <div class="icheck row" style="margin-bottom:5px;">
-                <div class="square-green  col-lg-4 col-xs-4" style="margin: 0;">
-                    <label for="radio-00" class="label_radio"> 保密 </label>
+
+                <div class="square-green  col-lg-4 col-xs-4" style="margin: 0; padding-right:0;">
+                    <label for="radio-00" class="label_radio"> secret </label>
                     <input type="radio" checked="" value="保密" id="radio-00" name="user_sex">
                 </div>
-                <div class="square-blue  col-lg-4 col-xs-4" style="margin: 0;">
-                    <label for="radio-01" class="label_radio ">男</label>
+                <div class="square-blue  col-lg-4 col-xs-4" style="margin: 0;padding:0;">
+                    <label for="radio-01" class="label_radio ">male</label>
                     <input type="radio" value="男" id="radio-01" name="user_sex">
                 </div>
-                <div class="square-red  col-lg-4 col-xs-4" style="margin: 0;">
-                    <label for="radio-02" class="label_radio ">女</label>
+                <div class="square-red  col-lg-4 col-xs-4" style="margin: 0;padding-left:0;">
+                    <label for="radio-02" class="label_radio ">female</label>
                     <input type="radio" value="女" id="radio-02" name="user_sex">
                 </div>
 
@@ -60,23 +65,23 @@
             <div class="form-group last">
                 <div class="fileupload fileupload-new" data-provides="fileupload">
                     <div class="fileupload-new thumbnail" style="width: 100%; height: 150px;">
-                        <img src="/chinstgram/Uploads/avatar/avatar_default.jpg" alt=""/>
+                        <img src="/chin/Uploads/avatar/avatar_default.jpg" alt=""/>
                     </div>
                     <div class="fileupload-preview fileupload-exists thumbnail"
                          style="max-width: 100%; max-height: 150px; line-height: 20px;">
                     </div>
                     <div>
                         <span class="btn btn-default btn-file" style="margin-left: 0;">
-                            <span class="fileupload-new"><i class="fa fa-upload"></i> 上传头像</span>
-                            <span class="fileupload-exists"><i class="fa fa-undo"></i> 换一张</span>
+                            <span class="fileupload-new"><i class="fa fa-upload"></i> Upload avatar </span>
+                            <span class="fileupload-exists"><i class="fa fa-undo"></i> Second thought</span>
                             <input name="user_image_url" id="user_image_url" type="file" class="default"/>
                         </span>
                         <span href="javascript:void(0);" class="btn btn-danger fileupload-exists"
-                           data-dismiss="fileupload"><i class="fa fa-trash"></i> 删除</span>
+                           data-dismiss="fileupload"><i class="fa fa-trash"></i> regret</span>
                     </div>
                     <br/>
                     <span class="label label-danger ">NOTE</span>
-                    <span>头像图片请不要超过3MB</span>
+                    <span>Do not exceed the limit of 3mb</span>
                 </div>
 
             </div>
@@ -89,9 +94,9 @@
             </button>
 
             <div class="registration">
-                已经注册？
+                Already registered？
                 <a href="<?php echo U('Home/User/login');?>" class="">
-                    用已知账户登录
+                    Login
                 </a>
             </div>
 
@@ -106,14 +111,14 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">输入有误</h4>
+                        <h4 style="text-align: center;" class="modal-title">Oops! :(</h4>
                     </div>
                     <div class="modal-body">
-                        <p id="error_text"></p>
+                        <p style="text-align: center;" id="error_text"></p>
 
                     </div>
                     <div class="modal-footer">
-                        <button data-dismiss="modal" class="btn btn-block btn-primary" type="button">知道了</button>
+                        <button data-dismiss="modal" class="btn btn-block btn-primary" type="button">OK</button>
                     </div>
                 </div>
             </div>
@@ -125,18 +130,18 @@
 </div>
 
 
-<script type="text/javascript" src="/chinstgram/Public/js/jquery.min.js"></script>
-<script type="text/javascript" src="/chinstgram/Public/js/jquery-ui.min.js"></script>
-<script type="text/javascript" src="/chinstgram/Public/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="/chinstgram/Public/js/jquery.nicescroll.js"></script>
-<script type="text/javascript" src="/chinstgram/Public/js/bootstrap-fileupload.min.js"></script>
-<script type="text/javascript" src="/chinstgram/Public/js/index.js"></script>
-<script type="text/javascript" src="/chinstgram/Public/js/jquery.icheck.js"></script>
-<script type="text/javascript" src="/chinstgram/Public/js/icheck-init.js"></script>
+<script type="text/javascript" src="/chin/Public/js/jquery.min.js"></script>
+<script type="text/javascript" src="/chin/Public/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/chin/Public/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/chin/Public/js/jquery.nicescroll.js"></script>
+<script type="text/javascript" src="/chin/Public/js/bootstrap-fileupload.min.js"></script>
+<script type="text/javascript" src="/chin/Public/js/index.js"></script>
+<script type="text/javascript" src="/chin/Public/js/jquery.icheck.js"></script>
+<script type="text/javascript" src="/chin/Public/js/icheck-init.js"></script>
 
 
 
-<script type="text/javascript" src="/chinstgram/Public/js/user_register.js"></script>
+<script type="text/javascript" src="/chin/Public/js/user_register.js"></script>
 
 <script>
 

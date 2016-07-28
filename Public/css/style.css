@@ -1544,8 +1544,8 @@ ul.pros-chart li:last-child {
 }
 
 .custom-trq-footer {
-    background: none repeat scroll 0 0 #4eb6b7;
-    box-shadow: 0 5px 0 #46a3a4;
+    background: none repeat scroll 0 0 #65CEA7;
+    box-shadow: 0 5px 0 #66B397;
     color: #fff;
     border-top: none;
 }
@@ -5619,4 +5619,15 @@ body {
     color: #ffffff;
     background: #65CEA7;
     border-color: #ffffff;
+}
+
+.load-comment-btn {
+    margin-bottom: -12px!important;
+    text-align: center;
+    margin: 0;
+    display: block;
+}
+
+.directory-info-row .media, address {
+    margin: 0;
 }

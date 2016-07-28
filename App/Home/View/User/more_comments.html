@@ -1,0 +1,9 @@
+
+<volist name="CommentList" id="Comment">
+    <a href="{:U('Home/User/other')}?user_id={$Comment.comment_user_id}">{$Comment.user_nickname}</a>
+    {$Comment.comment_content}<br/>
+
+</volist>
+<gt name="count_left" value="0">
+    <a class="load-comment-btn" id="load-comment-btn-{$post_id}-{$page}" onclick="onloadcomment({$post_id},{$page})" href="javascript:void(0);"> <i class="fa fa-chevron-down"></i> </a>
+</gt>
