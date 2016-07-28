@@ -7,7 +7,7 @@
     <load href="__PUBLIC__/css/style.css"/>
     <load href="__PUBLIC__/css/style-responsive.css"/>
 
-    <title>chInstgram - 登录</title>
+    <title>Chinstagram - Login</title>
 </head>
 
 <body class="login">
@@ -15,16 +15,23 @@
 <div class="container">
 
     <form id="login_form" class="form-signin" action="{:U('Home/User/login_success')}" method="post">
+
         <div class="form-signin-heading text-center">
-            <h1 class="sign-title">登录</h1>
+
+            <h1 class="sign-title">Sign In</h1>
             <!--<img src="images/login-logo.png" alt=""/>-->
+            <div style="padding-top: 10px" class="logo">
+                <a style="margin:0px;" href="index.html"><img style="width: 200px;" src="__PUBLIC__/pic/index_logo.png" alt=""></a>
+            </div>
             <i style="font-size: 8em;color: #6BC5A4;" class="fa fa-user"></i>
+
         </div>
         <div class="login-wrap">
+
             <div class="form-group">
                 <div class="iconic-input">
                     <i class="fa fa-envelope" style=""></i>
-                    <input name="user_email" id="user_email" type="text" class="form-control" placeholder="用户帐号（邮箱）"
+                    <input name="user_email" id="user_email" type="text" class="form-control" placeholder="User ID（email）"
                            autofocus>
                 </div>
             </div>
@@ -33,7 +40,7 @@
                     <i class="fa fa-key" style=""></i>
 
                     <input name="user_password" id="user_password" type="password" class="form-control"
-                           placeholder="密码">
+                           placeholder="Password">
                 </div>
             </div>
 
@@ -44,45 +51,12 @@
 
 
             <div class="registration">
-                还不是会员?
+                Not a member yet? 
                 <a class="" href="{:U('Home/User/register')}">
-                    注册
+                    Signup
                 </a>
             </div>
-
-            <!--
-                        <label class="checkbox">
-                            <input type="checkbox" value="remember-me"> 记住我
-                            <span class="pull-right">
-                                <a data-toggle="modal" href="#myModal"> 忘记密码?</a>
-                            </span>
-                        </label>
-            -->
         </div>
-
-        <!-- Modal
-        <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal"
-             class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Forgot Password ?</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>Enter your e-mail address below to reset your password.</p>
-                        <input type="text" name="email" placeholder="Email" autocomplete="off"
-                               class="form-control placeholder-no-fix">
-
-                    </div>
-                    <div class="modal-footer">
-                        <button data-dismiss="modal" class="btn btn-default" type="button">Cancel</button>
-                        <button class="btn btn-primary" type="button">Submit</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- modal -->
 
     </form>
 
@@ -95,14 +69,14 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title">出错了:(</h4>
+                    <h4 style="text-align: center;" class="modal-title">Oops! :(</h4>
                 </div>
                 <div class="modal-body">
-                    <p>帐号或者密码错误</p>
+                    <p style="text-align: center;">Told you not to give others your password</p>
 
                 </div>
                 <div class="modal-footer">
-                    <button data-dismiss="modal" class="btn btn-primary btn-block" type="button">知道了</button>
+                    <button data-dismiss="modal" class="btn btn-primary btn-block" type="button">OK</button>
                 </div>
             </div>
         </div>

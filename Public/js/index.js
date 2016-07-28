@@ -196,3 +196,113 @@ jQuery(document).ready(function ($) {
     });
     $('.wrapper').css('min-height', window_height - 101 + 'px');
 });
+
+function onloadcomment($postid, $page) {
+    if(!$page) $page = 0;
+    $.post('more_comments',
+        {
+            post_id: $postid,
+            page: $page
+
+        },
+        function (data) {
+            $("#load-comment-btn-" + $postid + "-" + $page).hide();
+            $("#post-comment-" + $postid).fadeIn();
+            $(data).appendTo("#post-comment-" + $postid).hide().fadeIn(1000);;
+            //$('.btn-more').removeClass('hidden');
+            //$('footer').removeClass('hidden');
+
+        });
+}
+
+function onlike($postid) {
+
+    if(!$("#like-btn-" + $postid).hasClass("active")) {
+
+        $.post('like_post',
+            {
+                post_id: $postid
+            },
+            function (data) {
+                if (!data['res']) {
+                    $('#error_text').text("You have already liked this post.");
+
+                } else {
+                    $('#like-btn-' + $postid).addClass('active');
+                    $('#error_text').text("You just liked a post.");
+                    $('#like-btn-' + $postid + ' span').text(" "+(parseInt($('#like-btn-' + $postid + ' span').text()) + 1));
+                }
+
+                $('#hint').trigger('click');
+            });
+
+    } else {
+        $('#error_text').text("We designed this website to encourage positive emotions, so we will not provide UNLIKING function in the near future");
+        $('#hint').trigger('click');
+    }
+}
+
+function onaddcomment($postid) {
+    $.post('add_comment',
+        {
+            post_id: $postid,
+            comment_content:$('#comment-input-' + $postid).val()
+
+        },
+        function (data) {
+            if (!data['res']) {
+                $('#error_text').text(data['error']);
+                $('#hint').trigger('click');
+
+            } else {
+                $('#comment-input-' + $postid).val("");
+                $("#post-comment-" + $postid).empty().hide();
+
+                $("#load-comment-btn-" + $postid + "-0").trigger("click");
+
+                $('#error_text').text(data['error']);
+                $('#comment-btn-' + $postid + ' span').text(" "+(parseInt($('#comment-btn-' + $postid + ' span').text()) + 1));
+                $('#hint').trigger('click');
+            }
+        });
+}
+
+function onunfollow(user_id){
+    $.post('unfollow',
+        {
+            user_id: user_id,
+        },
+        function (data) {
+            if (!data['res']) {
+                $('#error_text').text(data['error']);
+                $('#hint').trigger('click');
+
+            } else {
+                $('#follow_btn').show();
+                $('#unfollow_btn').hide();
+                $('#follower_count').text(" "+(parseInt($('#follower_count').text()) + 1));
+                $('#error_text').text(data['error']);
+                $('#hint').trigger('click');
+            }
+        });
+}
+
+function onfollow(user_id){
+    $.post('follow',
+        {
+            user_id: user_id,
+        },
+        function (data) {
+            if (!data['res']) {
+                $('#error_text').text(data['error']);
+                $('#hint').trigger('click');
+
+            } else {
+                $('#follow_btn').hide();
+                $('#unfollow_btn').show();
+                $('#follower_count').text(" "+(parseInt($('#follower_count').text()) - 1));
+                $('#error_text').text(data['error']);
+                $('#hint').trigger('click');
+            }
+        });
+}

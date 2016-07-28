@@ -1,20 +1,37 @@
 /* MEDIA QUERIES */
 @media screen and (max-width: 1400px) {
+    .modal-show-img {
+        width: 1080px;
+    }
     .media-gal .item img {
         height: 220px;
     }
 }
 @media screen and (max-width: 1250px) {
+    .modal-show-img {
+        width: 1000px;
+    }
     .media-gal .item img {
         height: 180px;
     }
 }
 @media screen and (max-width: 1000px) {
+    .modal-show-img {
+        width: 800px;
+    }
 
     .media-gal .item img {
         height: 180px;
     }
 }
+
+
+@media screen and (max-width: 800px) {
+    .modal-show-img {
+        width: auto;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .header-section .back-btn {
         width: 52px;

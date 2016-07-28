@@ -54,7 +54,7 @@ class CameraController extends CoreController {
 
             } else {
                 if (empty($_FILES['post_url']['tmp_name'])) {
-                    session('error', '没有上传文件');
+                    session('error', 'no image uploaded');
                     redirect('post_failed');
                 } else {
                     $config = array(
@@ -70,6 +70,10 @@ class CameraController extends CoreController {
                     if (!$info) {
                         // 上传错误提示错误信息
                         session('error', $upload->getError());
+                        if ($upload->getError() == "上传文件后缀不允许"){
+                            session('error', "not a supported image format");
+                        }
+
                         redirect(U('post_failed'));
                     }
 
@@ -80,8 +84,18 @@ class CameraController extends CoreController {
                     $image = new \Think\Image();
                     $image->open('./Uploads/' . $info['post_url']['savepath'] . '/' . $info['post_url']['savename']);
                     $image->thumb($image->width(), $image->height())->save('./Uploads/' . $info['post_url']['savepath'] . '/' . 'compressed_' . $info['post_url']['savename']);
-                    $image->thumb(1080, 1080)->save('./Uploads/' . $info['post_url']['savepath'] . '/' . 'thumb1080_' . $info['post_url']['savename']);
-                    $image->thumb(500, 500)->save('./Uploads/' . $info['post_url']['savepath'] . '/' . 'thumb500_' . $info['post_url']['savename']);
+
+
+                    $width = 500;
+                    $width2 = 1080;
+
+
+                    $height =  500 * $image->height() / $image->width();
+                    $height2 = 1080 * $image->height() / $image->width();
+
+                    $image->thumb($width, $height)->save('./Uploads/' . $info['post_url']['savepath'] . '/' . 'thumb500_' . $info['post_url']['savename']);
+                    $image->thumb($width2, $height2)->save('./Uploads/' . $info['post_url']['savepath'] . '/' . 'thumb1080_' . $info['post_url']['savename']);
+
 
                     $data['post_url'] = $info['post_url']['savename'];
 
@@ -96,7 +110,7 @@ class CameraController extends CoreController {
                 $data['post_datetime'] = get_datetime();
 
                 $this->Model->add($data);
-                $this->display();
+                redirect(U('User/index'));
             }
 
         } else {

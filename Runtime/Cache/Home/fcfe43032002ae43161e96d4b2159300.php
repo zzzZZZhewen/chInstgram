@@ -4,41 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1,maximum-scale=1"/>
-    <link rel="stylesheet" type="text/css" href="/chinstgram/Public/css/bootstrap-fileupload.min.css" />
+    <link rel="stylesheet" type="text/css" href="/chin/Public/css/bootstrap-fileupload.min.css" />
 
-    <link rel="stylesheet" type="text/css" href="/chinstgram/Public/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="/chinstgram/Public/css/style-responsive.css" />
+    <link rel="stylesheet" type="text/css" href="/chin/Public/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/chin/Public/css/style-responsive.css" />
 
-    <link rel="stylesheet" type="text/css" href="/chinstgram/Public/css/iCheck/skins/square/green.css" />
+    <link rel="stylesheet" type="text/css" href="/chin/Public/css/iCheck/skins/square/green.css" />
 
-    <link rel="stylesheet" type="text/css" href="/chinstgram/Public/css/iCheck/skins/square/square.css" />
+    <link rel="stylesheet" type="text/css" href="/chin/Public/css/iCheck/skins/square/square.css" />
 
-    <link rel="stylesheet" type="text/css" href="/chinstgram/Public/css/iCheck/skins/square/red.css" />
+    <link rel="stylesheet" type="text/css" href="/chin/Public/css/iCheck/skins/square/red.css" />
 
-    <link rel="stylesheet" type="text/css" href="/chinstgram/Public/css/iCheck/skins/square/blue.css" />
-    <title>chInstgram - 相机</title>
+    <link rel="stylesheet" type="text/css" href="/chin/Public/css/iCheck/skins/square/blue.css" />
+    <title>Chinstagram - Camera</title>
 </head>
 
 <body>
 <section>
     <!--两个导航栏-->
     <nav class="left-side sticky-left-side">
+        <div style="padding-top: 10px" class="logo">
+            <a href="<?php echo U('Home/Index/index');?>"><img style="width: 200px;" src="/chin/Public/pic/index_logo.png" alt=""></a>
+        </div>
         <div class="left-side-inner">
             <ul class="nav nav-pills nav-stacked custom-nav">
                 <li>
-                    <a href="<?php echo U('Home/Index/index');?>"><i class="fa fa-home"></i> <span> 首页</span></a>
+                    <a href="<?php echo U('Home/Index/index');?>"><i class="fa fa-home"></i> <span> Home</span></a>
                 </li>
                 <li>
-                    <a href="<?php echo U('Home/Search/index');?>"><i class="fa fa-search"></i> <span> 搜索</span></a>
+                    <a href="<?php echo U('Home/Search/index');?>"><i class="fa fa-search"></i> <span> Find</span></a>
                 </li>
                 <li class="active">
-                    <a href="<?php echo U('Home/Camera/index');?>"><i class="fa fa-camera"></i> <span> 相机</span></a>
+                    <a href="<?php echo U('Home/Camera/index');?>"><i class="fa fa-camera"></i> <span> Camera</span></a>
                 </li>
                 <li>
-                    <a href="<?php echo U('Home/Message/index');?>"><i class="fa fa-envelope"></i> <span> 消息</span></a>
+                    <a href="<?php echo U('Home/Message/index');?>"><i class="fa fa-envelope"></i> <span> Message</span></a>
                 </li>
                 <li>
-                    <a href="<?php echo U('Home/User/index');?>"><i class="fa fa-user"></i> <span> 用户</span></a>
+                    <a href="<?php echo U('Home/User/index');?>"><i class="fa fa-user"></i> <span> User</span></a>
                 </li>
             </ul>
         </div>
@@ -82,20 +85,20 @@
             <a href="javascript:void(0);" class="toggle-btn hidden-xs">
                 <i class="fa fa-bars"></i>
             </a>
-            <span>相机</span>
+            <span>Camera</span>
 
             <div class="menu-right hidden-xs">
                 <ul class="notification-menu">
                     <li>
                         <a href="javascript:void(0);" class="btn btn-default dropdown-toggle"
                            data-toggle="dropdown">
-                            <img src="/chinstgram/Uploads/avatar/<?php echo ($User["user_image_url"]); ?>" alt=""/>
+                            <img src="/chin/Uploads/avatar/<?php echo ($User["user_image_url"]); ?>" alt=""/>
                             <?php echo ($User["user_nickname"]); ?>
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
-                            <li><a href="<?php echo U('Home/User/index');?>"><i class="fa fa-cog"></i> 档案</a></li>
-                            <li><a id="logout_btn" href="<?php echo U('Home/User/logout');?>"><i class="fa fa-sign-out"></i> 登出</a>
+                            <li><a href="<?php echo U('Home/User/index');?>"><i class="fa fa-cog"></i> profile</a></li>
+                            <li><a id="logout_btn" href="<?php echo U('Home/User/logout');?>"><i class="fa fa-sign-out"></i> Signout</a>
                             </li>
                         </ul>
                     </li>
@@ -114,15 +117,15 @@
                             <div class="form-group last">
                                 <div class="fileupload fileupload-new" data-provides="fileupload">
                                     <div class="fileupload-new thumbnail" style="width: 100%; height: 300px;">
-                                        <img src="/chinstgram/Uploads/avatar/<?php echo ($User["user_image_url"]); ?>" alt=""/>
+                                        <img src="/chin/Uploads/upload.png" alt=""/>
                                     </div>
                                     <div class="fileupload-preview fileupload-exists thumbnail"
                                          style="width: 100%; max-height: 300px; line-height: 20px;">
                                     </div>
                                     <div>
                                     <span class="btn btn-warning btn-file btn-block" style="margin-left: 0;">
-                                        <span class="fileupload-new"><i class="fa fa-upload"></i> 上传图片</span>
-                                        <span class="fileupload-exists"><i class="fa fa-undo"></i> 换一张</span>
+                                        <span class="fileupload-new"><i class="fa fa-upload"></i> upload picture</span>
+                                        <span class="fileupload-exists"><i class="fa fa-undo"></i> second thought</span>
                                         <input name="post_url" id="post_url" type="file" class="default"/>
                                     </span>
                                     </div>
@@ -130,14 +133,13 @@
 
                             </div>
 
-                            <p>图片描述</p>
 
                             <div class="form-group">
                                 <div class="iconic-input">
                                     <i class="fa fa-info-circle" style="line-height: 90px"></i>
 
                                     <input name="post_content" id="post_content" type="text" class="form-control"
-                                           placeholder="添加有趣的图片描述吧（请勿超过140个字符）"
+                                           placeholder="Add some fun words!（no exceeding 140 characters）"
                                            style="line-height: 70px; ">
                                 </div>
                             </div>
@@ -159,7 +161,7 @@
                                     <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal"
                                                 aria-hidden="true">&times;</button>
-                                        <h4 class="modal-title">输入有误</h4>
+                                        <h4 class="modal-title">Wrong Input</h4>
                                     </div>
                                     <div class="modal-body">
                                         <p id="error_text"></p>
@@ -167,7 +169,7 @@
                                     </div>
                                     <div class="modal-footer">
                                         <button data-dismiss="modal" class="btn btn-default btn-block" type="button">
-                                            知道了
+                                            OK
                                         </button>
                                     </div>
                                 </div>
@@ -211,19 +213,19 @@
             </div>
         </div>
         <footer class="">
-            2015 &copy; chInstgram
+            2016 &copy; Chinstagram
         </footer>
     </div>
 </section>
-<script type="text/javascript" src="/chinstgram/Public/js/jquery.min.js"></script>
-<script type="text/javascript" src="/chinstgram/Public/js/jquery-ui.min.js"></script>
-<script type="text/javascript" src="/chinstgram/Public/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="/chinstgram/Public/js/jquery.nicescroll.js"></script>
-<script type="text/javascript" src="/chinstgram/Public/js/bootstrap-fileupload.min.js"></script>
-<script type="text/javascript" src="/chinstgram/Public/js/index.js"></script>
-<script type="text/javascript" src="/chinstgram/Public/js/jquery.icheck.js"></script>
-<script type="text/javascript" src="/chinstgram/Public/js/icheck-init.js"></script>
-<script type="text/javascript" src="/chinstgram/Public/js/camera_index.js"></script>
+<script type="text/javascript" src="/chin/Public/js/jquery.min.js"></script>
+<script type="text/javascript" src="/chin/Public/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/chin/Public/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/chin/Public/js/jquery.nicescroll.js"></script>
+<script type="text/javascript" src="/chin/Public/js/bootstrap-fileupload.min.js"></script>
+<script type="text/javascript" src="/chin/Public/js/index.js"></script>
+<script type="text/javascript" src="/chin/Public/js/jquery.icheck.js"></script>
+<script type="text/javascript" src="/chin/Public/js/icheck-init.js"></script>
+<script type="text/javascript" src="/chin/Public/js/camera_index.js"></script>
 
 
 </body>

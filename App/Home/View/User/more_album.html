@@ -1,0 +1,19 @@
+
+
+
+<volist name="PostList" id="Post">
+
+    <div class="item">
+        <a href="#myModal" data-toggle="modal" onclick="loadbigpic('__ROOT__/Uploads/posts/thumb1080_{$Post.post_url}')">
+            <img style="background-image: url('__ROOT__/Uploads/posts/thumb500_{$Post.post_url}'); background-size: cover; background-position: center;"  alt=""/>
+        </a>
+    </div>
+
+</volist>
+<gt name="count_left" value="0">
+    <div style="clear: both;"></div>
+    <a style=" margin-top: 20px; margin-bottom: 20px;" id="more-album-btn-{$user_id}-{$page}" class="btn-more btn btn-primary" onclick="loadalbum({$user_id},{$page})">more</a>
+</gt>
+<lt name="count_left" value="1">
+    <div style="clear: both; margin-bottom: 20px;"></div>
+</lt>

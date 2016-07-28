@@ -1,0 +1,35 @@
+    <volist name="Messages" id="Message">
+
+        <eq name="Message.message_sender_id" value="$User.user_id">
+
+
+            <li class="out">
+                <a href='{:U("User/other")}?user_id={$Other_user.user_id}'>
+                    <img src="__ROOT__/Uploads/avatar/{$User.user_image_url}" alt="" class="avatar">
+                </a>
+                <div class="message">
+                    <span class="arrow"></span>
+                    <a class="name" href="javascript:void(0);">You</a>
+                    <span class="datetime">at {$Message.message_datetime}</span>
+                                                <span class="body">
+                                                    {$Message.message_content}
+                                                </span>
+                </div>
+            </li>
+
+        <else/>
+            <li class="in">
+                <a href='{:U("User/other")}?user_id={$Other_user.user_id}'>
+                    <img src="__ROOT__/Uploads/avatar/{$Other_user.user_image_url}" alt="" class="avatar">
+                </a>
+                <div class="message">
+                    <span class="arrow"></span>
+                    <a class="name" href='{:U("User/other")}?user_id={$Other_user.user_id}'>{$Other_user.user_nickname}</a>
+                    <span class="datetime">at {$Message.message_datetime}</span>
+                                                <span class="body">
+                                                    {$Message.message_content}
+                                                </span>
+                </div>
+            </li>
+        </eq>
+    </volist>
